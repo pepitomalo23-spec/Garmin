@@ -1,10 +1,10 @@
-=== Clave de firma (12:47:20)
+=== Clave de firma (16:07:09)
 Clave derivada: 2f22074e06c9
 --- código de salida: 0
-=== Instalar CLI (12:47:21)
+=== Instalar CLI (16:07:12)
 go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
-go: downloading github.com/pkg/errors v0.9.1
 go: downloading github.com/Masterminds/semver/v3 v3.2.1
+go: downloading github.com/pkg/errors v0.9.1
 go: downloading github.com/sirupsen/logrus v1.9.3
 go: downloading github.com/spf13/cobra v1.7.0
 go: downloading github.com/spf13/pflag v1.0.5
@@ -22,88 +22,88 @@ go: downloading github.com/spf13/jwalterweatherman v1.1.0
 go: downloading github.com/mattn/go-runewidth v0.0.9
 go: downloading github.com/andybalholm/cascadia v1.3.1
 go: downloading golang.org/x/net v0.11.0
+go: downloading golang.org/x/text v0.10.0
 go: downloading github.com/subosito/gotenv v1.4.2
 go: downloading github.com/hashicorp/hcl v1.0.0
 go: downloading github.com/magiconair/properties v1.8.7
 go: downloading github.com/pelletier/go-toml/v2 v2.0.8
 go: downloading gopkg.in/yaml.v3 v3.0.1
-go: downloading golang.org/x/text v0.10.0
 --- código de salida: 0
-=== Aceptar licencia (12:47:34)
+=== Aceptar licencia (16:07:31)
 --- código de salida: 0
-=== Login Garmin (12:47:34)
+=== Login Garmin (16:07:31)
 Successfully logged in
 --- código de salida: 0
-=== SDK (12:47:37)
-time="2026-11-20T12:47:37Z" level=info msg="Setting 9.3.0 to be the current SDK"
-time="2026-11-20T12:47:37Z" level=info msg="SDK does not exist, downloading it"
+=== SDK (16:07:35)
+time="2026-11-20T16:07:35Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-20T16:07:35Z" level=info msg="SDK does not exist, downloading it"
 --- código de salida: 0
-=== Dispositivos (12:47:40)
-time="2026-11-20T12:47:55Z" level=info msg="Downloading device zip" device=marq2
-time="2026-11-20T12:47:55Z" level=info msg="Downloading device zip" device=fenix7xpro
-time="2026-11-20T12:47:55Z" level=info msg="Downloading device zip" device=instinct2x
-time="2026-11-20T12:47:55Z" level=info msg="Downloading device zip" device=fenix7pronowifi
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=fenix9prosolar51mm
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=d2mach2pro
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=d2bravo
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=fenix9prosolar47mm
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=marq3
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=edgeexplore
-time="2026-11-20T12:47:56Z" level=info msg="Downloading device zip" device=marqdriver
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=descentg1
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=epix2pro42mm
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=approachs50
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=gpsmaph1
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=fr70
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=fenix6spro
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=fr265
-time="2026-11-20T12:47:57Z" level=info msg="Downloading device zip" device=approachs7042mm
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=d2mach2
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=fenix5
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=fr645m
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=enduro
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=descentmk2s
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=gpsmap66
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=garminswim2
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=marqgolfer
-time="2026-11-20T12:47:58Z" level=info msg="Downloading device zip" device=fr170
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=edge130
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=oregon7xx
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=d2air
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=venu3
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=fenix843mm
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=fenix3_hr
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=edgeexplore2
-time="2026-11-20T12:47:59Z" level=info msg="Downloading device zip" device=approachs7047mm
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=fenix7pro
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=enduro3
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=fr57047mm
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=marq2aviator
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=venusq
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=edge1040
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=descentmk343mm
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=edge850
-time="2026-11-20T12:48:00Z" level=info msg="Downloading device zip" device=fenix6s
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=legacysagarey
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=edge540
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=instincte45mm
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=edgeexplore3plus
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=d2deltas
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=fenix5x
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=fenixchronos
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=venu2
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=epix2pro51mm
-time="2026-11-20T12:48:01Z" level=info msg="Downloading device zip" device=vivoactive5
-time="2026-11-20T12:48:02Z" level=info msg="Downloading device zip" device=approachs7247mm
-time="2026-11-20T12:48:02Z" level=info msg="Downloading device zip" device=edge_1000
-time="2026-11-20T12:48:02Z" level=info msg="Downloading device zip" device=fenix6xpro
-time="2026-11-20T12:48:02Z" level=info msg="Downloading device zip" device=fr245m
-time="2026-11-20T12:48:02Z" level=info msg="Downloading device zip" device=venud
+=== Dispositivos (16:07:40)
+time="2026-11-20T16:07:57Z" level=info msg="Downloading device zip" device=instinct3amoled50mm
+time="2026-11-20T16:07:57Z" level=info msg="Downloading device zip" device=fenix8pro47mm
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=d2delta
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=marqcaptain
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=fenix8solar51mm
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=d2bravo
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=edge1030bontrager
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=d2air
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=instinct2x
+time="2026-11-20T16:07:58Z" level=info msg="Downloading device zip" device=vivoactive5
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=approachs7042mm
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=approachs7247mm
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=edge820
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=fr920xt
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=fr265
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=fenix6spro
+time="2026-11-20T16:07:59Z" level=info msg="Downloading device zip" device=fr45
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=fr735xt
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=legacysagarey
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=fr945lte
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=approachs7047mm
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=edge540
+time="2026-11-20T16:08:00Z" level=info msg="Downloading device zip" device=instincte45mm
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=marqaviator
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=vivoactive_hr
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=montana7xx
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=fenix7pro
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=venu3
+time="2026-11-20T16:08:01Z" level=info msg="Downloading device zip" device=fr57047mm
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=fenix9prosolar47mm
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=d2mach2pro
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=vivolife
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=d2airx10
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=descentg1
+time="2026-11-20T16:08:02Z" level=info msg="Downloading device zip" device=instinct3amoled45mm
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=etrextouch
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=enduro4
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=edgeexplore3plus
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=fenix6
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=vivoactive4
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=vivoactive4s
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=venud
+time="2026-11-20T16:08:03Z" level=info msg="Downloading device zip" device=instinct3solar45mm
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=venux1
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=fenix943mm
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=edge520plus
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=fr945
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=enduro
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=gpsmap67
+time="2026-11-20T16:08:04Z" level=info msg="Downloading device zip" device=edge840
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=fenix8solar47mm
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=descentg2
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=d2charlie
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=edge_520
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=fr170
+time="2026-11-20T16:08:05Z" level=info msg="Downloading device zip" device=fenix6s
+time="2026-11-20T16:08:06Z" level=info msg="Downloading device zip" device=fr245m
+time="2026-11-20T16:08:06Z" level=info msg="Downloading device zip" device=vivoactive
+time="2026-11-20T16:08:06Z" level=info msg="Downloading device zip" device=vivoactive3mlte
+time="2026-11-20T16:08:06Z" level=info msg="Downloading device zip" device=venu2s
 --- código de salida: 0
-=== Lista de relojes (12:48:02)
+=== Lista de relojes (16:08:06)
 119 relojes añadidos al manifest
 --- código de salida: 0
-=== Compilar .iq (12:48:02)
+=== Compilar .iq (16:08:06)
 WARNING: fr255: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr255' (40x40). The image will be scaled to the target size.
 164 OUT OF 196 DEVICES BUILT
 WARNING: fenix7xpro: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fenix7xpro' (40x40). The image will be scaled to the target size.
