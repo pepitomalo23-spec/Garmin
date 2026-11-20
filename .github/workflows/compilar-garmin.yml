@@ -1,8 +1,9 @@
 name: Compilar esfera Garmin
 
-# Compila la esfera en la nube (sin ordenador) y deja el paquete .iq en build/.
-# Necesita dos secretos del repositorio: GARMIN_USERNAME y GARMIN_PASSWORD
-# (tu cuenta Garmin; solo se usan para descargar los archivos de dispositivos del SDK).
+# Compila la esfera en la nube (sin ordenador) y deja en build/:
+#   PabloFace.iq  -> paquete para subir a la tienda Connect IQ
+#   log.txt       -> registro de la compilación (contraseña enmascarada)
+# Secretos necesarios: GARMIN_USERNAME y GARMIN_PASSWORD.
 
 on:
   push:
@@ -24,19 +25,9 @@ env:
 jobs:
   compilar:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-
-      - name: Comprobar secretos
-        env:
-          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
-          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
-        run: |
-          if [ -z "$GARMIN_USERNAME" ] || [ -z "$GARMIN_PASSWORD" ]; then
-            echo "::error::Faltan los secretos GARMIN_USERNAME / GARMIN_PASSWORD (Settings > Secrets and variables > Actions)."
-            exit 1
-          fi
 
       - uses: actions/setup-java@v4
         with:
@@ -46,36 +37,25 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "stable"
+          cache: false
 
-      - name: Instalar gestor del SDK (CLI)
-        run: |
-          go install github.com/lindell/connect-iq-sdk-manager-cli@${SDK_MANAGER_VERSION}
-          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
-
-      - name: Licencia, login y descarga de SDK + dispositivos
+      - name: Compilar
         env:
           GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          connect-iq-sdk-manager-cli agreement accept
-          connect-iq-sdk-manager-cli login
-          connect-iq-sdk-manager-cli sdk set "${SDK_VERSION}"
-          connect-iq-sdk-manager-cli device download --download-all
-          echo "$(connect-iq-sdk-manager-cli sdk current-path --bin)" >> "$GITHUB_PATH"
-
-      - name: Rellenar lista de relojes
-        run: python3 scripts/fill_products.py manifest.xml
-
-      - name: Compilar paquete .iq (todos los relojes)
-        run: |
           mkdir -p build
-          monkeyc -e -r -w -f monkey.jungle -y keys/developer_key.der -o build/PabloFace.iq
-          ls -la build
+          if [ -z "$GARMIN_USERNAME" ] || [ -z "$GARMIN_PASSWORD" ]; then
+            echo "ESTADO: FALLO - faltan los secretos GARMIN_USERNAME / GARMIN_PASSWORD" | tee build/log.txt
+            exit 1
+          fi
+          bash scripts/build.sh
 
-      - name: Guardar el resultado en el repositorio
+      - name: Guardar resultado y registro en el repositorio
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add build/PabloFace.iq
-          git commit -m "Build: PabloFace.iq ($(date -u +%Y-%m-%dT%H:%MZ))" || echo "Sin cambios"
+          git add -f build/ || true
+          git commit -m "Build $(date -u +%Y-%m-%dT%H:%MZ): $(tail -n1 build/log.txt 2>/dev/null)" || echo "Sin cambios"
           git push
