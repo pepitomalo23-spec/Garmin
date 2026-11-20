@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="f416abff908b4941865a20fc43c55386" type="watchface" name="@Strings.AppName" entry="PabloFaceApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+        <iq:products>
+            <!-- PRODUCTS: el script scripts/fill_products.py rellena esta lista con todos los relojes compatibles -->
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>spa</iq:language>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>
