@@ -1,0 +1,168 @@
+=== Clave de firma (10:16:47)
+Clave derivada: 2f22074e06c9
+--- código de salida: 0
+=== Instalar CLI (10:16:49)
+go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
+go: downloading github.com/Masterminds/semver/v3 v3.2.1
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/sirupsen/logrus v1.9.3
+go: downloading github.com/spf13/cobra v1.7.0
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading github.com/spf13/viper v1.16.0
+go: downloading github.com/deckarep/golang-set/v2 v2.3.1
+go: downloading github.com/olekukonko/tablewriter v0.0.5
+go: downloading golang.org/x/sys v0.10.0
+go: downloading github.com/PuerkitoBio/goquery v1.8.1
+go: downloading gopkg.in/ini.v1 v1.67.0
+go: downloading github.com/fsnotify/fsnotify v1.6.0
+go: downloading github.com/mitchellh/mapstructure v1.5.0
+go: downloading github.com/spf13/afero v1.9.5
+go: downloading github.com/spf13/cast v1.5.1
+go: downloading github.com/spf13/jwalterweatherman v1.1.0
+go: downloading github.com/mattn/go-runewidth v0.0.9
+go: downloading github.com/andybalholm/cascadia v1.3.1
+go: downloading golang.org/x/net v0.11.0
+go: downloading golang.org/x/text v0.10.0
+go: downloading github.com/subosito/gotenv v1.4.2
+go: downloading github.com/hashicorp/hcl v1.0.0
+go: downloading github.com/magiconair/properties v1.8.7
+go: downloading github.com/pelletier/go-toml/v2 v2.0.8
+go: downloading gopkg.in/yaml.v3 v3.0.1
+--- código de salida: 0
+=== Aceptar licencia (10:17:08)
+--- código de salida: 0
+=== Login Garmin (10:17:09)
+Successfully logged in
+--- código de salida: 0
+=== SDK (10:17:12)
+time="2026-11-20T10:17:12Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-20T10:17:12Z" level=info msg="SDK does not exist, downloading it"
+--- código de salida: 0
+=== Dispositivos (10:17:16)
+time="2026-11-20T10:17:33Z" level=info msg="Downloading device zip" device=fr45
+time="2026-11-20T10:17:33Z" level=info msg="Downloading device zip" device=vivoactive_hr
+time="2026-11-20T10:17:33Z" level=info msg="Downloading device zip" device=fr165
+time="2026-11-20T10:17:33Z" level=info msg="Downloading device zip" device=edgeexplore2
+time="2026-11-20T10:17:33Z" level=info msg="Downloading device zip" device=descentmk1
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=edge520plus
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=edge_520
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=fenix5xplus
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=fenixchronos
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=legacysagarey
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=fenix7x
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=venusq2m
+time="2026-11-20T10:17:34Z" level=info msg="Downloading device zip" device=d2deltapx
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=fr630
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=fr935
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=legacyherofirstavenger
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=enduro
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=venu2s
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=d2airx10
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=d2charlie
+time="2026-11-20T10:17:35Z" level=info msg="Downloading device zip" device=edge130
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=fr235
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=epix2
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=marq2aviator
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=instincte45mm
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=fenix943mm
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=epix
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=fenix3_hr
+time="2026-11-20T10:17:36Z" level=info msg="Downloading device zip" device=vivoactive4s
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=instinct2
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=fenix7spro
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=instincte40mm
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=approachs50
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=fenixe
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=edge1030
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=legacyherocaptainmarvel
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=vivoactive3
+time="2026-11-20T10:17:37Z" level=info msg="Downloading device zip" device=approachs62
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=epix2pro47mm
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=fr170
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=fenix7pro
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=instinct3amoled50mm
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=etrextouch
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=fenix9prosolar51mm
+time="2026-11-20T10:17:38Z" level=info msg="Downloading device zip" device=vivolife
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=descentmk2s
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=fr955
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=instinctcrossover
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=marq2
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=edgemtb
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=fr57042mm
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=fr265
+time="2026-11-20T10:17:39Z" level=info msg="Downloading device zip" device=enduro3
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=approachs7247mm
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=edge530
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=fenix7
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=approachs7042mm
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=fenix9pro47mm
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=marqdriver
+time="2026-11-20T10:17:40Z" level=info msg="Downloading device zip" device=venusq2
+--- código de salida: 0
+=== Lista de relojes (10:17:41)
+119 relojes añadidos al manifest
+--- código de salida: 0
+=== Compilar .iq (10:17:41)
+WARNING: fr255: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr255' (40x40). The image will be scaled to the target size.
+164 OUT OF 196 DEVICES BUILT
+WARNING: fenix7xpro: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fenix7xpro' (40x40). The image will be scaled to the target size.
+165 OUT OF 196 DEVICES BUILT
+166 OUT OF 196 DEVICES BUILT
+167 OUT OF 196 DEVICES BUILT
+168 OUT OF 196 DEVICES BUILT
+WARNING: approachs7247mm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'approachs7247mm' (65x65). The image will be scaled to the target size.
+169 OUT OF 196 DEVICES BUILT
+WARNING: fr165m: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr165m' (54x54). The image will be scaled to the target size.
+170 OUT OF 196 DEVICES BUILT
+WARNING: venusqm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venusqm' (36x36). The image will be scaled to the target size.
+171 OUT OF 196 DEVICES BUILT
+WARNING: venusqm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venusqm' (36x36). The image will be scaled to the target size.
+172 OUT OF 196 DEVICES BUILT
+WARNING: venusqm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venusqm' (36x36). The image will be scaled to the target size.
+173 OUT OF 196 DEVICES BUILT
+WARNING: venusqm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venusqm' (36x36). The image will be scaled to the target size.
+174 OUT OF 196 DEVICES BUILT
+WARNING: fr57042mm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr57042mm' (54x54). The image will be scaled to the target size.
+175 OUT OF 196 DEVICES BUILT
+176 OUT OF 196 DEVICES BUILT
+WARNING: marq3: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'marq3' (65x65). The image will be scaled to the target size.
+177 OUT OF 196 DEVICES BUILT
+WARNING: d2mach2pro: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'd2mach2pro' (65x65). The image will be scaled to the target size.
+178 OUT OF 196 DEVICES BUILT
+WARNING: legacysagarey: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'legacysagarey' (30x30). The image will be scaled to the target size.
+179 OUT OF 196 DEVICES BUILT
+WARNING: legacysagarey: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'legacysagarey' (30x30). The image will be scaled to the target size.
+180 OUT OF 196 DEVICES BUILT
+WARNING: marqcaptain: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'marqcaptain' (40x40). The image will be scaled to the target size.
+181 OUT OF 196 DEVICES BUILT
+WARNING: marqcaptain: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'marqcaptain' (40x40). The image will be scaled to the target size.
+182 OUT OF 196 DEVICES BUILT
+WARNING: venu441mm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venu441mm' (54x54). The image will be scaled to the target size.
+183 OUT OF 196 DEVICES BUILT
+184 OUT OF 196 DEVICES BUILT
+WARNING: venux1: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venux1' (65x65). The image will be scaled to the target size.
+185 OUT OF 196 DEVICES BUILT
+186 OUT OF 196 DEVICES BUILT
+WARNING: venu445mm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venu445mm' (65x65). The image will be scaled to the target size.
+187 OUT OF 196 DEVICES BUILT
+WARNING: venu445mm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venu445mm' (65x65). The image will be scaled to the target size.
+188 OUT OF 196 DEVICES BUILT
+WARNING: venusq2m: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'venusq2m' (40x40). The image will be scaled to the target size.
+189 OUT OF 196 DEVICES BUILT
+190 OUT OF 196 DEVICES BUILT
+WARNING: fr945: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr945' (40x40). The image will be scaled to the target size.
+191 OUT OF 196 DEVICES BUILT
+WARNING: fr945: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr945' (40x40). The image will be scaled to the target size.
+192 OUT OF 196 DEVICES BUILT
+WARNING: legacyherofirstavenger: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'legacyherofirstavenger' (35x35). The image will be scaled to the target size.
+193 OUT OF 196 DEVICES BUILT
+WARNING: legacyherofirstavenger: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'legacyherofirstavenger' (35x35). The image will be scaled to the target size.
+194 OUT OF 196 DEVICES BUILT
+WARNING: fr255sm: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fr255sm' (40x40). The image will be scaled to the target size.
+195 OUT OF 196 DEVICES BUILT
+WARNING: fenix7pro: The launcher icon (60x60) isn't compatible with the specified launcher icon size of the device 'fenix7pro' (40x40). The image will be scaled to the target size.
+196 OUT OF 196 DEVICES BUILT
+BUILD SUCCESSFUL
+--- código de salida: 0
+ESTADO: OK
