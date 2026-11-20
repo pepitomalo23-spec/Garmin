@@ -3,7 +3,8 @@ name: Compilar esfera Garmin
 # Compila la esfera en la nube (sin ordenador) y deja en build/:
 #   PabloFace.iq  -> paquete para subir a la tienda Connect IQ
 #   log.txt       -> registro de la compilación (contraseña enmascarada)
-# Secretos necesarios: GARMIN_USERNAME y GARMIN_PASSWORD.
+# Secretos necesarios: GARMIN_USERNAME, GARMIN_PASSWORD y CLAVE_FIRMA
+# (frase larga inventada; de ella se deriva siempre la misma clave de firma).
 
 on:
   push:
@@ -43,8 +44,10 @@ jobs:
         env:
           GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          CLAVE_FIRMA: ${{ secrets.CLAVE_FIRMA }}
         run: |
           mkdir -p build
+          pip install --quiet pycryptodome
           if [ -z "$GARMIN_USERNAME" ] || [ -z "$GARMIN_PASSWORD" ]; then
             echo "ESTADO: FALLO - faltan los secretos GARMIN_USERNAME / GARMIN_PASSWORD" | tee build/log.txt
             exit 1
