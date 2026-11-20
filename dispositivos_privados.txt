@@ -1,0 +1,2 @@
+# Relojes cuyos archivos se exportan cifrados (uno por línea)
+fenix6xpro

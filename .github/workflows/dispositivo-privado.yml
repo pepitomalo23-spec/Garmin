@@ -1,0 +1,51 @@
+name: Exportar dispositivo cifrado
+
+# Descarga los archivos de un reloj concreto (lista en dispositivos_privados.txt)
+# y los guarda CIFRADOS con keys/entrega_pub.pem, para compilar en privado
+# esferas con contenido personal (fotos) sin publicarlo en este repo.
+
+on:
+  push:
+    branches: ["main"]
+    paths: ["dispositivos_privados.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  exportar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+          cache: false
+      - name: Descargar y cifrar
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: |
+          set -euo pipefail
+          go install github.com/lindell/connect-iq-sdk-manager-cli@v0.8.4
+          export PATH="$(go env GOPATH)/bin:$PATH"
+          connect-iq-sdk-manager-cli agreement accept
+          connect-iq-sdk-manager-cli login > /dev/null
+          ARGS=""; for d in $(grep -v '^#' dispositivos_privados.txt); do ARGS="$ARGS --device=$d"; done
+          connect-iq-sdk-manager-cli device download $ARGS
+          mkdir -p build/privado
+          tar -C "$HOME/.Garmin/ConnectIQ" -czf /tmp/dev.tgz Devices
+          openssl rand -out /tmp/k.bin 32
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in /tmp/dev.tgz -out build/privado/dispositivos.tgz.enc -pass file:/tmp/k.bin
+          openssl pkeyutl -encrypt -pubin -inkey keys/entrega_pub.pem -in /tmp/k.bin -out build/privado/clave.bin.enc
+          rm -f /tmp/k.bin /tmp/dev.tgz
+          ls -la build/privado
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f build/privado
+          git commit -m "Dispositivos cifrados $(date -u +%Y-%m-%dT%H:%MZ)" || echo "Sin cambios"
+          git push
