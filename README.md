@@ -8,3 +8,4 @@ Repositorio privado del proyecto Garmin.
 
 Instalación sin cable: subir `build/PabloFace.iq` como **app beta** en https://apps.garmin.com/developer y añadirla al reloj desde la app Connect IQ del móvil.
 
+
