@@ -1,0 +1,440 @@
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Communications,1,14,28]; ]
+import Toybox.Communications;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [PersistedContent,3,14,30]; ]
+import Toybox.PersistedContent;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 14; @symbol_classdef = [Directo,14,6,13]; ]
+class Directo {
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 14; ]
+    <init> {
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 14; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 16; @position = 16; @symbol_vardef = [_enCurso,16,16,24]; @symbol_type<0> = [Boolean,16,28,35]; ]
+    private
+    var _enCurso as Boolean = false;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 17; @position = 16; @symbol_vardef = [_otraVez,17,16,24]; @symbol_type<0> = [Boolean,17,28,35]; ]
+    private
+    var _otraVez as Boolean = false;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 18; @position = 16; @symbol_vardef = [_ultimo,18,16,23]; @symbol_type<0> = [Number,18,27,33]; ]
+    private
+    var _ultimo as Number = 0;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 19; @position = 8; @symbol_vardef = [refinarEn,19,8,17]; @symbol_type<0> = [Number,19,21,27]; ]
+    var refinarEn as Number = 0;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 21; @symbol_functiondef = [initialize,21,13,23]; ]
+    function initialize() as Void {
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 24; @symbol_functiondef = [avisar,24,13,19]; ]
+    function avisar() as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_24_30_27_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 25 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_8_25_49_if_stmt:
+        symbol [ _enCurso %tmp.2 25 12 20 ];
+        %tmp.2 = getv ? :_enCurso;
+        bf %tmp.2 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_8_25_49_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_8_25_49_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_22_25_49_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 25 24 ]
+        %tmp.3 = true;
+        symbol [ _otraVez ? 25 24 32 ];
+        putv self :_otraVez %tmp.3;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 25 41 ]
+        ret ?;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_22_25_49_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_8_25_49_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_25_8_25_49_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 26 8 ]
+        %tmp.4 = self;
+        symbol [ enviar %tmp.5 26 8 14 ];
+        %tmp.5 = getv function %tmp.4 :enviar;
+        invoke %tmp.4 %tmp.5();
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_24_30_27_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 30; @symbol_functiondef = [alTick,30,13,19]; @symbol_param<0> = [c,30,20,21]; @symbol_param<0>_type<0> = [Cronometro,30,25,35]; ]
+    function alTick(c as Cronometro) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_30_45_38_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 31 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_30_45_38_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_30_45_38_4_stop" ]
+        %ahora.1 = local;
+        symbol [ ahora %ahora.1 31 12 17 ];
+        symbol [ Time %tmp.1 31 20 24 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 31 25 28 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ value %tmp.4 31 31 36 ];
+        %tmp.4 = getv function %tmp.3 :value;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %ahora.1 %tmp.5;
+        symbol [ ahora %ahora.1 31 12 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 32 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_12_32_38_begin:
+        symbol [ refinarEn %tmp.7 32 12 21 ];
+        %tmp.7 = getv ? :refinarEn;
+        %tmp.8 = 0;
+        %tmp.9 = gt %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_29_32_38_true:
+        %tmp.10 = lgetv %ahora.1;
+        symbol [ ahora %tmp.10 32 29 34 ];
+        symbol [ refinarEn %tmp.12 32 38 47 ];
+        %tmp.12 = getv ? :refinarEn;
+        %tmp.13 = gte %tmp.10 %tmp.12;
+        push %tmp.13;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_29_32_38_end:
+        %tmp.14 = phi [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_12_32_38_begin] [%tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_29_32_38_true] [%tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_29_32_38_end];
+        bf %tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_49_35_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 33 12 ]
+        %tmp.15 = 0;
+        symbol [ refinarEn ? 33 12 21 ];
+        putv self :refinarEn %tmp.15;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 34 12 ]
+        %tmp.16 = self;
+        symbol [ avisar %tmp.17 34 12 18 ];
+        %tmp.17 = getv function %tmp.16 :avisar;
+        invoke %tmp.16 %tmp.17();
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_49_35_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_false:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 35 15 ]
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_19_35_62_begin:
+        %tmp.18 = lgetv %c;
+        symbol [ c %tmp.18 35 19 20 ];
+        symbol [ estado %tmp.19 35 21 27 ];
+        %tmp.19 = getv %tmp.18 :estado;
+        symbol [ E_MARCHA %tmp.21 35 31 39 ];
+        %tmp.21 = getv ? :E_MARCHA;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_43_35_62_true:
+        %tmp.23 = lgetv %ahora.1;
+        symbol [ ahora %tmp.23 35 43 48 ];
+        symbol [ _ultimo %tmp.25 35 51 58 ];
+        %tmp.25 = getv ? :_ultimo;
+        %tmp.26 = sub %tmp.23 %tmp.25;
+        %tmp.27 = 60;
+        %tmp.28 = gte %tmp.26 %tmp.27;
+        push %tmp.28;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_43_35_62_end:
+        %tmp.29 = phi [%tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_19_35_62_begin] [%tmp.28 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_43_35_62_true] [%tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_43_35_62_end];
+        bf %tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_66_37_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 36 12 ]
+        %tmp.30 = self;
+        symbol [ avisar %tmp.31 36 12 18 ];
+        %tmp.31 = getv function %tmp.30 :avisar;
+        invoke %tmp.30 %tmp.31();
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_66_37_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_35_15_37_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_32_8_37_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_30_45_38_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 40; @symbol_functiondef = [arrancado,40,13,22]; ]
+    function arrancado() as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_40_33_43_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 41 8 ]
+        symbol [ Time %tmp.1 41 20 24 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 41 25 28 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ value %tmp.4 41 31 36 ];
+        %tmp.4 = getv function %tmp.3 :value;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = 3;
+        %tmp.7 = add %tmp.5 %tmp.6;
+        symbol [ refinarEn ? 41 8 17 ];
+        putv self :refinarEn %tmp.7;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 42 8 ]
+        %tmp.8 = self;
+        symbol [ avisar %tmp.9 42 8 14 ];
+        %tmp.9 = getv function %tmp.8 :avisar;
+        invoke %tmp.8 %tmp.9();
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_40_33_43_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 45; @symbol_functiondef = [enviar,45,21,27]; ]
+    private
+    function enviar() as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 46 8 ]
+        symbol [ Time %tmp.1 46 18 22 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 46 23 26 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ value %tmp.4 46 29 34 ];
+        %tmp.4 = getv function %tmp.3 :value;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ _ultimo ? 46 8 15 ];
+        putv self :_ultimo %tmp.5;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 47 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_stop" ]
+        %clave.1 = local;
+        symbol [ clave %clave.1 47 12 17 ];
+        symbol [ Almacen %tmp.7 47 20 27 ];
+        %tmp.7 = getv ? :Almacen;
+        symbol [ clave %tmp.8 47 28 33 ];
+        %tmp.8 = getv function %tmp.7 :clave;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        lputv %clave.1 %tmp.9;
+        symbol [ clave %clave.1 47 12 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 48 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_12_48_63_begin:
+        %tmp.10 = lgetv %clave.1;
+        symbol [ clave %tmp.10 48 12 17 ];
+        symbol [ length %tmp.11 48 18 24 ];
+        %tmp.11 = getv function %tmp.10 :length;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = 20;
+        %tmp.14 = lt %tmp.12 %tmp.13;
+        bt %tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_35_48_63_false:
+        symbol [ System %tmp.15 48 36 42 ];
+        %tmp.15 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.16 48 43 60 ];
+        %tmp.16 = getv function %tmp.15 :getDeviceSettings;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        symbol [ phoneConnected %tmp.18 48 63 77 ];
+        %tmp.18 = getv %tmp.17 :phoneConnected;
+        %tmp.19 = not %tmp.18;
+        push %tmp.19;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_35_48_63_end:
+        %tmp.20 = phi [%tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_12_48_63_begin] [%tmp.19 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_35_48_63_false] [%tmp.20 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_35_48_63_end];
+        bf %tmp.20 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_79_48_89_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 48 81 ]
+        ret ?;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_79_48_89_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_48_8_48_89_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 49 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_stop" ]
+        %c.2 = local;
+        symbol [ c %c.2 49 12 13 ];
+        %tmp.21 = self;
+        symbol [ app %tmp.22 49 16 19 ];
+        %tmp.22 = getv function %tmp.21 :app;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        symbol [ crono %tmp.24 49 22 27 ];
+        %tmp.24 = getv %tmp.23 :crono;
+        %tmp.25 = as %tmp.24 Cronometro;
+        symbol [ Cronometro %tmp.25 49 31 41 ];
+        lputv %c.2 %tmp.25;
+        symbol [ c %c.2 49 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 50 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_stop" ]
+        %params.3 = local;
+        symbol [ params %params.3 50 12 18 ];
+        %tmp.26 = newd Dictionary<Object, Object> 0;
+        symbol [ Dictionary %tmp.26 50 27 37 ];
+        symbol [ Object %tmp.26 50 38 44 ];
+        symbol [ Object %tmp.26 50 46 52 ];
+        lputv %params.3 %tmp.26;
+        symbol [ params %params.3 50 12 18 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 51 8 ]
+        %tmp.27 = lgetv %params.3;
+        symbol [ params %tmp.27 51 8 14 ];
+        symbol [ put %tmp.28 51 15 18 ];
+        %tmp.28 = getv function %tmp.27 :put;
+        %tmp.29 = "e";
+        %tmp.30 = lgetv %c.2;
+        symbol [ c %tmp.30 51 24 25 ];
+        symbol [ estado %tmp.31 51 26 32 ];
+        %tmp.31 = getv %tmp.30 :estado;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.31);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 52 8 ]
+        %tmp.32 = lgetv %params.3;
+        symbol [ params %tmp.32 52 8 14 ];
+        symbol [ put %tmp.33 52 15 18 ];
+        %tmp.33 = getv function %tmp.32 :put;
+        %tmp.34 = "ini";
+        %tmp.35 = lgetv %c.2;
+        symbol [ c %tmp.35 52 26 27 ];
+        symbol [ inicio %tmp.36 52 28 34 ];
+        %tmp.36 = getv %tmp.35 :inicio;
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.36);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 53 8 ]
+        %tmp.37 = lgetv %params.3;
+        symbol [ params %tmp.37 53 8 14 ];
+        symbol [ put %tmp.38 53 15 18 ];
+        %tmp.38 = getv function %tmp.37 :put;
+        %tmp.39 = "acum";
+        %tmp.40 = lgetv %c.2;
+        symbol [ c %tmp.40 53 27 28 ];
+        symbol [ acum %tmp.41 53 29 33 ];
+        %tmp.41 = getv %tmp.40 :acum;
+        invoke %tmp.37 %tmp.38(%tmp.39, %tmp.41);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 54 8 ]
+        %tmp.42 = lgetv %params.3;
+        symbol [ params %tmp.42 54 8 14 ];
+        symbol [ put %tmp.43 54 15 18 ];
+        %tmp.43 = getv function %tmp.42 :put;
+        %tmp.44 = "aE";
+        %tmp.45 = lgetv %c.2;
+        symbol [ c %tmp.45 54 25 26 ];
+        symbol [ anclaE %tmp.46 54 27 33 ];
+        %tmp.46 = getv %tmp.45 :anclaE;
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.46);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 55 8 ]
+        %tmp.47 = lgetv %params.3;
+        symbol [ params %tmp.47 55 8 14 ];
+        symbol [ put %tmp.48 55 15 18 ];
+        %tmp.48 = getv function %tmp.47 :put;
+        %tmp.49 = "aOff";
+        %tmp.50 = lgetv %c.2;
+        symbol [ c %tmp.50 55 27 28 ];
+        symbol [ offsetAncla %tmp.51 55 29 40 ];
+        %tmp.51 = getv function %tmp.50 :offsetAncla;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.52);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 56 8 ]
+        %tmp.53 = lgetv %params.3;
+        symbol [ params %tmp.53 56 8 14 ];
+        symbol [ put %tmp.54 56 15 18 ];
+        %tmp.54 = getv function %tmp.53 :put;
+        %tmp.55 = "par";
+        %tmp.56 = lgetv %c.2;
+        symbol [ c %tmp.56 56 26 27 ];
+        symbol [ parciales %tmp.57 56 28 37 ];
+        %tmp.57 = getv %tmp.56 :parciales;
+        invoke %tmp.53 %tmp.54(%tmp.55, %tmp.57);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 57 8 ]
+        %tmp.58 = lgetv %params.3;
+        symbol [ params %tmp.58 57 8 14 ];
+        symbol [ put %tmp.59 57 15 18 ];
+        %tmp.59 = getv function %tmp.58 :put;
+        %tmp.60 = "version";
+        symbol [ Almacen %tmp.62 57 30 37 ];
+        %tmp.62 = getv ? :Almacen;
+        symbol [ VERSION_APP %tmp.63 57 38 49 ];
+        %tmp.63 = getv %tmp.62 :VERSION_APP;
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.63);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 58 8 ]
+        %tmp.64 = lgetv %params.3;
+        symbol [ params %tmp.64 58 8 14 ];
+        symbol [ put %tmp.65 58 15 18 ];
+        %tmp.65 = getv function %tmp.64 :put;
+        %tmp.66 = "modelo";
+        symbol [ Almacen %tmp.68 58 29 36 ];
+        %tmp.68 = getv ? :Almacen;
+        symbol [ MODELO %tmp.69 58 37 43 ];
+        %tmp.69 = getv %tmp.68 :MODELO;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.69);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 59 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_stop" ]
+        %opciones.4 = local;
+        symbol [ opciones %opciones.4 59 12 20 ];
+        %tmp.70 = newd 3;
+        %tmp.72 = const :method;
+        symbol [ method %tmp.72 60 13 19 const ];
+        symbol [ Communications %tmp.73 60 23 37 ];
+        %tmp.73 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_POST %tmp.74 60 38 62 ];
+        %tmp.74 = getv %tmp.73 :HTTP_REQUEST_METHOD_POST;
+        %tmp.75 = dup %tmp.70;
+        %tmp.76 = aputv %tmp.75 %tmp.72 %tmp.74;
+        %tmp.78 = const :headers;
+        symbol [ headers %tmp.78 61 13 20 const ];
+        %tmp.79 = newd 2;
+        %tmp.80 = "Content-Type";
+        symbol [ Communications %tmp.81 62 34 48 ];
+        %tmp.81 = getm $.Toybox.Communications;
+        symbol [ REQUEST_CONTENT_TYPE_JSON %tmp.82 62 49 74 ];
+        %tmp.82 = getv %tmp.81 :REQUEST_CONTENT_TYPE_JSON;
+        %tmp.83 = dup %tmp.79;
+        %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+        %tmp.85 = "Authorization";
+        %tmp.86 = "Bearer ";
+        %tmp.87 = lgetv %clave.1;
+        symbol [ clave %tmp.87 63 47 52 ];
+        %tmp.88 = add %tmp.86 %tmp.87;
+        %tmp.89 = dup %tmp.84;
+        %tmp.90 = aputv %tmp.89 %tmp.85 %tmp.88;
+        %tmp.91 = dup %tmp.76;
+        %tmp.92 = aputv %tmp.91 %tmp.78 %tmp.90;
+        %tmp.94 = const :responseType;
+        symbol [ responseType %tmp.94 65 13 25 const ];
+        symbol [ Communications %tmp.95 65 29 43 ];
+        %tmp.95 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.96 65 44 75 ];
+        %tmp.96 = getv %tmp.95 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.97 = dup %tmp.92;
+        %tmp.98 = aputv %tmp.97 %tmp.94 %tmp.96;
+        lputv %opciones.4 %tmp.98;
+        symbol [ opciones %opciones.4 59 12 20 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 67 8 ]
+        %tmp.99 = true;
+        symbol [ _enCurso ? 67 8 16 ];
+        putv self :_enCurso %tmp.99;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 68 8 ]
+        symbol [ Communications %tmp.100 68 8 22 ];
+        %tmp.100 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.101 68 23 37 ];
+        %tmp.101 = getv function %tmp.100 :makeWebRequest;
+        symbol [ Almacen %tmp.103 68 38 45 ];
+        %tmp.103 = getv ? :Almacen;
+        symbol [ servidor %tmp.104 68 46 54 ];
+        %tmp.104 = getv function %tmp.103 :servidor;
+        %tmp.105 = invoke %tmp.103 %tmp.104();
+        %tmp.106 = "/directo";
+        %tmp.107 = add %tmp.105 %tmp.106;
+        %tmp.108 = lgetv %params.3;
+        symbol [ params %tmp.108 68 71 77 ];
+        %tmp.109 = lgetv %opciones.4;
+        symbol [ opciones %tmp.109 68 79 87 ];
+        %tmp.110 = self;
+        symbol [ method %tmp.111 68 89 95 ];
+        %tmp.111 = getv function %tmp.110 :method;
+        %tmp.113 = const :alResponder;
+        symbol [ alResponder %tmp.113 68 97 108 const ];
+        %tmp.114 = invoke %tmp.110 %tmp.111(%tmp.113);
+        invoke %tmp.100 %tmp.101(%tmp.107, %tmp.108, %tmp.109, %tmp.114);
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_45_38_69_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 71; @symbol_functiondef = [alResponder,71,13,24]; @symbol_param<0> = [cod,71,25,28]; @symbol_param<0>_type<0> = [Number,71,32,38]; @symbol_param<1> = [datos,71,40,45]; @symbol_param<1>_type<0> = [ByteArray,71,57,66]; @symbol_param<1>_type<1> = [Dictionary,71,70,80]; @symbol_param<1>_type<2> = [String,71,84,90]; @symbol_param<1>_type<3> = [PersistedContent,71,94,110]; @symbol_param<1>_type<4> = [Iterator,71,111,119]; ]
+    function alResponder(cod as Number, datos as Null or ByteArray or Dictionary or String or PersistedContent.Iterator) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_71_129_77_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 72 8 ]
+        %tmp.1 = false;
+        symbol [ _enCurso ? 72 8 16 ];
+        putv self :_enCurso %tmp.1;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 73 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_8_76_8_if_stmt:
+        symbol [ _otraVez %tmp.3 73 12 20 ];
+        %tmp.3 = getv ? :_otraVez;
+        bf %tmp.3 @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_8_76_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_8_76_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_22_76_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 74 12 ]
+        %tmp.4 = false;
+        symbol [ _otraVez ? 74 12 20 ];
+        putv self :_otraVez %tmp.4;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc" 75 12 ]
+        %tmp.5 = self;
+        symbol [ enviar %tmp.6 75 12 18 ];
+        %tmp.6 = getv function %tmp.5 :enviar;
+        invoke %tmp.5 %tmp.6();
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_22_76_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_8_76_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_73_8_76_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Directo_mc_71_129_77_4_stop:
+    }
+}
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Directo.mc"; @line = 1; ]
+<init> {
+}

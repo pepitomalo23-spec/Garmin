@@ -1214,6 +1214,178 @@ _home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_105_46_105_60_end:
     ret %tmp.34;
 _home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_101_52_106_0_stop:
 }
+[ @file = "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc"; @line = 111; test = true; @symbol_functiondef = [pruebaAfinarAncla,111,9,26]; @symbol_param<0> = [logger,111,27,33]; @symbol_param<0>_type<0> = [Logger,111,37,43]; @symbol_return<0> = [Boolean,111,48,55]; ]
+function pruebaAfinarAncla(logger as Logger) as Boolean {
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_start:
+[ "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc" 112 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_start" "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_stop" ]
+    %r.1 = local;
+    symbol [ r %r.1 112 8 9 ];
+    %tmp.1 = self;
+    symbol [ cruzarAncla %tmp.2 112 12 23 ];
+    %tmp.2 = getv function %tmp.1 :cruzarAncla;
+    %tmp.3 = 0;
+    %tmp.4 = 999;
+    %tmp.5 = 2;
+    %tmp.6 = 1580;
+    %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6);
+    lputv %r.1 %tmp.7;
+    symbol [ r %r.1 112 8 9 ];
+[ "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc" 113 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_start" "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_stop" ]
+    %r2.2 = local;
+    symbol [ r2 %r2.2 113 8 10 ];
+    %tmp.8 = self;
+    symbol [ cruzarAncla %tmp.9 113 13 24 ];
+    %tmp.9 = getv function %tmp.8 :cruzarAncla;
+    %tmp.10 = lgetv %r.1;
+    symbol [ r %tmp.10 113 25 26 ];
+    %tmp.11 = 0;
+    %tmp.12 = agetv %tmp.10 %tmp.11;
+    %tmp.13 = as %tmp.12 Number;
+    symbol [ Number %tmp.13 113 33 39 ];
+    %tmp.14 = lgetv %r.1;
+    symbol [ r %tmp.14 113 41 42 ];
+    %tmp.15 = 1;
+    %tmp.16 = agetv %tmp.14 %tmp.15;
+    %tmp.17 = as %tmp.16 Number;
+    symbol [ Number %tmp.17 113 49 55 ];
+    %tmp.18 = 2;
+    %tmp.19 = 2579;
+    %tmp.20 = invoke %tmp.8 %tmp.9(%tmp.13, %tmp.17, %tmp.18, %tmp.19);
+    lputv %r2.2 %tmp.20;
+    symbol [ r2 %r2.2 113 8 10 ];
+[ "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc" 114 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_start" "_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_stop" ]
+    %r3.3 = local;
+    symbol [ r3 %r3.3 114 8 10 ];
+    %tmp.21 = self;
+    symbol [ cruzarAncla %tmp.22 114 13 24 ];
+    %tmp.22 = getv function %tmp.21 :cruzarAncla;
+    %tmp.23 = lgetv %r2.2;
+    symbol [ r2 %tmp.23 114 25 27 ];
+    %tmp.24 = 0;
+    %tmp.25 = agetv %tmp.23 %tmp.24;
+    %tmp.26 = as %tmp.25 Number;
+    symbol [ Number %tmp.26 114 34 40 ];
+    %tmp.27 = lgetv %r2.2;
+    symbol [ r2 %tmp.27 114 42 44 ];
+    %tmp.28 = 1;
+    %tmp.29 = agetv %tmp.27 %tmp.28;
+    %tmp.30 = as %tmp.29 Number;
+    symbol [ Number %tmp.30 114 51 57 ];
+    %tmp.31 = 1;
+    %tmp.32 = 9000;
+    %tmp.33 = invoke %tmp.21 %tmp.22(%tmp.26, %tmp.30, %tmp.31, %tmp.32);
+    lputv %r3.3 %tmp.33;
+    symbol [ r3 %r3.3 114 8 10 ];
+[ "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc" 115 4 ]
+    %tmp.34 = lgetv %logger;
+    symbol [ logger %tmp.34 115 4 10 ];
+    symbol [ debug %tmp.35 115 11 16 ];
+    %tmp.35 = getv function %tmp.34 :debug;
+    %tmp.36 = lgetv %r.1;
+    symbol [ r %tmp.36 115 17 18 ];
+    symbol [ toString %tmp.37 115 19 27 ];
+    %tmp.37 = getv function %tmp.36 :toString;
+    %tmp.38 = invoke %tmp.36 %tmp.37();
+    %tmp.39 = " ";
+    %tmp.40 = add %tmp.38 %tmp.39;
+    %tmp.41 = lgetv %r2.2;
+    symbol [ r2 %tmp.41 115 38 40 ];
+    symbol [ toString %tmp.42 115 41 49 ];
+    %tmp.42 = getv function %tmp.41 :toString;
+    %tmp.43 = invoke %tmp.41 %tmp.42();
+    %tmp.44 = add %tmp.40 %tmp.43;
+    %tmp.45 = " ";
+    %tmp.46 = add %tmp.44 %tmp.45;
+    %tmp.47 = lgetv %r3.3;
+    symbol [ r3 %tmp.47 115 60 62 ];
+    symbol [ toString %tmp.48 115 63 71 ];
+    %tmp.48 = getv function %tmp.47 :toString;
+    %tmp.49 = invoke %tmp.47 %tmp.48();
+    %tmp.50 = add %tmp.46 %tmp.49;
+    invoke %tmp.34 %tmp.35(%tmp.50);
+[ "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc" 116 4 ]
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_98_begin:
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_82_begin:
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_66_begin:
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_50_begin:
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_34_begin:
+    %tmp.51 = lgetv %r.1;
+    symbol [ r %tmp.51 116 11 12 ];
+    %tmp.52 = 0;
+    %tmp.53 = agetv %tmp.51 %tmp.52;
+    %tmp.54 = 420;
+    %tmp.55 = eq %tmp.53 %tmp.54;
+    %tmp.56 = dup %tmp.55;
+    bf %tmp.56 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_26_116_34_end;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_26_116_34_true:
+    %tmp.57 = lgetv %r.1;
+    symbol [ r %tmp.57 116 26 27 ];
+    %tmp.58 = 1;
+    %tmp.59 = agetv %tmp.57 %tmp.58;
+    %tmp.60 = 999;
+    %tmp.61 = eq %tmp.59 %tmp.60;
+    %tmp.62 = and %tmp.55 %tmp.61;
+    push %tmp.62;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_26_116_34_end:
+    %tmp.63 = phi [%tmp.56 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_34_begin] [%tmp.62 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_26_116_34_true] [%tmp.63 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_26_116_34_end];
+    %tmp.64 = dup %tmp.63;
+    bf %tmp.64 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_41_116_50_end;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_41_116_50_true:
+    %tmp.65 = lgetv %r2.2;
+    symbol [ r2 %tmp.65 116 41 43 ];
+    %tmp.66 = 0;
+    %tmp.67 = agetv %tmp.65 %tmp.66;
+    %tmp.68 = 420;
+    %tmp.69 = eq %tmp.67 %tmp.68;
+    %tmp.70 = and %tmp.63 %tmp.69;
+    push %tmp.70;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_41_116_50_end:
+    %tmp.71 = phi [%tmp.64 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_50_begin] [%tmp.70 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_41_116_50_true] [%tmp.71 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_41_116_50_end];
+    %tmp.72 = dup %tmp.71;
+    bf %tmp.72 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_57_116_66_end;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_57_116_66_true:
+    %tmp.73 = lgetv %r2.2;
+    symbol [ r2 %tmp.73 116 57 59 ];
+    %tmp.74 = 1;
+    %tmp.75 = agetv %tmp.73 %tmp.74;
+    %tmp.76 = 420;
+    %tmp.77 = eq %tmp.75 %tmp.76;
+    %tmp.78 = and %tmp.71 %tmp.77;
+    push %tmp.78;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_57_116_66_end:
+    %tmp.79 = phi [%tmp.72 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_66_begin] [%tmp.78 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_57_116_66_true] [%tmp.79 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_57_116_66_end];
+    %tmp.80 = dup %tmp.79;
+    bf %tmp.80 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_73_116_82_end;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_73_116_82_true:
+    %tmp.81 = lgetv %r3.3;
+    symbol [ r3 %tmp.81 116 73 75 ];
+    %tmp.82 = 0;
+    %tmp.83 = agetv %tmp.81 %tmp.82;
+    %tmp.84 = 420;
+    %tmp.85 = eq %tmp.83 %tmp.84;
+    %tmp.86 = and %tmp.79 %tmp.85;
+    push %tmp.86;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_73_116_82_end:
+    %tmp.87 = phi [%tmp.80 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_82_begin] [%tmp.86 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_73_116_82_true] [%tmp.87 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_73_116_82_end];
+    %tmp.88 = dup %tmp.87;
+    bf %tmp.88 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_89_116_98_end;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_89_116_98_true:
+    %tmp.89 = lgetv %r3.3;
+    symbol [ r3 %tmp.89 116 89 91 ];
+    %tmp.90 = 1;
+    %tmp.91 = agetv %tmp.89 %tmp.90;
+    %tmp.92 = 420;
+    %tmp.93 = eq %tmp.91 %tmp.92;
+    %tmp.94 = and %tmp.87 %tmp.93;
+    push %tmp.94;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_89_116_98_end:
+    %tmp.95 = phi [%tmp.88 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_11_116_98_begin] [%tmp.94 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_89_116_98_true] [%tmp.95 @_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_116_89_116_98_end];
+    ret %tmp.95;
+_home_runner_work_Garmin_Garmin_crono_test_Pruebas_mc_111_56_117_0_stop:
+}
 [ @file = "/home/runner/work/Garmin/Garmin/crono/test/Pruebas.mc"; @line = 1; ]
 <init> {
 }

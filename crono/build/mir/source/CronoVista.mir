@@ -44,7 +44,7 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_22_26_25_4_stop:
     }
     [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 27; @symbol_functiondef = [onShow,27,13,19]; ]
     function onShow() as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_27_30_31_4_start:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_27_30_32_4_start:
 [ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 28 8 ]
         %tmp.1 = 0;
         symbol [ _periodo ? 28 8 16 ];
@@ -65,1319 +65,1375 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_27_30_31_4_start:
         %tmp.8 = getv function %tmp.7 :intentar;
         %tmp.9 = false;
         invoke %tmp.7 %tmp.8(%tmp.9);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_27_30_31_4_stop:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 31 8 ]
+        %tmp.10 = self;
+        symbol [ avisarDirecto %tmp.11 31 8 21 ];
+        %tmp.11 = getv function %tmp.10 :avisarDirecto;
+        %tmp.12 = false;
+        invoke %tmp.10 %tmp.11(%tmp.12);
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_27_30_32_4_stop:
     }
-    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 33; @symbol_functiondef = [onHide,33,13,19]; ]
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 34; @symbol_functiondef = [onHide,34,13,19]; ]
     function onHide() as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_33_30_36_4_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 34 8 ]
-        symbol [ _timer %tmp.2 34 8 14 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_34_30_37_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 35 8 ]
+        symbol [ _timer %tmp.2 35 8 14 ];
         %tmp.2 = getv ? :_timer;
-        symbol [ stop %tmp.3 34 15 19 ];
+        symbol [ stop %tmp.3 35 15 19 ];
         %tmp.3 = getv function %tmp.2 :stop;
         invoke %tmp.2 %tmp.3();
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 35 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 36 8 ]
         %tmp.4 = 0;
-        symbol [ _periodo ? 35 8 16 ];
+        symbol [ _periodo ? 36 8 16 ];
         putv self :_periodo %tmp.4;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_33_30_36_4_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_34_30_37_4_stop:
     }
-    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 38; @symbol_functiondef = [ajustarTimer,38,13,25]; ]
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 39; @symbol_functiondef = [ajustarTimer,39,13,25]; ]
     function ajustarTimer() as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_38_36_45_4_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 39 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_38_36_45_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_38_36_45_4_stop" ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_36_46_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 40 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_36_46_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_36_46_4_stop" ]
         %p.1 = local;
-        symbol [ p %p.1 39 12 13 ];
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_begin:
+        symbol [ p %p.1 40 12 13 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_begin:
         %tmp.1 = self;
-        symbol [ app %tmp.2 39 17 20 ];
+        symbol [ app %tmp.2 40 17 20 ];
         %tmp.2 = getv function %tmp.1 :app;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ crono %tmp.4 39 23 28 ];
+        symbol [ crono %tmp.4 40 23 28 ];
         %tmp.4 = getv %tmp.3 :crono;
-        symbol [ estado %tmp.5 39 29 35 ];
+        symbol [ estado %tmp.5 40 29 35 ];
         %tmp.5 = getv %tmp.4 :estado;
-        symbol [ E_MARCHA %tmp.7 39 39 47 ];
+        symbol [ E_MARCHA %tmp.7 40 39 47 ];
         %tmp.7 = getv ? :E_MARCHA;
         %tmp.8 = eq %tmp.5 %tmp.7;
-        bf %tmp.8 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_else_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_true:
+        bf %tmp.8 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_true:
         %tmp.9 = 50;
         push %tmp.9;
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_else_false:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_else_false:
         %tmp.10 = 1000;
         push %tmp.10;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_end:
-        %tmp.11 = phi [%tmp.8 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_begin] [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_true] [%tmp.10 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_else_false] [%tmp.11 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_16_39_56_end];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_end:
+        %tmp.11 = phi [%tmp.8 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_begin] [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_true] [%tmp.10 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_else_false] [%tmp.11 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_16_40_56_end];
         lputv %p.1 %tmp.11;
-        symbol [ p %p.1 39 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 40 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_8_44_8_if_stmt:
+        symbol [ p %p.1 40 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 41 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_8_45_8_if_stmt:
         %tmp.12 = lgetv %p.1;
-        symbol [ p %tmp.12 40 12 13 ];
-        symbol [ _periodo %tmp.14 40 17 25 ];
+        symbol [ p %tmp.12 41 12 13 ];
+        symbol [ _periodo %tmp.14 41 17 25 ];
         %tmp.14 = getv ? :_periodo;
         %tmp.15 = ne %tmp.12 %tmp.14;
-        bf %tmp.15 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_8_44_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_8_44_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_27_44_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 41 12 ]
-        symbol [ _timer %tmp.17 41 12 18 ];
+        bf %tmp.15 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_8_45_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_8_45_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_27_45_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 42 12 ]
+        symbol [ _timer %tmp.17 42 12 18 ];
         %tmp.17 = getv ? :_timer;
-        symbol [ stop %tmp.18 41 19 23 ];
+        symbol [ stop %tmp.18 42 19 23 ];
         %tmp.18 = getv function %tmp.17 :stop;
         invoke %tmp.17 %tmp.18();
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 42 12 ]
-        symbol [ _timer %tmp.20 42 12 18 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 43 12 ]
+        symbol [ _timer %tmp.20 43 12 18 ];
         %tmp.20 = getv ? :_timer;
-        symbol [ start %tmp.21 42 19 24 ];
+        symbol [ start %tmp.21 43 19 24 ];
         %tmp.21 = getv function %tmp.20 :start;
         %tmp.22 = self;
-        symbol [ method %tmp.23 42 25 31 ];
+        symbol [ method %tmp.23 43 25 31 ];
         %tmp.23 = getv function %tmp.22 :method;
         %tmp.25 = const :tick;
-        symbol [ tick %tmp.25 42 33 37 const ];
+        symbol [ tick %tmp.25 43 33 37 const ];
         %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.25);
         %tmp.27 = lgetv %p.1;
-        symbol [ p %tmp.27 42 40 41 ];
+        symbol [ p %tmp.27 43 40 41 ];
         %tmp.28 = true;
         invoke %tmp.20 %tmp.21(%tmp.26, %tmp.27, %tmp.28);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 43 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 44 12 ]
         %tmp.29 = lgetv %p.1;
-        symbol [ p %tmp.29 43 23 24 ];
-        symbol [ _periodo ? 43 12 20 ];
+        symbol [ p %tmp.29 44 23 24 ];
+        symbol [ _periodo ? 44 12 20 ];
         putv self :_periodo %tmp.29;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_27_44_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_8_44_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_40_8_44_8_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_38_36_45_4_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_27_45_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_8_45_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_41_8_45_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_39_36_46_4_stop:
     }
-    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 47; @symbol_functiondef = [tick,47,13,17]; ]
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 48; @symbol_functiondef = [tick,48,13,17]; ]
     function tick() as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_47_28_51_4_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 48 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_47_28_51_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_47_28_51_4_stop" ]
-        %s.1 = local;
-        symbol [ s %s.1 48 12 13 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 49 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_stop" ]
+        %c.1 = local;
+        symbol [ c %c.1 49 12 13 ];
         %tmp.1 = self;
-        symbol [ app %tmp.2 48 16 19 ];
+        symbol [ app %tmp.2 49 16 19 ];
         %tmp.2 = getv function %tmp.1 :app;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ sincro %tmp.4 48 22 28 ];
-        %tmp.4 = getv %tmp.3 :sincro;
-        %tmp.5 = as %tmp.4 SincroPrimerPlano;
-        symbol [ SincroPrimerPlano %tmp.5 48 32 49 ];
-        lputv %s.1 %tmp.5;
-        symbol [ s %s.1 48 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 49 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_stmt:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_12_49_29_begin:
-        %tmp.6 = lgetv %s.1;
-        symbol [ s %tmp.6 49 12 13 ];
-        symbol [ pend %tmp.7 49 14 18 ];
-        %tmp.7 = getv %tmp.6 :pend;
-        %tmp.8 = 0;
-        %tmp.9 = gt %tmp.7 %tmp.8;
-        bf %tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_26_49_29_true:
-        %tmp.10 = lgetv %s.1;
-        symbol [ s %tmp.10 49 27 28 ];
-        symbol [ enviando %tmp.11 49 29 37 ];
-        %tmp.11 = getv %tmp.10 :enviando;
-        %tmp.12 = not %tmp.11;
-        push %tmp.12;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_26_49_29_end:
-        %tmp.13 = phi [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_12_49_29_begin] [%tmp.12 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_26_49_29_true] [%tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_26_49_29_end];
-        bf %tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_39_49_60_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 49 41 ]
-        %tmp.14 = lgetv %s.1;
-        symbol [ s %tmp.14 49 41 42 ];
-        symbol [ intentar %tmp.15 49 43 51 ];
-        %tmp.15 = getv function %tmp.14 :intentar;
-        %tmp.16 = false;
-        invoke %tmp.14 %tmp.15(%tmp.16);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_39_49_60_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_49_8_49_60_if_end:
+        symbol [ crono %tmp.4 49 22 27 ];
+        %tmp.4 = getv %tmp.3 :crono;
+        %tmp.5 = as %tmp.4 Cronometro;
+        symbol [ Cronometro %tmp.5 49 31 41 ];
+        lputv %c.1 %tmp.5;
+        symbol [ c %c.1 49 12 13 ];
 [ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 50 8 ]
-        symbol [ WatchUi %tmp.17 50 8 15 ];
-        %tmp.17 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.18 50 16 29 ];
-        %tmp.18 = getv function %tmp.17 :requestUpdate;
-        invoke %tmp.17 %tmp.18();
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_47_28_51_4_stop:
-    }
-    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 53; @symbol_functiondef = [onUpdate,53,13,21]; @symbol_param<0> = [dc,53,22,24]; @symbol_param<0>_type<0> = [Graphics,53,28,36]; @symbol_param<0>_type<1> = [Dc,53,37,39]; ]
-    function onUpdate(dc as Graphics.Dc) as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start:
+        %tmp.6 = lgetv %c.1;
+        symbol [ c %tmp.6 50 8 9 ];
+        symbol [ afinarAncla %tmp.7 50 10 21 ];
+        %tmp.7 = getv function %tmp.6 :afinarAncla;
+        invoke %tmp.6 %tmp.7();
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 51 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_8_51_75_if_stmt:
+        %tmp.8 = self;
+        symbol [ app %tmp.9 51 12 15 ];
+        %tmp.9 = getv function %tmp.8 :app;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        symbol [ directo %tmp.11 51 18 25 ];
+        %tmp.11 = getv %tmp.10 :directo;
+        %tmp.12 = null;
+        %tmp.13 = ne %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_8_51_75_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_8_51_75_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_35_51_75_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 51 37 ]
+        %tmp.14 = self;
+        symbol [ app %tmp.15 51 38 41 ];
+        %tmp.15 = getv function %tmp.14 :app;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        symbol [ directo %tmp.17 51 44 51 ];
+        %tmp.17 = getv %tmp.16 :directo;
+        %tmp.18 = as %tmp.17 Directo;
+        symbol [ Directo %tmp.18 51 55 62 ];
+        symbol [ alTick %tmp.19 51 64 70 ];
+        %tmp.19 = getv function %tmp.18 :alTick;
+        %tmp.20 = lgetv %c.1;
+        symbol [ c %tmp.20 51 71 72 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_35_51_75_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_8_51_75_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_51_8_51_75_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 52 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_stop" ]
+        %s.2 = local;
+        symbol [ s %s.2 52 12 13 ];
+        %tmp.21 = self;
+        symbol [ app %tmp.22 52 16 19 ];
+        %tmp.22 = getv function %tmp.21 :app;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        symbol [ sincro %tmp.24 52 22 28 ];
+        %tmp.24 = getv %tmp.23 :sincro;
+        %tmp.25 = as %tmp.24 SincroPrimerPlano;
+        symbol [ SincroPrimerPlano %tmp.25 52 32 49 ];
+        lputv %s.2 %tmp.25;
+        symbol [ s %s.2 52 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 53 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_12_53_29_begin:
+        %tmp.26 = lgetv %s.2;
+        symbol [ s %tmp.26 53 12 13 ];
+        symbol [ pend %tmp.27 53 14 18 ];
+        %tmp.27 = getv %tmp.26 :pend;
+        %tmp.28 = 0;
+        %tmp.29 = gt %tmp.27 %tmp.28;
+        bf %tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_26_53_29_true:
+        %tmp.30 = lgetv %s.2;
+        symbol [ s %tmp.30 53 27 28 ];
+        symbol [ enviando %tmp.31 53 29 37 ];
+        %tmp.31 = getv %tmp.30 :enviando;
+        %tmp.32 = not %tmp.31;
+        push %tmp.32;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_26_53_29_end:
+        %tmp.33 = phi [%tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_12_53_29_begin] [%tmp.32 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_26_53_29_true] [%tmp.33 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_26_53_29_end];
+        bf %tmp.33 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_39_53_60_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 53 41 ]
+        %tmp.34 = lgetv %s.2;
+        symbol [ s %tmp.34 53 41 42 ];
+        symbol [ intentar %tmp.35 53 43 51 ];
+        %tmp.35 = getv function %tmp.34 :intentar;
+        %tmp.36 = false;
+        invoke %tmp.34 %tmp.35(%tmp.36);
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_39_53_60_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_8_53_60_if_end:
 [ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 54 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ WatchUi %tmp.37 54 8 15 ];
+        %tmp.37 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.38 54 16 29 ];
+        %tmp.38 = getv function %tmp.37 :requestUpdate;
+        invoke %tmp.37 %tmp.38();
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_48_28_55_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 57; @symbol_functiondef = [onUpdate,57,13,21]; @symbol_param<0> = [dc,57,22,24]; @symbol_param<0>_type<0> = [Graphics,57,28,36]; @symbol_param<0>_type<1> = [Dc,57,37,39]; ]
+    function onUpdate(dc as Graphics.Dc) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 58 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %w.1 = local;
-        symbol [ w %w.1 54 12 13 ];
+        symbol [ w %w.1 58 12 13 ];
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 54 16 18 ];
-        symbol [ getWidth %tmp.2 54 19 27 ];
+        symbol [ dc %tmp.1 58 16 18 ];
+        symbol [ getWidth %tmp.2 58 19 27 ];
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %w.1 %tmp.3;
-        symbol [ w %w.1 54 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 55 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ w %w.1 58 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 59 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %h.2 = local;
-        symbol [ h %h.2 55 12 13 ];
+        symbol [ h %h.2 59 12 13 ];
         %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 55 16 18 ];
-        symbol [ getHeight %tmp.5 55 19 28 ];
+        symbol [ dc %tmp.4 59 16 18 ];
+        symbol [ getHeight %tmp.5 59 19 28 ];
         %tmp.5 = getv function %tmp.4 :getHeight;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %h.2 %tmp.6;
-        symbol [ h %h.2 55 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 56 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ h %h.2 59 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 60 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %cx.3 = local;
-        symbol [ cx %cx.3 56 12 14 ];
+        symbol [ cx %cx.3 60 12 14 ];
         %tmp.7 = lgetv %w.1;
-        symbol [ w %tmp.7 56 17 18 ];
+        symbol [ w %tmp.7 60 17 18 ];
         %tmp.8 = 2;
         %tmp.9 = div %tmp.7 %tmp.8;
         lputv %cx.3 %tmp.9;
-        symbol [ cx %cx.3 56 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 57 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ cx %cx.3 60 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 61 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %c.4 = local;
-        symbol [ c %c.4 57 12 13 ];
+        symbol [ c %c.4 61 12 13 ];
         %tmp.10 = self;
-        symbol [ app %tmp.11 57 16 19 ];
+        symbol [ app %tmp.11 61 16 19 ];
         %tmp.11 = getv function %tmp.10 :app;
         %tmp.12 = invoke %tmp.10 %tmp.11();
-        symbol [ crono %tmp.13 57 22 27 ];
+        symbol [ crono %tmp.13 61 22 27 ];
         %tmp.13 = getv %tmp.12 :crono;
         %tmp.14 = as %tmp.13 Cronometro;
-        symbol [ Cronometro %tmp.14 57 31 41 ];
+        symbol [ Cronometro %tmp.14 61 31 41 ];
         lputv %c.4 %tmp.14;
-        symbol [ c %c.4 57 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 58 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ c %c.4 61 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 62 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %s.5 = local;
-        symbol [ s %s.5 58 12 13 ];
+        symbol [ s %s.5 62 12 13 ];
         %tmp.15 = self;
-        symbol [ app %tmp.16 58 16 19 ];
+        symbol [ app %tmp.16 62 16 19 ];
         %tmp.16 = getv function %tmp.15 :app;
         %tmp.17 = invoke %tmp.15 %tmp.16();
-        symbol [ sincro %tmp.18 58 22 28 ];
+        symbol [ sincro %tmp.18 62 22 28 ];
         %tmp.18 = getv %tmp.17 :sincro;
         %tmp.19 = as %tmp.18 SincroPrimerPlano;
-        symbol [ SincroPrimerPlano %tmp.19 58 32 49 ];
+        symbol [ SincroPrimerPlano %tmp.19 62 32 49 ];
         lputv %s.5 %tmp.19;
-        symbol [ s %s.5 58 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 59 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ s %s.5 62 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 63 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %t.6 = local;
-        symbol [ t %t.6 59 12 13 ];
+        symbol [ t %t.6 63 12 13 ];
         %tmp.20 = lgetv %c.4;
-        symbol [ c %tmp.20 59 16 17 ];
-        symbol [ transcurrido %tmp.21 59 18 30 ];
+        symbol [ c %tmp.20 63 16 17 ];
+        symbol [ transcurrido %tmp.21 63 18 30 ];
         %tmp.21 = getv function %tmp.20 :transcurrido;
         %tmp.22 = invoke %tmp.20 %tmp.21();
         lputv %t.6 %tmp.22;
-        symbol [ t %t.6 59 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 60 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ t %t.6 63 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 64 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %J.7 = local;
-        symbol [ J %J.7 60 12 13 ];
-        symbol [ Graphics %tmp.23 60 16 24 ];
+        symbol [ J %J.7 64 12 13 ];
+        symbol [ Graphics %tmp.23 64 16 24 ];
         %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.24 60 25 44 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.24 64 25 44 ];
         %tmp.24 = getv %tmp.23 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.25 60 47 55 ];
+        symbol [ Graphics %tmp.25 64 47 55 ];
         %tmp.25 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.26 60 56 76 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.26 64 56 76 ];
         %tmp.26 = getv %tmp.25 :TEXT_JUSTIFY_VCENTER;
         %tmp.27 = bitor %tmp.24 %tmp.26;
         lputv %J.7 %tmp.27;
-        symbol [ J %J.7 60 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 62 8 ]
+        symbol [ J %J.7 64 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 66 8 ]
         %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 62 8 10 ];
-        symbol [ setColor %tmp.29 62 11 19 ];
+        symbol [ dc %tmp.28 66 8 10 ];
+        symbol [ setColor %tmp.29 66 11 19 ];
         %tmp.29 = getv function %tmp.28 :setColor;
-        symbol [ Graphics %tmp.30 62 20 28 ];
+        symbol [ Graphics %tmp.30 66 20 28 ];
         %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.31 62 29 40 ];
+        symbol [ COLOR_BLACK %tmp.31 66 29 40 ];
         %tmp.31 = getv %tmp.30 :COLOR_BLACK;
-        symbol [ Graphics %tmp.32 62 42 50 ];
+        symbol [ Graphics %tmp.32 66 42 50 ];
         %tmp.32 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.33 62 51 62 ];
+        symbol [ COLOR_BLACK %tmp.33 66 51 62 ];
         %tmp.33 = getv %tmp.32 :COLOR_BLACK;
         invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 63 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 67 8 ]
         %tmp.34 = lgetv %dc;
-        symbol [ dc %tmp.34 63 8 10 ];
-        symbol [ clear %tmp.35 63 11 16 ];
+        symbol [ dc %tmp.34 67 8 10 ];
+        symbol [ clear %tmp.35 67 11 16 ];
         %tmp.35 = getv function %tmp.34 :clear;
         invoke %tmp.34 %tmp.35();
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 66 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 70 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %est.8 = local;
-        symbol [ est %est.8 66 12 15 ];
+        symbol [ est %est.8 70 12 15 ];
         %tmp.36 = self;
-        symbol [ estadoSincro %tmp.37 66 18 30 ];
+        symbol [ estadoSincro %tmp.37 70 18 30 ];
         %tmp.37 = getv function %tmp.36 :estadoSincro;
         %tmp.38 = lgetv %s.5;
-        symbol [ s %tmp.38 66 31 32 ];
+        symbol [ s %tmp.38 70 31 32 ];
         %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
         lputv %est.8 %tmp.39;
-        symbol [ est %est.8 66 12 15 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 67 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ est %est.8 70 12 15 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 71 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %yT.9 = local;
-        symbol [ yT %yT.9 67 12 14 ];
+        symbol [ yT %yT.9 71 12 14 ];
         %tmp.40 = lgetv %h.2;
-        symbol [ h %tmp.40 67 17 18 ];
+        symbol [ h %tmp.40 71 17 18 ];
         %tmp.41 = 11;
         %tmp.42 = mul %tmp.40 %tmp.41;
         %tmp.43 = 100;
         %tmp.44 = div %tmp.42 %tmp.43;
         lputv %yT.9 %tmp.44;
-        symbol [ yT %yT.9 67 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 68 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ yT %yT.9 71 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 72 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %tw.10 = local;
-        symbol [ tw %tw.10 68 12 14 ];
+        symbol [ tw %tw.10 72 12 14 ];
         %tmp.45 = lgetv %dc;
-        symbol [ dc %tmp.45 68 17 19 ];
-        symbol [ getTextWidthInPixels %tmp.46 68 20 40 ];
+        symbol [ dc %tmp.45 72 17 19 ];
+        symbol [ getTextWidthInPixels %tmp.46 72 20 40 ];
         %tmp.46 = getv function %tmp.45 :getTextWidthInPixels;
         %tmp.47 = "CRONO";
-        symbol [ Graphics %tmp.48 68 50 58 ];
+        symbol [ Graphics %tmp.48 72 50 58 ];
         %tmp.48 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.49 68 59 69 ];
+        symbol [ FONT_XTINY %tmp.49 72 59 69 ];
         %tmp.49 = getv %tmp.48 :FONT_XTINY;
         %tmp.50 = invoke %tmp.45 %tmp.46(%tmp.47, %tmp.49);
         lputv %tw.10 %tmp.50;
-        symbol [ tw %tw.10 68 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 69 8 ]
+        symbol [ tw %tw.10 72 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 73 8 ]
         %tmp.51 = lgetv %dc;
-        symbol [ dc %tmp.51 69 8 10 ];
-        symbol [ setColor %tmp.52 69 11 19 ];
+        symbol [ dc %tmp.51 73 8 10 ];
+        symbol [ setColor %tmp.52 73 11 19 ];
         %tmp.52 = getv function %tmp.51 :setColor;
-        symbol [ Graphics %tmp.53 69 20 28 ];
+        symbol [ Graphics %tmp.53 73 20 28 ];
         %tmp.53 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.54 69 29 42 ];
+        symbol [ COLOR_LT_GRAY %tmp.54 73 29 42 ];
         %tmp.54 = getv %tmp.53 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.55 69 44 52 ];
+        symbol [ Graphics %tmp.55 73 44 52 ];
         %tmp.55 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.56 69 53 70 ];
+        symbol [ COLOR_TRANSPARENT %tmp.56 73 53 70 ];
         %tmp.56 = getv %tmp.55 :COLOR_TRANSPARENT;
         invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 70 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 74 8 ]
         %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 70 8 10 ];
-        symbol [ drawText %tmp.58 70 11 19 ];
+        symbol [ dc %tmp.57 74 8 10 ];
+        symbol [ drawText %tmp.58 74 11 19 ];
         %tmp.58 = getv function %tmp.57 :drawText;
         %tmp.59 = lgetv %cx.3;
-        symbol [ cx %tmp.59 70 20 22 ];
+        symbol [ cx %tmp.59 74 20 22 ];
         %tmp.60 = 7;
         %tmp.61 = sub %tmp.59 %tmp.60;
         %tmp.62 = lgetv %yT.9;
-        symbol [ yT %tmp.62 70 28 30 ];
-        symbol [ Graphics %tmp.63 70 32 40 ];
+        symbol [ yT %tmp.62 74 28 30 ];
+        symbol [ Graphics %tmp.63 74 32 40 ];
         %tmp.63 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.64 70 41 51 ];
+        symbol [ FONT_XTINY %tmp.64 74 41 51 ];
         %tmp.64 = getv %tmp.63 :FONT_XTINY;
         %tmp.65 = "CRONO";
         %tmp.66 = lgetv %J.7;
-        symbol [ J %tmp.66 70 62 63 ];
+        symbol [ J %tmp.66 74 62 63 ];
         invoke %tmp.57 %tmp.58(%tmp.61, %tmp.62, %tmp.64, %tmp.65, %tmp.66);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 71 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 75 8 ]
         %tmp.67 = lgetv %dc;
-        symbol [ dc %tmp.67 71 8 10 ];
-        symbol [ setColor %tmp.68 71 11 19 ];
+        symbol [ dc %tmp.67 75 8 10 ];
+        symbol [ setColor %tmp.68 75 11 19 ];
         %tmp.68 = getv function %tmp.67 :setColor;
         %tmp.69 = lgetv %est.8;
-        symbol [ est %tmp.69 71 20 23 ];
+        symbol [ est %tmp.69 75 20 23 ];
         %tmp.70 = 1;
         %tmp.71 = agetv %tmp.69 %tmp.70;
         %tmp.72 = as %tmp.71 Number;
-        symbol [ Number %tmp.72 71 30 36 ];
-        symbol [ Graphics %tmp.73 71 38 46 ];
+        symbol [ Number %tmp.72 75 30 36 ];
+        symbol [ Graphics %tmp.73 75 38 46 ];
         %tmp.73 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.74 71 47 64 ];
+        symbol [ COLOR_TRANSPARENT %tmp.74 75 47 64 ];
         %tmp.74 = getv %tmp.73 :COLOR_TRANSPARENT;
         invoke %tmp.67 %tmp.68(%tmp.72, %tmp.74);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 72 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 76 8 ]
         %tmp.75 = lgetv %dc;
-        symbol [ dc %tmp.75 72 8 10 ];
-        symbol [ fillCircle %tmp.76 72 11 21 ];
+        symbol [ dc %tmp.75 76 8 10 ];
+        symbol [ fillCircle %tmp.76 76 11 21 ];
         %tmp.76 = getv function %tmp.75 :fillCircle;
         %tmp.77 = lgetv %cx.3;
-        symbol [ cx %tmp.77 72 22 24 ];
+        symbol [ cx %tmp.77 76 22 24 ];
         %tmp.78 = 7;
         %tmp.79 = sub %tmp.77 %tmp.78;
         %tmp.80 = lgetv %tw.10;
-        symbol [ tw %tmp.80 72 31 33 ];
+        symbol [ tw %tmp.80 76 31 33 ];
         %tmp.81 = 2;
         %tmp.82 = div %tmp.80 %tmp.81;
         %tmp.83 = add %tmp.79 %tmp.82;
         %tmp.84 = 10;
         %tmp.85 = add %tmp.83 %tmp.84;
         %tmp.86 = lgetv %yT.9;
-        symbol [ yT %tmp.86 72 44 46 ];
+        symbol [ yT %tmp.86 76 44 46 ];
         %tmp.87 = 5;
         invoke %tmp.75 %tmp.76(%tmp.85, %tmp.86, %tmp.87);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 75 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 79 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %yE.11 = local;
-        symbol [ yE %yE.11 75 12 14 ];
+        symbol [ yE %yE.11 79 12 14 ];
         %tmp.88 = lgetv %h.2;
-        symbol [ h %tmp.88 75 17 18 ];
+        symbol [ h %tmp.88 79 17 18 ];
         %tmp.89 = 21;
         %tmp.90 = mul %tmp.88 %tmp.89;
         %tmp.91 = 100;
         %tmp.92 = div %tmp.90 %tmp.91;
         lputv %yE.11 %tmp.92;
-        symbol [ yE %yE.11 75 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 76 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ yE %yE.11 79 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 80 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %txtE.12 = local;
-        symbol [ txtE %txtE.12 76 12 16 ];
+        symbol [ txtE %txtE.12 80 12 16 ];
         %tmp.93 = "PREPARADO";
         lputv %txtE.12 %tmp.93;
-        symbol [ txtE %txtE.12 76 12 16 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 77 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ txtE %txtE.12 80 12 16 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 81 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %colE.13 = local;
-        symbol [ colE %colE.13 77 12 16 ];
-        symbol [ Graphics %tmp.94 77 19 27 ];
+        symbol [ colE %colE.13 81 12 16 ];
+        symbol [ Graphics %tmp.94 81 19 27 ];
         %tmp.94 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.95 77 28 41 ];
+        symbol [ COLOR_LT_GRAY %tmp.95 81 28 41 ];
         %tmp.95 = getv %tmp.94 :COLOR_LT_GRAY;
         lputv %colE.13 %tmp.95;
-        symbol [ colE %colE.13 77 12 16 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 78 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_stmt:
+        symbol [ colE %colE.13 81 12 16 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 82 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_stmt:
         %tmp.96 = lgetv %c.4;
-        symbol [ c %tmp.96 78 12 13 ];
-        symbol [ estado %tmp.97 78 14 20 ];
+        symbol [ c %tmp.96 82 12 13 ];
+        symbol [ estado %tmp.97 82 14 20 ];
         %tmp.97 = getv %tmp.96 :estado;
-        symbol [ E_MARCHA %tmp.99 78 24 32 ];
+        symbol [ E_MARCHA %tmp.99 82 24 32 ];
         %tmp.99 = getv ? :E_MARCHA;
         %tmp.100 = eq %tmp.97 %tmp.99;
-        bf %tmp.100 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_34_78_85_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 78 36 ]
+        bf %tmp.100 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_34_82_85_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 82 36 ]
         %tmp.101 = "EN MARCHA";
         lputv %txtE.12 %tmp.101;
-        symbol [ txtE %txtE.12 78 36 40 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 78 56 ]
-        symbol [ Graphics %tmp.102 78 63 71 ];
+        symbol [ txtE %txtE.12 82 36 40 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 82 56 ]
+        symbol [ Graphics %tmp.102 82 63 71 ];
         %tmp.102 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.103 78 72 83 ];
+        symbol [ COLOR_GREEN %tmp.103 82 72 83 ];
         %tmp.103 = getv %tmp.102 :COLOR_GREEN;
         lputv %colE.13 %tmp.103;
-        symbol [ colE %colE.13 78 56 60 ];
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_34_78_85_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_false:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 79 13 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_13_79_86_if_stmt:
+        symbol [ colE %colE.13 82 56 60 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_34_82_85_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_false:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 83 13 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_13_83_86_if_stmt:
         %tmp.104 = lgetv %c.4;
-        symbol [ c %tmp.104 79 17 18 ];
-        symbol [ estado %tmp.105 79 19 25 ];
+        symbol [ c %tmp.104 83 17 18 ];
+        symbol [ estado %tmp.105 83 19 25 ];
         %tmp.105 = getv %tmp.104 :estado;
-        symbol [ E_PAUSA %tmp.107 79 29 36 ];
+        symbol [ E_PAUSA %tmp.107 83 29 36 ];
         %tmp.107 = getv ? :E_PAUSA;
         %tmp.108 = eq %tmp.105 %tmp.107;
-        bf %tmp.108 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_13_79_86_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_13_79_86_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_38_79_86_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 79 40 ]
+        bf %tmp.108 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_13_83_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_13_83_86_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_38_83_86_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 83 40 ]
         %tmp.109 = "PAUSA";
         lputv %txtE.12 %tmp.109;
-        symbol [ txtE %txtE.12 79 40 44 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 79 56 ]
-        symbol [ Graphics %tmp.110 79 63 71 ];
+        symbol [ txtE %txtE.12 83 40 44 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 83 56 ]
+        symbol [ Graphics %tmp.110 83 63 71 ];
         %tmp.110 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.111 79 72 84 ];
+        symbol [ COLOR_ORANGE %tmp.111 83 72 84 ];
         %tmp.111 = getv %tmp.110 :COLOR_ORANGE;
         lputv %colE.13 %tmp.111;
-        symbol [ colE %colE.13 79 56 60 ];
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_38_79_86_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_13_79_86_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_79_13_79_86_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_78_8_79_86_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 80 8 ]
+        symbol [ colE %colE.13 83 56 60 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_38_83_86_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_13_83_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_83_13_83_86_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_82_8_83_86_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 84 8 ]
         %tmp.112 = lgetv %dc;
-        symbol [ dc %tmp.112 80 8 10 ];
-        symbol [ setColor %tmp.113 80 11 19 ];
+        symbol [ dc %tmp.112 84 8 10 ];
+        symbol [ setColor %tmp.113 84 11 19 ];
         %tmp.113 = getv function %tmp.112 :setColor;
         %tmp.114 = lgetv %colE.13;
-        symbol [ colE %tmp.114 80 20 24 ];
-        symbol [ Graphics %tmp.115 80 26 34 ];
+        symbol [ colE %tmp.114 84 20 24 ];
+        symbol [ Graphics %tmp.115 84 26 34 ];
         %tmp.115 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.116 80 35 52 ];
+        symbol [ COLOR_TRANSPARENT %tmp.116 84 35 52 ];
         %tmp.116 = getv %tmp.115 :COLOR_TRANSPARENT;
         invoke %tmp.112 %tmp.113(%tmp.114, %tmp.116);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 81 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 85 8 ]
         %tmp.117 = lgetv %dc;
-        symbol [ dc %tmp.117 81 8 10 ];
-        symbol [ drawText %tmp.118 81 11 19 ];
+        symbol [ dc %tmp.117 85 8 10 ];
+        symbol [ drawText %tmp.118 85 11 19 ];
         %tmp.118 = getv function %tmp.117 :drawText;
         %tmp.119 = lgetv %cx.3;
-        symbol [ cx %tmp.119 81 20 22 ];
+        symbol [ cx %tmp.119 85 20 22 ];
         %tmp.120 = lgetv %yE.11;
-        symbol [ yE %tmp.120 81 24 26 ];
-        symbol [ Graphics %tmp.121 81 28 36 ];
+        symbol [ yE %tmp.120 85 24 26 ];
+        symbol [ Graphics %tmp.121 85 28 36 ];
         %tmp.121 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.122 81 37 46 ];
+        symbol [ FONT_TINY %tmp.122 85 37 46 ];
         %tmp.122 = getv %tmp.121 :FONT_TINY;
         %tmp.123 = lgetv %txtE.12;
-        symbol [ txtE %tmp.123 81 48 52 ];
+        symbol [ txtE %tmp.123 85 48 52 ];
         %tmp.124 = lgetv %J.7;
-        symbol [ J %tmp.124 81 54 55 ];
+        symbol [ J %tmp.124 85 54 55 ];
         invoke %tmp.117 %tmp.118(%tmp.119, %tmp.120, %tmp.122, %tmp.123, %tmp.124);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 84 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 88 8 ]
         %tmp.125 = self;
-        symbol [ dibujarTiempo %tmp.126 84 8 21 ];
+        symbol [ dibujarTiempo %tmp.126 88 8 21 ];
         %tmp.126 = getv function %tmp.125 :dibujarTiempo;
         %tmp.127 = lgetv %dc;
-        symbol [ dc %tmp.127 84 22 24 ];
+        symbol [ dc %tmp.127 88 22 24 ];
         %tmp.128 = lgetv %cx.3;
-        symbol [ cx %tmp.128 84 26 28 ];
+        symbol [ cx %tmp.128 88 26 28 ];
         %tmp.129 = lgetv %h.2;
-        symbol [ h %tmp.129 84 30 31 ];
+        symbol [ h %tmp.129 88 30 31 ];
         %tmp.130 = 43;
         %tmp.131 = mul %tmp.129 %tmp.130;
         %tmp.132 = 100;
         %tmp.133 = div %tmp.131 %tmp.132;
         %tmp.134 = lgetv %w.1;
-        symbol [ w %tmp.134 84 44 45 ];
+        symbol [ w %tmp.134 88 44 45 ];
         %tmp.135 = 44;
         %tmp.136 = sub %tmp.134 %tmp.135;
         %tmp.137 = lgetv %t.6;
-        symbol [ t %tmp.137 84 52 53 ];
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_begin:
+        symbol [ t %tmp.137 88 52 53 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_begin:
         %tmp.138 = lgetv %c.4;
-        symbol [ c %tmp.138 85 13 14 ];
-        symbol [ estado %tmp.139 85 15 21 ];
+        symbol [ c %tmp.138 89 13 14 ];
+        symbol [ estado %tmp.139 89 15 21 ];
         %tmp.139 = getv %tmp.138 :estado;
-        symbol [ E_PAUSA %tmp.141 85 25 32 ];
+        symbol [ E_PAUSA %tmp.141 89 25 32 ];
         %tmp.141 = getv ? :E_PAUSA;
         %tmp.142 = eq %tmp.139 %tmp.141;
-        bf %tmp.142 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_else_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_true:
-        symbol [ Graphics %tmp.143 85 36 44 ];
+        bf %tmp.142 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_true:
+        symbol [ Graphics %tmp.143 89 36 44 ];
         %tmp.143 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.144 85 45 57 ];
+        symbol [ COLOR_ORANGE %tmp.144 89 45 57 ];
         %tmp.144 = getv %tmp.143 :COLOR_ORANGE;
         push %tmp.144;
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_else_false:
-        symbol [ Graphics %tmp.145 85 60 68 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_else_false:
+        symbol [ Graphics %tmp.145 89 60 68 ];
         %tmp.145 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.146 85 69 80 ];
+        symbol [ COLOR_WHITE %tmp.146 89 69 80 ];
         %tmp.146 = getv %tmp.145 :COLOR_WHITE;
         push %tmp.146;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_end:
-        %tmp.147 = phi [%tmp.142 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_begin] [%tmp.144 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_true] [%tmp.146 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_else_false] [%tmp.147 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_85_12_85_69_end];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_end:
+        %tmp.147 = phi [%tmp.142 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_begin] [%tmp.144 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_true] [%tmp.146 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_else_false] [%tmp.147 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_89_12_89_69_end];
         invoke %tmp.125 %tmp.126(%tmp.127, %tmp.128, %tmp.133, %tmp.136, %tmp.137, %tmp.147);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 88 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 92 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %y1.14 = local;
-        symbol [ y1 %y1.14 88 12 14 ];
+        symbol [ y1 %y1.14 92 12 14 ];
         %tmp.148 = lgetv %h.2;
-        symbol [ h %tmp.148 88 17 18 ];
+        symbol [ h %tmp.148 92 17 18 ];
         %tmp.149 = 63;
         %tmp.150 = mul %tmp.148 %tmp.149;
         %tmp.151 = 100;
         %tmp.152 = div %tmp.150 %tmp.151;
         lputv %y1.14 %tmp.152;
-        symbol [ y1 %y1.14 88 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 89 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ y1 %y1.14 92 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 93 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %y2.15 = local;
-        symbol [ y2 %y2.15 89 12 14 ];
+        symbol [ y2 %y2.15 93 12 14 ];
         %tmp.153 = lgetv %h.2;
-        symbol [ h %tmp.153 89 17 18 ];
+        symbol [ h %tmp.153 93 17 18 ];
         %tmp.154 = 72;
         %tmp.155 = mul %tmp.153 %tmp.154;
         %tmp.156 = 100;
         %tmp.157 = div %tmp.155 %tmp.156;
         lputv %y2.15 %tmp.157;
-        symbol [ y2 %y2.15 89 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 90 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+        symbol [ y2 %y2.15 93 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 94 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %nv.16 = local;
-        symbol [ nv %nv.16 90 12 14 ];
+        symbol [ nv %nv.16 94 12 14 ];
         %tmp.158 = lgetv %c.4;
-        symbol [ c %tmp.158 90 17 18 ];
-        symbol [ parciales %tmp.159 90 19 28 ];
+        symbol [ c %tmp.158 94 17 18 ];
+        symbol [ parciales %tmp.159 94 19 28 ];
         %tmp.159 = getv %tmp.158 :parciales;
-        symbol [ size %tmp.160 90 29 33 ];
+        symbol [ size %tmp.160 94 29 33 ];
         %tmp.160 = getv function %tmp.159 :size;
         %tmp.161 = invoke %tmp.159 %tmp.160();
         lputv %nv.16 %tmp.161;
-        symbol [ nv %nv.16 90 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 91 8 ]
+        symbol [ nv %nv.16 94 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 95 8 ]
         %tmp.162 = lgetv %dc;
-        symbol [ dc %tmp.162 91 8 10 ];
-        symbol [ setColor %tmp.163 91 11 19 ];
+        symbol [ dc %tmp.162 95 8 10 ];
+        symbol [ setColor %tmp.163 95 11 19 ];
         %tmp.163 = getv function %tmp.162 :setColor;
-        symbol [ Graphics %tmp.164 91 20 28 ];
+        symbol [ Graphics %tmp.164 95 20 28 ];
         %tmp.164 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.165 91 29 40 ];
+        symbol [ COLOR_WHITE %tmp.165 95 29 40 ];
         %tmp.165 = getv %tmp.164 :COLOR_WHITE;
-        symbol [ Graphics %tmp.166 91 42 50 ];
+        symbol [ Graphics %tmp.166 95 42 50 ];
         %tmp.166 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.167 91 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.167 95 51 68 ];
         %tmp.167 = getv %tmp.166 :COLOR_TRANSPARENT;
         invoke %tmp.162 %tmp.163(%tmp.165, %tmp.167);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 92 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_stmt:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 96 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_stmt:
         %tmp.168 = lgetv %c.4;
-        symbol [ c %tmp.168 92 12 13 ];
-        symbol [ estado %tmp.169 92 14 20 ];
+        symbol [ c %tmp.168 96 12 13 ];
+        symbol [ estado %tmp.169 96 14 20 ];
         %tmp.169 = getv %tmp.168 :estado;
-        symbol [ E_LISTO %tmp.171 92 24 31 ];
+        symbol [ E_LISTO %tmp.171 96 24 31 ];
         %tmp.171 = getv ? :E_LISTO;
         %tmp.172 = eq %tmp.169 %tmp.171;
-        bf %tmp.172 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_33_95_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 93 12 ]
+        bf %tmp.172 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_33_99_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 97 12 ]
         %tmp.173 = lgetv %dc;
-        symbol [ dc %tmp.173 93 12 14 ];
-        symbol [ setColor %tmp.174 93 15 23 ];
+        symbol [ dc %tmp.173 97 12 14 ];
+        symbol [ setColor %tmp.174 97 15 23 ];
         %tmp.174 = getv function %tmp.173 :setColor;
-        symbol [ Graphics %tmp.175 93 24 32 ];
+        symbol [ Graphics %tmp.175 97 24 32 ];
         %tmp.175 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.176 93 33 46 ];
+        symbol [ COLOR_LT_GRAY %tmp.176 97 33 46 ];
         %tmp.176 = getv %tmp.175 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.177 93 48 56 ];
+        symbol [ Graphics %tmp.177 97 48 56 ];
         %tmp.177 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.178 93 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.178 97 57 74 ];
         %tmp.178 = getv %tmp.177 :COLOR_TRANSPARENT;
         invoke %tmp.173 %tmp.174(%tmp.176, %tmp.178);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 94 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 98 12 ]
         %tmp.179 = lgetv %dc;
-        symbol [ dc %tmp.179 94 12 14 ];
-        symbol [ drawText %tmp.180 94 15 23 ];
+        symbol [ dc %tmp.179 98 12 14 ];
+        symbol [ drawText %tmp.180 98 15 23 ];
         %tmp.180 = getv function %tmp.179 :drawText;
         %tmp.181 = lgetv %cx.3;
-        symbol [ cx %tmp.181 94 24 26 ];
+        symbol [ cx %tmp.181 98 24 26 ];
         %tmp.182 = lgetv %y1.14;
-        symbol [ y1 %tmp.182 94 28 30 ];
-        symbol [ Graphics %tmp.183 94 32 40 ];
+        symbol [ y1 %tmp.182 98 28 30 ];
+        symbol [ Graphics %tmp.183 98 32 40 ];
         %tmp.183 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.184 94 41 51 ];
+        symbol [ FONT_XTINY %tmp.184 98 41 51 ];
         %tmp.184 = getv %tmp.183 :FONT_XTINY;
         %tmp.185 = "START para empezar";
         %tmp.186 = lgetv %J.7;
-        symbol [ J %tmp.186 94 75 76 ];
+        symbol [ J %tmp.186 98 75 76 ];
         invoke %tmp.179 %tmp.180(%tmp.181, %tmp.182, %tmp.184, %tmp.185, %tmp.186);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_33_95_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_false:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 95 15 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_33_99_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_false:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 99 15 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_stmt:
         %tmp.187 = lgetv %nv.16;
-        symbol [ nv %tmp.187 95 19 21 ];
+        symbol [ nv %tmp.187 99 19 21 ];
         %tmp.188 = 0;
         %tmp.189 = gt %tmp.187 %tmp.188;
-        bf %tmp.189 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_else_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_27_99_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 96 12 ]
+        bf %tmp.189 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_27_103_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 100 12 ]
         %tmp.190 = lgetv %dc;
-        symbol [ dc %tmp.190 96 12 14 ];
-        symbol [ drawText %tmp.191 96 15 23 ];
+        symbol [ dc %tmp.190 100 12 14 ];
+        symbol [ drawText %tmp.191 100 15 23 ];
         %tmp.191 = getv function %tmp.190 :drawText;
         %tmp.192 = lgetv %cx.3;
-        symbol [ cx %tmp.192 96 24 26 ];
+        symbol [ cx %tmp.192 100 24 26 ];
         %tmp.193 = lgetv %y1.14;
-        symbol [ y1 %tmp.193 96 28 30 ];
-        symbol [ Graphics %tmp.194 96 32 40 ];
+        symbol [ y1 %tmp.193 100 28 30 ];
+        symbol [ Graphics %tmp.194 100 32 40 ];
         %tmp.194 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.195 96 41 50 ];
+        symbol [ FONT_TINY %tmp.195 100 41 50 ];
         %tmp.195 = getv %tmp.194 :FONT_TINY;
         %tmp.196 = "Vuelta ";
         %tmp.197 = lgetv %nv.16;
-        symbol [ nv %tmp.197 96 65 67 ];
+        symbol [ nv %tmp.197 100 65 67 ];
         %tmp.198 = 1;
         %tmp.199 = add %tmp.197 %tmp.198;
-        symbol [ toString %tmp.200 96 73 81 ];
+        symbol [ toString %tmp.200 100 73 81 ];
         %tmp.200 = getv function %tmp.199 :toString;
         %tmp.201 = invoke %tmp.199 %tmp.200();
         %tmp.202 = add %tmp.196 %tmp.201;
         %tmp.203 = "  ";
         %tmp.204 = add %tmp.202 %tmp.203;
         %tmp.205 = self;
-        symbol [ textoTiempo %tmp.206 96 93 104 ];
+        symbol [ textoTiempo %tmp.206 100 93 104 ];
         %tmp.206 = getv function %tmp.205 :textoTiempo;
         %tmp.207 = lgetv %c.4;
-        symbol [ c %tmp.207 96 105 106 ];
-        symbol [ vueltaActual %tmp.208 96 107 119 ];
+        symbol [ c %tmp.207 100 105 106 ];
+        symbol [ vueltaActual %tmp.208 100 107 119 ];
         %tmp.208 = getv function %tmp.207 :vueltaActual;
         %tmp.209 = invoke %tmp.207 %tmp.208();
         %tmp.210 = invoke %tmp.205 %tmp.206(%tmp.209);
         %tmp.211 = add %tmp.204 %tmp.210;
         %tmp.212 = lgetv %J.7;
-        symbol [ J %tmp.212 96 124 125 ];
+        symbol [ J %tmp.212 100 124 125 ];
         invoke %tmp.190 %tmp.191(%tmp.192, %tmp.193, %tmp.195, %tmp.211, %tmp.212);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 97 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 101 12 ]
         %tmp.213 = lgetv %dc;
-        symbol [ dc %tmp.213 97 12 14 ];
-        symbol [ setColor %tmp.214 97 15 23 ];
+        symbol [ dc %tmp.213 101 12 14 ];
+        symbol [ setColor %tmp.214 101 15 23 ];
         %tmp.214 = getv function %tmp.213 :setColor;
-        symbol [ Graphics %tmp.215 97 24 32 ];
+        symbol [ Graphics %tmp.215 101 24 32 ];
         %tmp.215 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.216 97 33 46 ];
+        symbol [ COLOR_LT_GRAY %tmp.216 101 33 46 ];
         %tmp.216 = getv %tmp.215 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.217 97 48 56 ];
+        symbol [ Graphics %tmp.217 101 48 56 ];
         %tmp.217 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.218 97 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.218 101 57 74 ];
         %tmp.218 = getv %tmp.217 :COLOR_TRANSPARENT;
         invoke %tmp.213 %tmp.214(%tmp.216, %tmp.218);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 98 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 102 12 ]
         %tmp.219 = lgetv %dc;
-        symbol [ dc %tmp.219 98 12 14 ];
-        symbol [ drawText %tmp.220 98 15 23 ];
+        symbol [ dc %tmp.219 102 12 14 ];
+        symbol [ drawText %tmp.220 102 15 23 ];
         %tmp.220 = getv function %tmp.219 :drawText;
         %tmp.221 = lgetv %cx.3;
-        symbol [ cx %tmp.221 98 24 26 ];
+        symbol [ cx %tmp.221 102 24 26 ];
         %tmp.222 = lgetv %y2.15;
-        symbol [ y2 %tmp.222 98 28 30 ];
-        symbol [ Graphics %tmp.223 98 32 40 ];
+        symbol [ y2 %tmp.222 102 28 30 ];
+        symbol [ Graphics %tmp.223 102 32 40 ];
         %tmp.223 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.224 98 41 51 ];
+        symbol [ FONT_XTINY %tmp.224 102 41 51 ];
         %tmp.224 = getv %tmp.223 :FONT_XTINY;
         %tmp.225 = "Anterior ";
         %tmp.226 = self;
-        symbol [ textoTiempo %tmp.227 98 67 78 ];
+        symbol [ textoTiempo %tmp.227 102 67 78 ];
         %tmp.227 = getv function %tmp.226 :textoTiempo;
         %tmp.228 = lgetv %c.4;
-        symbol [ c %tmp.228 98 79 80 ];
-        symbol [ ultimaVuelta %tmp.229 98 81 93 ];
+        symbol [ c %tmp.228 102 79 80 ];
+        symbol [ ultimaVuelta %tmp.229 102 81 93 ];
         %tmp.229 = getv function %tmp.228 :ultimaVuelta;
         %tmp.230 = invoke %tmp.228 %tmp.229();
         %tmp.231 = invoke %tmp.226 %tmp.227(%tmp.230);
         %tmp.232 = add %tmp.225 %tmp.231;
         %tmp.233 = lgetv %J.7;
-        symbol [ J %tmp.233 98 98 99 ];
+        symbol [ J %tmp.233 102 98 99 ];
         invoke %tmp.219 %tmp.220(%tmp.221, %tmp.222, %tmp.224, %tmp.232, %tmp.233);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_27_99_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_else_false:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_102_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 100 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_27_103_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_else_false:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_103_15_106_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 104 12 ]
         %tmp.234 = lgetv %dc;
-        symbol [ dc %tmp.234 100 12 14 ];
-        symbol [ setColor %tmp.235 100 15 23 ];
+        symbol [ dc %tmp.234 104 12 14 ];
+        symbol [ setColor %tmp.235 104 15 23 ];
         %tmp.235 = getv function %tmp.234 :setColor;
-        symbol [ Graphics %tmp.236 100 24 32 ];
+        symbol [ Graphics %tmp.236 104 24 32 ];
         %tmp.236 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.237 100 33 46 ];
+        symbol [ COLOR_LT_GRAY %tmp.237 104 33 46 ];
         %tmp.237 = getv %tmp.236 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.238 100 48 56 ];
+        symbol [ Graphics %tmp.238 104 48 56 ];
         %tmp.238 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.239 100 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.239 104 57 74 ];
         %tmp.239 = getv %tmp.238 :COLOR_TRANSPARENT;
         invoke %tmp.234 %tmp.235(%tmp.237, %tmp.239);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 101 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 105 12 ]
         %tmp.240 = lgetv %dc;
-        symbol [ dc %tmp.240 101 12 14 ];
-        symbol [ drawText %tmp.241 101 15 23 ];
+        symbol [ dc %tmp.240 105 12 14 ];
+        symbol [ drawText %tmp.241 105 15 23 ];
         %tmp.241 = getv function %tmp.240 :drawText;
         %tmp.242 = lgetv %cx.3;
-        symbol [ cx %tmp.242 101 24 26 ];
+        symbol [ cx %tmp.242 105 24 26 ];
         %tmp.243 = lgetv %y1.14;
-        symbol [ y1 %tmp.243 101 28 30 ];
-        symbol [ Graphics %tmp.244 101 32 40 ];
+        symbol [ y1 %tmp.243 105 28 30 ];
+        symbol [ Graphics %tmp.244 105 32 40 ];
         %tmp.244 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.245 101 41 51 ];
+        symbol [ FONT_XTINY %tmp.245 105 41 51 ];
         %tmp.245 = getv %tmp.244 :FONT_XTINY;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_begin:
         %tmp.246 = lgetv %c.4;
-        symbol [ c %tmp.246 101 54 55 ];
-        symbol [ estado %tmp.247 101 56 62 ];
+        symbol [ c %tmp.246 105 54 55 ];
+        symbol [ estado %tmp.247 105 56 62 ];
         %tmp.247 = getv %tmp.246 :estado;
-        symbol [ E_MARCHA %tmp.249 101 66 74 ];
+        symbol [ E_MARCHA %tmp.249 105 66 74 ];
         %tmp.249 = getv ? :E_MARCHA;
         %tmp.250 = eq %tmp.247 %tmp.249;
-        bf %tmp.250 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_else_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_true:
+        bf %tmp.250 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_true:
         %tmp.251 = "BACK marca vuelta";
         push %tmp.251;
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_else_false:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_else_false:
         %tmp.252 = "Sin vueltas";
         push %tmp.252;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_end:
-        %tmp.253 = phi [%tmp.250 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_begin] [%tmp.251 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_true] [%tmp.252 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_else_false] [%tmp.253 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_101_53_101_100_end];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_end:
+        %tmp.253 = phi [%tmp.250 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_begin] [%tmp.251 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_true] [%tmp.252 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_else_false] [%tmp.253 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_105_53_105_100_end];
         %tmp.254 = lgetv %J.7;
-        symbol [ J %tmp.254 101 115 116 ];
+        symbol [ J %tmp.254 105 115 116 ];
         invoke %tmp.240 %tmp.241(%tmp.242, %tmp.243, %tmp.245, %tmp.253, %tmp.254);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_102_8_stop:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_95_15_102_8_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_92_8_102_8_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 105 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop" ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_103_15_106_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_99_15_106_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_96_8_106_8_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 109 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop" ]
         %y3.17 = local;
-        symbol [ y3 %y3.17 105 12 14 ];
+        symbol [ y3 %y3.17 109 12 14 ];
         %tmp.255 = lgetv %h.2;
-        symbol [ h %tmp.255 105 17 18 ];
+        symbol [ h %tmp.255 109 17 18 ];
         %tmp.256 = 81;
         %tmp.257 = mul %tmp.255 %tmp.256;
         %tmp.258 = 100;
         %tmp.259 = div %tmp.257 %tmp.258;
         lputv %y3.17 %tmp.259;
-        symbol [ y3 %y3.17 105 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 106 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_stmt:
+        symbol [ y3 %y3.17 109 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 110 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_stmt:
         %tmp.260 = lgetv %s.5;
-        symbol [ s %tmp.260 106 12 13 ];
-        symbol [ mensaje %tmp.261 106 14 21 ];
+        symbol [ s %tmp.260 110 12 13 ];
+        symbol [ mensaje %tmp.261 110 14 21 ];
         %tmp.261 = getv %tmp.260 :mensaje;
         %tmp.262 = null;
         %tmp.263 = ne %tmp.261 %tmp.262;
-        bf %tmp.263 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_31_109_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 107 12 ]
+        bf %tmp.263 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_31_113_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 111 12 ]
         %tmp.264 = lgetv %dc;
-        symbol [ dc %tmp.264 107 12 14 ];
-        symbol [ setColor %tmp.265 107 15 23 ];
+        symbol [ dc %tmp.264 111 12 14 ];
+        symbol [ setColor %tmp.265 111 15 23 ];
         %tmp.265 = getv function %tmp.264 :setColor;
-        symbol [ Graphics %tmp.266 107 24 32 ];
+        symbol [ Graphics %tmp.266 111 24 32 ];
         %tmp.266 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.267 107 33 42 ];
+        symbol [ COLOR_RED %tmp.267 111 33 42 ];
         %tmp.267 = getv %tmp.266 :COLOR_RED;
-        symbol [ Graphics %tmp.268 107 44 52 ];
+        symbol [ Graphics %tmp.268 111 44 52 ];
         %tmp.268 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.269 107 53 70 ];
+        symbol [ COLOR_TRANSPARENT %tmp.269 111 53 70 ];
         %tmp.269 = getv %tmp.268 :COLOR_TRANSPARENT;
         invoke %tmp.264 %tmp.265(%tmp.267, %tmp.269);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 108 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 112 12 ]
         %tmp.270 = lgetv %dc;
-        symbol [ dc %tmp.270 108 12 14 ];
-        symbol [ drawText %tmp.271 108 15 23 ];
+        symbol [ dc %tmp.270 112 12 14 ];
+        symbol [ drawText %tmp.271 112 15 23 ];
         %tmp.271 = getv function %tmp.270 :drawText;
         %tmp.272 = lgetv %cx.3;
-        symbol [ cx %tmp.272 108 24 26 ];
+        symbol [ cx %tmp.272 112 24 26 ];
         %tmp.273 = lgetv %y3.17;
-        symbol [ y3 %tmp.273 108 28 30 ];
-        symbol [ Graphics %tmp.274 108 32 40 ];
+        symbol [ y3 %tmp.273 112 28 30 ];
+        symbol [ Graphics %tmp.274 112 32 40 ];
         %tmp.274 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.275 108 41 51 ];
+        symbol [ FONT_XTINY %tmp.275 112 41 51 ];
         %tmp.275 = getv %tmp.274 :FONT_XTINY;
         %tmp.276 = lgetv %s.5;
-        symbol [ s %tmp.276 108 53 54 ];
-        symbol [ mensaje %tmp.277 108 55 62 ];
+        symbol [ s %tmp.276 112 53 54 ];
+        symbol [ mensaje %tmp.277 112 55 62 ];
         %tmp.277 = getv %tmp.276 :mensaje;
         %tmp.278 = as %tmp.277 String;
-        symbol [ String %tmp.278 108 66 72 ];
+        symbol [ String %tmp.278 112 66 72 ];
         %tmp.279 = lgetv %J.7;
-        symbol [ J %tmp.279 108 74 75 ];
+        symbol [ J %tmp.279 112 74 75 ];
         invoke %tmp.270 %tmp.271(%tmp.272, %tmp.273, %tmp.275, %tmp.278, %tmp.279);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_31_109_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_false:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 109 15 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_stmt:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_19_109_54_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_31_113_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_false:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 113 15 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_19_113_54_begin:
         %tmp.280 = lgetv %c.4;
-        symbol [ c %tmp.280 109 19 20 ];
-        symbol [ estado %tmp.281 109 21 27 ];
+        symbol [ c %tmp.280 113 19 20 ];
+        symbol [ estado %tmp.281 113 21 27 ];
         %tmp.281 = getv %tmp.280 :estado;
-        symbol [ E_LISTO %tmp.283 109 31 38 ];
+        symbol [ E_LISTO %tmp.283 113 31 38 ];
         %tmp.283 = getv ? :E_LISTO;
         %tmp.284 = eq %tmp.281 %tmp.283;
-        bf %tmp.284 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_42_109_54_true:
+        bf %tmp.284 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_42_113_54_true:
         %tmp.285 = lgetv %c.4;
-        symbol [ c %tmp.285 109 42 43 ];
-        symbol [ ultimo %tmp.286 109 44 50 ];
+        symbol [ c %tmp.285 113 42 43 ];
+        symbol [ ultimo %tmp.286 113 44 50 ];
         %tmp.286 = getv %tmp.285 :ultimo;
         %tmp.287 = null;
         %tmp.288 = ne %tmp.286 %tmp.287;
         push %tmp.288;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_42_109_54_end:
-        %tmp.289 = phi [%tmp.284 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_19_109_54_begin] [%tmp.288 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_42_109_54_true] [%tmp.289 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_42_109_54_end];
-        bf %tmp.289 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_false;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_60_113_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 110 12 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_60_113_8_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_60_113_8_stop" ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_42_113_54_end:
+        %tmp.289 = phi [%tmp.284 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_19_113_54_begin] [%tmp.288 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_42_113_54_true] [%tmp.289 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_42_113_54_end];
+        bf %tmp.289 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_false;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_60_117_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 114 12 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_60_117_8_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_60_117_8_stop" ]
         %u.18 = local;
-        symbol [ u %u.18 110 16 17 ];
+        symbol [ u %u.18 114 16 17 ];
         %tmp.290 = lgetv %c.4;
-        symbol [ c %tmp.290 110 20 21 ];
-        symbol [ ultimo %tmp.291 110 22 28 ];
+        symbol [ c %tmp.290 114 20 21 ];
+        symbol [ ultimo %tmp.291 114 22 28 ];
         %tmp.291 = getv %tmp.290 :ultimo;
         %tmp.292 = as %tmp.291 Dictionary;
-        symbol [ Dictionary %tmp.292 110 32 42 ];
+        symbol [ Dictionary %tmp.292 114 32 42 ];
         lputv %u.18 %tmp.292;
-        symbol [ u %u.18 110 16 17 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 111 12 ]
+        symbol [ u %u.18 114 16 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 115 12 ]
         %tmp.293 = lgetv %dc;
-        symbol [ dc %tmp.293 111 12 14 ];
-        symbol [ setColor %tmp.294 111 15 23 ];
+        symbol [ dc %tmp.293 115 12 14 ];
+        symbol [ setColor %tmp.294 115 15 23 ];
         %tmp.294 = getv function %tmp.293 :setColor;
-        symbol [ Graphics %tmp.295 111 24 32 ];
+        symbol [ Graphics %tmp.295 115 24 32 ];
         %tmp.295 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.296 111 33 46 ];
+        symbol [ COLOR_LT_GRAY %tmp.296 115 33 46 ];
         %tmp.296 = getv %tmp.295 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.297 111 48 56 ];
+        symbol [ Graphics %tmp.297 115 48 56 ];
         %tmp.297 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.298 111 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.298 115 57 74 ];
         %tmp.298 = getv %tmp.297 :COLOR_TRANSPARENT;
         invoke %tmp.293 %tmp.294(%tmp.296, %tmp.298);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 112 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 116 12 ]
         %tmp.299 = lgetv %dc;
-        symbol [ dc %tmp.299 112 12 14 ];
-        symbol [ drawText %tmp.300 112 15 23 ];
+        symbol [ dc %tmp.299 116 12 14 ];
+        symbol [ drawText %tmp.300 116 15 23 ];
         %tmp.300 = getv function %tmp.299 :drawText;
         %tmp.301 = lgetv %cx.3;
-        symbol [ cx %tmp.301 112 24 26 ];
+        symbol [ cx %tmp.301 116 24 26 ];
         %tmp.302 = lgetv %y3.17;
-        symbol [ y3 %tmp.302 112 28 30 ];
-        symbol [ Graphics %tmp.303 112 32 40 ];
+        symbol [ y3 %tmp.302 116 28 30 ];
+        symbol [ Graphics %tmp.303 116 32 40 ];
         %tmp.303 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.304 112 41 51 ];
+        symbol [ FONT_XTINY %tmp.304 116 41 51 ];
         %tmp.304 = getv %tmp.303 :FONT_XTINY;
         %tmp.305 = "Último ";
         %tmp.306 = self;
-        symbol [ textoTiempo %tmp.307 112 65 76 ];
+        symbol [ textoTiempo %tmp.307 116 65 76 ];
         %tmp.307 = getv function %tmp.306 :textoTiempo;
-        symbol [ Almacen %tmp.309 112 77 84 ];
+        symbol [ Almacen %tmp.309 116 77 84 ];
         %tmp.309 = getv ? :Almacen;
-        symbol [ num %tmp.310 112 85 88 ];
+        symbol [ num %tmp.310 116 85 88 ];
         %tmp.310 = getv function %tmp.309 :num;
         %tmp.311 = lgetv %u.18;
-        symbol [ u %tmp.311 112 89 90 ];
+        symbol [ u %tmp.311 116 89 90 ];
         %tmp.312 = "dur";
         %tmp.313 = agetv %tmp.311 %tmp.312;
         %tmp.314 = invoke %tmp.309 %tmp.310(%tmp.313);
         %tmp.315 = invoke %tmp.306 %tmp.307(%tmp.314);
         %tmp.316 = add %tmp.305 %tmp.315;
         %tmp.317 = lgetv %J.7;
-        symbol [ J %tmp.317 112 101 102 ];
+        symbol [ J %tmp.317 116 101 102 ];
         invoke %tmp.299 %tmp.300(%tmp.301, %tmp.302, %tmp.304, %tmp.316, %tmp.317);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_60_113_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_false:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 113 15 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_116_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_60_117_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_false:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 117 15 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_15_120_8_if_stmt:
         %tmp.318 = lgetv %c.4;
-        symbol [ c %tmp.318 113 19 20 ];
-        symbol [ estado %tmp.319 113 21 27 ];
+        symbol [ c %tmp.318 117 19 20 ];
+        symbol [ estado %tmp.319 117 21 27 ];
         %tmp.319 = getv %tmp.318 :estado;
-        symbol [ E_PAUSA %tmp.321 113 31 38 ];
+        symbol [ E_PAUSA %tmp.321 117 31 38 ];
         %tmp.321 = getv ? :E_PAUSA;
         %tmp.322 = eq %tmp.319 %tmp.321;
-        bf %tmp.322 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_116_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_116_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_40_116_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 114 12 ]
+        bf %tmp.322 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_15_120_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_15_120_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_40_120_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 118 12 ]
         %tmp.323 = lgetv %dc;
-        symbol [ dc %tmp.323 114 12 14 ];
-        symbol [ setColor %tmp.324 114 15 23 ];
+        symbol [ dc %tmp.323 118 12 14 ];
+        symbol [ setColor %tmp.324 118 15 23 ];
         %tmp.324 = getv function %tmp.323 :setColor;
-        symbol [ Graphics %tmp.325 114 24 32 ];
+        symbol [ Graphics %tmp.325 118 24 32 ];
         %tmp.325 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.326 114 33 45 ];
+        symbol [ COLOR_ORANGE %tmp.326 118 33 45 ];
         %tmp.326 = getv %tmp.325 :COLOR_ORANGE;
-        symbol [ Graphics %tmp.327 114 47 55 ];
+        symbol [ Graphics %tmp.327 118 47 55 ];
         %tmp.327 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.328 114 56 73 ];
+        symbol [ COLOR_TRANSPARENT %tmp.328 118 56 73 ];
         %tmp.328 = getv %tmp.327 :COLOR_TRANSPARENT;
         invoke %tmp.323 %tmp.324(%tmp.326, %tmp.328);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 115 12 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 119 12 ]
         %tmp.329 = lgetv %dc;
-        symbol [ dc %tmp.329 115 12 14 ];
-        symbol [ drawText %tmp.330 115 15 23 ];
+        symbol [ dc %tmp.329 119 12 14 ];
+        symbol [ drawText %tmp.330 119 15 23 ];
         %tmp.330 = getv function %tmp.329 :drawText;
         %tmp.331 = lgetv %cx.3;
-        symbol [ cx %tmp.331 115 24 26 ];
+        symbol [ cx %tmp.331 119 24 26 ];
         %tmp.332 = lgetv %y3.17;
-        symbol [ y3 %tmp.332 115 28 30 ];
-        symbol [ Graphics %tmp.333 115 32 40 ];
+        symbol [ y3 %tmp.332 119 28 30 ];
+        symbol [ Graphics %tmp.333 119 32 40 ];
         %tmp.333 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.334 115 41 51 ];
+        symbol [ FONT_XTINY %tmp.334 119 41 51 ];
         %tmp.334 = getv %tmp.333 :FONT_XTINY;
         %tmp.335 = "START sigue - BACK fin";
         %tmp.336 = lgetv %J.7;
-        symbol [ J %tmp.336 115 79 80 ];
+        symbol [ J %tmp.336 119 79 80 ];
         invoke %tmp.329 %tmp.330(%tmp.331, %tmp.332, %tmp.334, %tmp.335, %tmp.336);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_40_116_8_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_116_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_116_8_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_109_15_116_8_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_106_8_116_8_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 119 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_40_120_8_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_15_120_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_117_15_120_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_113_15_120_8_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_110_8_120_8_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 123 8 ]
         %tmp.337 = lgetv %dc;
-        symbol [ dc %tmp.337 119 8 10 ];
-        symbol [ setColor %tmp.338 119 11 19 ];
+        symbol [ dc %tmp.337 123 8 10 ];
+        symbol [ setColor %tmp.338 123 11 19 ];
         %tmp.338 = getv function %tmp.337 :setColor;
         %tmp.339 = lgetv %est.8;
-        symbol [ est %tmp.339 119 20 23 ];
+        symbol [ est %tmp.339 123 20 23 ];
         %tmp.340 = 1;
         %tmp.341 = agetv %tmp.339 %tmp.340;
         %tmp.342 = as %tmp.341 Number;
-        symbol [ Number %tmp.342 119 30 36 ];
-        symbol [ Graphics %tmp.343 119 38 46 ];
+        symbol [ Number %tmp.342 123 30 36 ];
+        symbol [ Graphics %tmp.343 123 38 46 ];
         %tmp.343 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.344 119 47 64 ];
+        symbol [ COLOR_TRANSPARENT %tmp.344 123 47 64 ];
         %tmp.344 = getv %tmp.343 :COLOR_TRANSPARENT;
         invoke %tmp.337 %tmp.338(%tmp.342, %tmp.344);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 120 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 124 8 ]
         %tmp.345 = lgetv %dc;
-        symbol [ dc %tmp.345 120 8 10 ];
-        symbol [ drawText %tmp.346 120 11 19 ];
+        symbol [ dc %tmp.345 124 8 10 ];
+        symbol [ drawText %tmp.346 124 11 19 ];
         %tmp.346 = getv function %tmp.345 :drawText;
         %tmp.347 = lgetv %cx.3;
-        symbol [ cx %tmp.347 120 20 22 ];
+        symbol [ cx %tmp.347 124 20 22 ];
         %tmp.348 = lgetv %h.2;
-        symbol [ h %tmp.348 120 24 25 ];
+        symbol [ h %tmp.348 124 24 25 ];
         %tmp.349 = 89;
         %tmp.350 = mul %tmp.348 %tmp.349;
         %tmp.351 = 100;
         %tmp.352 = div %tmp.350 %tmp.351;
-        symbol [ Graphics %tmp.353 120 38 46 ];
+        symbol [ Graphics %tmp.353 124 38 46 ];
         %tmp.353 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.354 120 47 57 ];
+        symbol [ FONT_XTINY %tmp.354 124 47 57 ];
         %tmp.354 = getv %tmp.353 :FONT_XTINY;
         %tmp.355 = lgetv %est.8;
-        symbol [ est %tmp.355 120 59 62 ];
+        symbol [ est %tmp.355 124 59 62 ];
         %tmp.356 = 0;
         %tmp.357 = agetv %tmp.355 %tmp.356;
         %tmp.358 = as %tmp.357 String;
-        symbol [ String %tmp.358 120 69 75 ];
+        symbol [ String %tmp.358 124 69 75 ];
         %tmp.359 = lgetv %J.7;
-        symbol [ J %tmp.359 120 77 78 ];
+        symbol [ J %tmp.359 124 77 78 ];
         invoke %tmp.345 %tmp.346(%tmp.347, %tmp.352, %tmp.354, %tmp.358, %tmp.359);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_53_49_121_4_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_57_49_125_4_stop:
     }
-    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 125; @symbol_functiondef = [dibujarTiempo,125,13,26]; @symbol_param<0> = [dc,125,27,29]; @symbol_param<0>_type<0> = [Graphics,125,33,41]; @symbol_param<0>_type<1> = [Dc,125,42,44]; @symbol_param<1> = [cx,125,46,48]; @symbol_param<1>_type<0> = [Number,125,52,58]; @symbol_param<2> = [cy,125,60,62]; @symbol_param<2>_type<0> = [Number,125,66,72]; @symbol_param<3> = [ancho,125,74,79]; @symbol_param<3>_type<0> = [Number,125,83,89]; @symbol_param<4> = [ms,125,91,93]; @symbol_param<4>_type<0> = [Number,125,97,103]; @symbol_param<5> = [color,125,105,110]; ]
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 129; @symbol_functiondef = [dibujarTiempo,129,13,26]; @symbol_param<0> = [dc,129,27,29]; @symbol_param<0>_type<0> = [Graphics,129,33,41]; @symbol_param<0>_type<1> = [Dc,129,42,44]; @symbol_param<1> = [cx,129,46,48]; @symbol_param<1>_type<0> = [Number,129,52,58]; @symbol_param<2> = [cy,129,60,62]; @symbol_param<2>_type<0> = [Number,129,66,72]; @symbol_param<3> = [ancho,129,74,79]; @symbol_param<3>_type<0> = [Number,129,83,89]; @symbol_param<4> = [ms,129,91,93]; @symbol_param<4>_type<0> = [Number,129,97,103]; @symbol_param<5> = [color,129,105,110]; ]
     function dibujarTiempo(dc as Graphics.Dc, cx as Number, cy as Number, ancho as Number, ms as Number, color) as Void {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 126 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 130 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %p.1 = local;
-        symbol [ p %p.1 126 12 13 ];
+        symbol [ p %p.1 130 12 13 ];
         %tmp.1 = self;
-        symbol [ partesTiempo %tmp.2 126 16 28 ];
+        symbol [ partesTiempo %tmp.2 130 16 28 ];
         %tmp.2 = getv function %tmp.1 :partesTiempo;
         %tmp.3 = lgetv %ms;
-        symbol [ ms %tmp.3 126 29 31 ];
+        symbol [ ms %tmp.3 130 29 31 ];
         %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
         lputv %p.1 %tmp.4;
-        symbol [ p %p.1 126 12 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 127 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ p %p.1 130 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 131 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %principal.2 = local;
-        symbol [ principal %principal.2 127 12 21 ];
+        symbol [ principal %principal.2 131 12 21 ];
         %tmp.5 = lgetv %p.1;
-        symbol [ p %tmp.5 127 24 25 ];
+        symbol [ p %tmp.5 131 24 25 ];
         %tmp.6 = 0;
         %tmp.7 = agetv %tmp.5 %tmp.6;
         %tmp.8 = as %tmp.7 String;
-        symbol [ String %tmp.8 127 32 38 ];
+        symbol [ String %tmp.8 131 32 38 ];
         lputv %principal.2 %tmp.8;
-        symbol [ principal %principal.2 127 12 21 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 128 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ principal %principal.2 131 12 21 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 132 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %cent.3 = local;
-        symbol [ cent %cent.3 128 12 16 ];
+        symbol [ cent %cent.3 132 12 16 ];
         %tmp.9 = lgetv %p.1;
-        symbol [ p %tmp.9 128 19 20 ];
+        symbol [ p %tmp.9 132 19 20 ];
         %tmp.10 = 1;
         %tmp.11 = agetv %tmp.9 %tmp.10;
         %tmp.12 = as %tmp.11 String;
-        symbol [ String %tmp.12 128 27 33 ];
+        symbol [ String %tmp.12 132 27 33 ];
         lputv %cent.3 %tmp.12;
-        symbol [ cent %cent.3 128 12 16 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 129 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ cent %cent.3 132 12 16 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 133 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %grandes.4 = local;
-        symbol [ grandes %grandes.4 129 12 19 ];
+        symbol [ grandes %grandes.4 133 12 19 ];
         %tmp.13 = newa 4;
-        symbol [ Graphics %tmp.14 129 23 31 ];
+        symbol [ Graphics %tmp.14 133 23 31 ];
         %tmp.14 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_THAI_HOT %tmp.15 129 32 52 ];
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.15 133 32 52 ];
         %tmp.15 = getv %tmp.14 :FONT_NUMBER_THAI_HOT;
         %tmp.16 = dup %tmp.13;
         %tmp.17 = aputv %tmp.16 0 %tmp.15;
-        symbol [ Graphics %tmp.18 129 54 62 ];
+        symbol [ Graphics %tmp.18 133 54 62 ];
         %tmp.18 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.19 129 63 78 ];
+        symbol [ FONT_NUMBER_HOT %tmp.19 133 63 78 ];
         %tmp.19 = getv %tmp.18 :FONT_NUMBER_HOT;
         %tmp.20 = dup %tmp.17;
         %tmp.21 = aputv %tmp.20 1 %tmp.19;
-        symbol [ Graphics %tmp.22 129 80 88 ];
+        symbol [ Graphics %tmp.22 133 80 88 ];
         %tmp.22 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.23 129 89 107 ];
+        symbol [ FONT_NUMBER_MEDIUM %tmp.23 133 89 107 ];
         %tmp.23 = getv %tmp.22 :FONT_NUMBER_MEDIUM;
         %tmp.24 = dup %tmp.21;
         %tmp.25 = aputv %tmp.24 2 %tmp.23;
-        symbol [ Graphics %tmp.26 129 109 117 ];
+        symbol [ Graphics %tmp.26 133 109 117 ];
         %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MILD %tmp.27 129 118 134 ];
+        symbol [ FONT_NUMBER_MILD %tmp.27 133 118 134 ];
         %tmp.27 = getv %tmp.26 :FONT_NUMBER_MILD;
         %tmp.28 = dup %tmp.25;
         %tmp.29 = aputv %tmp.28 3 %tmp.27;
         lputv %grandes.4 %tmp.29;
-        symbol [ grandes %grandes.4 129 12 19 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 130 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ grandes %grandes.4 133 12 19 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 134 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %peques.5 = local;
-        symbol [ peques %peques.5 130 12 18 ];
+        symbol [ peques %peques.5 134 12 18 ];
         %tmp.30 = newa 4;
-        symbol [ Graphics %tmp.31 130 22 30 ];
+        symbol [ Graphics %tmp.31 134 22 30 ];
         %tmp.31 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.32 130 31 49 ];
+        symbol [ FONT_NUMBER_MEDIUM %tmp.32 134 31 49 ];
         %tmp.32 = getv %tmp.31 :FONT_NUMBER_MEDIUM;
         %tmp.33 = dup %tmp.30;
         %tmp.34 = aputv %tmp.33 0 %tmp.32;
-        symbol [ Graphics %tmp.35 130 51 59 ];
+        symbol [ Graphics %tmp.35 134 51 59 ];
         %tmp.35 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MILD %tmp.36 130 60 76 ];
+        symbol [ FONT_NUMBER_MILD %tmp.36 134 60 76 ];
         %tmp.36 = getv %tmp.35 :FONT_NUMBER_MILD;
         %tmp.37 = dup %tmp.34;
         %tmp.38 = aputv %tmp.37 1 %tmp.36;
-        symbol [ Graphics %tmp.39 130 78 86 ];
+        symbol [ Graphics %tmp.39 134 78 86 ];
         %tmp.39 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MILD %tmp.40 130 87 103 ];
+        symbol [ FONT_NUMBER_MILD %tmp.40 134 87 103 ];
         %tmp.40 = getv %tmp.39 :FONT_NUMBER_MILD;
         %tmp.41 = dup %tmp.38;
         %tmp.42 = aputv %tmp.41 2 %tmp.40;
-        symbol [ Graphics %tmp.43 130 105 113 ];
+        symbol [ Graphics %tmp.43 134 105 113 ];
         %tmp.43 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.44 130 114 124 ];
+        symbol [ FONT_SMALL %tmp.44 134 114 124 ];
         %tmp.44 = getv %tmp.43 :FONT_SMALL;
         %tmp.45 = dup %tmp.42;
         %tmp.46 = aputv %tmp.45 3 %tmp.44;
         lputv %peques.5 %tmp.46;
-        symbol [ peques %peques.5 130 12 18 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 131 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ peques %peques.5 134 12 18 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 135 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %fG.6 = local;
-        symbol [ fG %fG.6 131 12 14 ];
+        symbol [ fG %fG.6 135 12 14 ];
         %tmp.47 = lgetv %grandes.4;
-        symbol [ grandes %tmp.47 131 17 24 ];
+        symbol [ grandes %tmp.47 135 17 24 ];
         %tmp.48 = 3;
         %tmp.49 = agetv %tmp.47 %tmp.48;
         lputv %fG.6 %tmp.49;
-        symbol [ fG %fG.6 131 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 132 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ fG %fG.6 135 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 136 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %fP.7 = local;
-        symbol [ fP %fP.7 132 12 14 ];
+        symbol [ fP %fP.7 136 12 14 ];
         %tmp.50 = lgetv %peques.5;
-        symbol [ peques %tmp.50 132 17 23 ];
+        symbol [ peques %tmp.50 136 17 23 ];
         %tmp.51 = 3;
         %tmp.52 = agetv %tmp.50 %tmp.51;
         lputv %fP.7 %tmp.52;
-        symbol [ fP %fP.7 132 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 133 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ fP %fP.7 136 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 137 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %wG.8 = local;
-        symbol [ wG %wG.8 133 12 14 ];
+        symbol [ wG %wG.8 137 12 14 ];
         %tmp.53 = 0;
         lputv %wG.8 %tmp.53;
-        symbol [ wG %wG.8 133 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 134 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ wG %wG.8 137 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 138 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %wP.9 = local;
-        symbol [ wP %wP.9 134 12 14 ];
+        symbol [ wP %wP.9 138 12 14 ];
         %tmp.54 = 0;
         lputv %wP.9 %tmp.54;
-        symbol [ wP %wP.9 134 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 135 8 ]
-        for @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_init:
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end" ]
+        symbol [ wP %wP.9 138 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 139 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_end" ]
         %i.10 = local;
-        symbol [ i %i.10 135 17 18 ];
+        symbol [ i %i.10 139 17 18 ];
         %tmp.55 = 0;
         lputv %i.10 %tmp.55;
-        symbol [ i %i.10 135 17 18 ];
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_test:
+        symbol [ i %i.10 139 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_test:
         %tmp.56 = lgetv %i.10;
-        symbol [ i %tmp.56 135 24 25 ];
+        symbol [ i %tmp.56 139 24 25 ];
         %tmp.57 = lgetv %grandes.4;
-        symbol [ grandes %tmp.57 135 28 35 ];
-        symbol [ size %tmp.58 135 36 40 ];
+        symbol [ grandes %tmp.57 139 28 35 ];
+        symbol [ size %tmp.58 139 36 40 ];
         %tmp.58 = getv function %tmp.57 :size;
         %tmp.59 = invoke %tmp.57 %tmp.58();
         %tmp.60 = lt %tmp.56 %tmp.59;
-        bf %tmp.60 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_begin:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_49_141_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 136 12 ]
+        bf %tmp.60 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_49_145_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 140 12 ]
         %tmp.61 = lgetv %grandes.4;
-        symbol [ grandes %tmp.61 136 17 24 ];
+        symbol [ grandes %tmp.61 140 17 24 ];
         %tmp.62 = lgetv %i.10;
-        symbol [ i %tmp.62 136 25 26 ];
+        symbol [ i %tmp.62 140 25 26 ];
         %tmp.63 = agetv %tmp.61 %tmp.62;
         lputv %fG.6 %tmp.63;
-        symbol [ fG %fG.6 136 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 137 12 ]
+        symbol [ fG %fG.6 140 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 141 12 ]
         %tmp.64 = lgetv %peques.5;
-        symbol [ peques %tmp.64 137 17 23 ];
+        symbol [ peques %tmp.64 141 17 23 ];
         %tmp.65 = lgetv %i.10;
-        symbol [ i %tmp.65 137 24 25 ];
+        symbol [ i %tmp.65 141 24 25 ];
         %tmp.66 = agetv %tmp.64 %tmp.65;
         lputv %fP.7 %tmp.66;
-        symbol [ fP %fP.7 137 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 138 12 ]
+        symbol [ fP %fP.7 141 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 142 12 ]
         %tmp.67 = lgetv %dc;
-        symbol [ dc %tmp.67 138 17 19 ];
-        symbol [ getTextWidthInPixels %tmp.68 138 20 40 ];
+        symbol [ dc %tmp.67 142 17 19 ];
+        symbol [ getTextWidthInPixels %tmp.68 142 20 40 ];
         %tmp.68 = getv function %tmp.67 :getTextWidthInPixels;
         %tmp.69 = lgetv %principal.2;
-        symbol [ principal %tmp.69 138 41 50 ];
+        symbol [ principal %tmp.69 142 41 50 ];
         %tmp.70 = lgetv %fG.6;
-        symbol [ fG %tmp.70 138 52 54 ];
+        symbol [ fG %tmp.70 142 52 54 ];
         %tmp.71 = invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70);
         lputv %wG.8 %tmp.71;
-        symbol [ wG %wG.8 138 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 139 12 ]
+        symbol [ wG %wG.8 142 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 143 12 ]
         %tmp.72 = lgetv %dc;
-        symbol [ dc %tmp.72 139 17 19 ];
-        symbol [ getTextWidthInPixels %tmp.73 139 20 40 ];
+        symbol [ dc %tmp.72 143 17 19 ];
+        symbol [ getTextWidthInPixels %tmp.73 143 20 40 ];
         %tmp.73 = getv function %tmp.72 :getTextWidthInPixels;
         %tmp.74 = lgetv %cent.3;
-        symbol [ cent %tmp.74 139 41 45 ];
+        symbol [ cent %tmp.74 143 41 45 ];
         %tmp.75 = lgetv %fP.7;
-        symbol [ fP %tmp.75 139 47 49 ];
+        symbol [ fP %tmp.75 143 47 49 ];
         %tmp.76 = invoke %tmp.72 %tmp.73(%tmp.74, %tmp.75);
         lputv %wP.9 %tmp.76;
-        symbol [ wP %wP.9 139 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 140 12 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_12_140_48_if_stmt:
+        symbol [ wP %wP.9 143 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 144 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_12_144_48_if_stmt:
         %tmp.77 = lgetv %wG.8;
-        symbol [ wG %tmp.77 140 16 18 ];
+        symbol [ wG %tmp.77 144 16 18 ];
         %tmp.78 = 10;
         %tmp.79 = add %tmp.77 %tmp.78;
         %tmp.80 = lgetv %wP.9;
-        symbol [ wP %tmp.80 140 26 28 ];
+        symbol [ wP %tmp.80 144 26 28 ];
         %tmp.81 = add %tmp.79 %tmp.80;
         %tmp.82 = lgetv %ancho;
-        symbol [ ancho %tmp.82 140 32 37 ];
+        symbol [ ancho %tmp.82 144 32 37 ];
         %tmp.83 = lte %tmp.81 %tmp.82;
-        bf %tmp.83 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_12_140_48_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_12_140_48_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_39_140_48_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 140 41 ]
-        goto break @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_39_140_48_stop:
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_12_140_48_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_140_12_140_48_if_end:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_49_141_8_stop:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_incr:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 135 ]
+        bf %tmp.83 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_12_144_48_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_12_144_48_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_39_144_48_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 144 41 ]
+        goto break @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_39_144_48_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_12_144_48_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_144_12_144_48_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_49_145_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 139 ]
         %tmp.86 = lgetv %i.10;
-        symbol [ i %tmp.86 135 44 45 ];
+        symbol [ i %tmp.86 139 44 45 ];
         %tmp.87 = add %tmp.86 1;
         lputv %i.10 %tmp.87;
-        symbol [ i %i.10 135 44 45 ];
-        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_test;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 142 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ i %i.10 139 44 45 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_139_8_145_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 146 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %hG.11 = local;
-        symbol [ hG %hG.11 142 12 14 ];
+        symbol [ hG %hG.11 146 12 14 ];
         %tmp.88 = lgetv %dc;
-        symbol [ dc %tmp.88 142 17 19 ];
-        symbol [ getFontHeight %tmp.89 142 20 33 ];
+        symbol [ dc %tmp.88 146 17 19 ];
+        symbol [ getFontHeight %tmp.89 146 20 33 ];
         %tmp.89 = getv function %tmp.88 :getFontHeight;
         %tmp.90 = lgetv %fG.6;
-        symbol [ fG %tmp.90 142 34 36 ];
+        symbol [ fG %tmp.90 146 34 36 ];
         %tmp.91 = invoke %tmp.88 %tmp.89(%tmp.90);
         lputv %hG.11 %tmp.91;
-        symbol [ hG %hG.11 142 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 143 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ hG %hG.11 146 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 147 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %hP.12 = local;
-        symbol [ hP %hP.12 143 12 14 ];
+        symbol [ hP %hP.12 147 12 14 ];
         %tmp.92 = lgetv %dc;
-        symbol [ dc %tmp.92 143 17 19 ];
-        symbol [ getFontHeight %tmp.93 143 20 33 ];
+        symbol [ dc %tmp.92 147 17 19 ];
+        symbol [ getFontHeight %tmp.93 147 20 33 ];
         %tmp.93 = getv function %tmp.92 :getFontHeight;
         %tmp.94 = lgetv %fP.7;
-        symbol [ fP %tmp.94 143 34 36 ];
+        symbol [ fP %tmp.94 147 34 36 ];
         %tmp.95 = invoke %tmp.92 %tmp.93(%tmp.94);
         lputv %hP.12 %tmp.95;
-        symbol [ hP %hP.12 143 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 144 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+        symbol [ hP %hP.12 147 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 148 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %x0.13 = local;
-        symbol [ x0 %x0.13 144 12 14 ];
+        symbol [ x0 %x0.13 148 12 14 ];
         %tmp.96 = lgetv %cx;
-        symbol [ cx %tmp.96 144 17 19 ];
+        symbol [ cx %tmp.96 148 17 19 ];
         %tmp.97 = lgetv %wG.8;
-        symbol [ wG %tmp.97 144 23 25 ];
+        symbol [ wG %tmp.97 148 23 25 ];
         %tmp.98 = 10;
         %tmp.99 = add %tmp.97 %tmp.98;
         %tmp.100 = lgetv %wP.9;
-        symbol [ wP %tmp.100 144 33 35 ];
+        symbol [ wP %tmp.100 148 33 35 ];
         %tmp.101 = add %tmp.99 %tmp.100;
         %tmp.102 = 2;
         %tmp.103 = div %tmp.101 %tmp.102;
         %tmp.104 = sub %tmp.96 %tmp.103;
         lputv %x0.13 %tmp.104;
-        symbol [ x0 %x0.13 144 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 145 8 ]
+        symbol [ x0 %x0.13 148 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 149 8 ]
         %tmp.105 = lgetv %dc;
-        symbol [ dc %tmp.105 145 8 10 ];
-        symbol [ setColor %tmp.106 145 11 19 ];
+        symbol [ dc %tmp.105 149 8 10 ];
+        symbol [ setColor %tmp.106 149 11 19 ];
         %tmp.106 = getv function %tmp.105 :setColor;
         %tmp.107 = lgetv %color;
-        symbol [ color %tmp.107 145 20 25 ];
-        symbol [ Graphics %tmp.108 145 27 35 ];
+        symbol [ color %tmp.107 149 20 25 ];
+        symbol [ Graphics %tmp.108 149 27 35 ];
         %tmp.108 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.109 145 36 53 ];
+        symbol [ COLOR_TRANSPARENT %tmp.109 149 36 53 ];
         %tmp.109 = getv %tmp.108 :COLOR_TRANSPARENT;
         invoke %tmp.105 %tmp.106(%tmp.107, %tmp.109);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 146 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 150 8 ]
         %tmp.110 = lgetv %dc;
-        symbol [ dc %tmp.110 146 8 10 ];
-        symbol [ drawText %tmp.111 146 11 19 ];
+        symbol [ dc %tmp.110 150 8 10 ];
+        symbol [ drawText %tmp.111 150 11 19 ];
         %tmp.111 = getv function %tmp.110 :drawText;
         %tmp.112 = lgetv %x0.13;
-        symbol [ x0 %tmp.112 146 20 22 ];
+        symbol [ x0 %tmp.112 150 20 22 ];
         %tmp.113 = lgetv %cy;
-        symbol [ cy %tmp.113 146 24 26 ];
+        symbol [ cy %tmp.113 150 24 26 ];
         %tmp.114 = lgetv %fG.6;
-        symbol [ fG %tmp.114 146 28 30 ];
+        symbol [ fG %tmp.114 150 28 30 ];
         %tmp.115 = lgetv %principal.2;
-        symbol [ principal %tmp.115 146 32 41 ];
-        symbol [ Graphics %tmp.116 146 43 51 ];
+        symbol [ principal %tmp.115 150 32 41 ];
+        symbol [ Graphics %tmp.116 150 43 51 ];
         %tmp.116 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.117 146 52 69 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.117 150 52 69 ];
         %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_LEFT;
-        symbol [ Graphics %tmp.118 146 72 80 ];
+        symbol [ Graphics %tmp.118 150 72 80 ];
         %tmp.118 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.119 146 81 101 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.119 150 81 101 ];
         %tmp.119 = getv %tmp.118 :TEXT_JUSTIFY_VCENTER;
         %tmp.120 = bitor %tmp.117 %tmp.119;
         invoke %tmp.110 %tmp.111(%tmp.112, %tmp.113, %tmp.114, %tmp.115, %tmp.120);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 148 8 ]
-        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop" ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 152 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop" ]
         %yP.14 = local;
-        symbol [ yP %yP.14 148 12 14 ];
+        symbol [ yP %yP.14 152 12 14 ];
         %tmp.121 = lgetv %cy;
-        symbol [ cy %tmp.121 148 17 19 ];
+        symbol [ cy %tmp.121 152 17 19 ];
         %tmp.122 = lgetv %hG.11;
-        symbol [ hG %tmp.122 148 23 25 ];
+        symbol [ hG %tmp.122 152 23 25 ];
         %tmp.123 = lgetv %hP.12;
-        symbol [ hP %tmp.123 148 28 30 ];
+        symbol [ hP %tmp.123 152 28 30 ];
         %tmp.124 = sub %tmp.122 %tmp.123;
         %tmp.125 = 30;
         %tmp.126 = mul %tmp.124 %tmp.125;
@@ -1385,23 +1441,23 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end:
         %tmp.128 = div %tmp.126 %tmp.127;
         %tmp.129 = add %tmp.121 %tmp.128;
         lputv %yP.14 %tmp.129;
-        symbol [ yP %yP.14 148 12 14 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 149 8 ]
+        symbol [ yP %yP.14 152 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 153 8 ]
         %tmp.130 = lgetv %dc;
-        symbol [ dc %tmp.130 149 8 10 ];
-        symbol [ fillCircle %tmp.131 149 11 21 ];
+        symbol [ dc %tmp.130 153 8 10 ];
+        symbol [ fillCircle %tmp.131 153 11 21 ];
         %tmp.131 = getv function %tmp.130 :fillCircle;
         %tmp.132 = lgetv %x0.13;
-        symbol [ x0 %tmp.132 149 22 24 ];
+        symbol [ x0 %tmp.132 153 22 24 ];
         %tmp.133 = lgetv %wG.8;
-        symbol [ wG %tmp.133 149 27 29 ];
+        symbol [ wG %tmp.133 153 27 29 ];
         %tmp.134 = add %tmp.132 %tmp.133;
         %tmp.135 = 4;
         %tmp.136 = add %tmp.134 %tmp.135;
         %tmp.137 = lgetv %yP.14;
-        symbol [ yP %tmp.137 149 35 37 ];
+        symbol [ yP %tmp.137 153 35 37 ];
         %tmp.138 = lgetv %hP.12;
-        symbol [ hP %tmp.138 149 40 42 ];
+        symbol [ hP %tmp.138 153 40 42 ];
         %tmp.139 = 22;
         %tmp.140 = mul %tmp.138 %tmp.139;
         %tmp.141 = 100;
@@ -1409,231 +1465,231 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_135_8_141_8_for_end:
         %tmp.143 = add %tmp.137 %tmp.142;
         %tmp.144 = 3;
         invoke %tmp.130 %tmp.131(%tmp.136, %tmp.143, %tmp.144);
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 150 8 ]
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 154 8 ]
         %tmp.145 = lgetv %dc;
-        symbol [ dc %tmp.145 150 8 10 ];
-        symbol [ drawText %tmp.146 150 11 19 ];
+        symbol [ dc %tmp.145 154 8 10 ];
+        symbol [ drawText %tmp.146 154 11 19 ];
         %tmp.146 = getv function %tmp.145 :drawText;
         %tmp.147 = lgetv %x0.13;
-        symbol [ x0 %tmp.147 150 20 22 ];
+        symbol [ x0 %tmp.147 154 20 22 ];
         %tmp.148 = lgetv %wG.8;
-        symbol [ wG %tmp.148 150 25 27 ];
+        symbol [ wG %tmp.148 154 25 27 ];
         %tmp.149 = add %tmp.147 %tmp.148;
         %tmp.150 = 10;
         %tmp.151 = add %tmp.149 %tmp.150;
         %tmp.152 = lgetv %yP.14;
-        symbol [ yP %tmp.152 150 34 36 ];
+        symbol [ yP %tmp.152 154 34 36 ];
         %tmp.153 = lgetv %fP.7;
-        symbol [ fP %tmp.153 150 38 40 ];
+        symbol [ fP %tmp.153 154 38 40 ];
         %tmp.154 = lgetv %cent.3;
-        symbol [ cent %tmp.154 150 42 46 ];
-        symbol [ Graphics %tmp.155 150 48 56 ];
+        symbol [ cent %tmp.154 154 42 46 ];
+        symbol [ Graphics %tmp.155 154 48 56 ];
         %tmp.155 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.156 150 57 74 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.156 154 57 74 ];
         %tmp.156 = getv %tmp.155 :TEXT_JUSTIFY_LEFT;
-        symbol [ Graphics %tmp.157 150 77 85 ];
+        symbol [ Graphics %tmp.157 154 77 85 ];
         %tmp.157 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.158 150 86 106 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.158 154 86 106 ];
         %tmp.158 = getv %tmp.157 :TEXT_JUSTIFY_VCENTER;
         %tmp.159 = bitor %tmp.156 %tmp.158;
         invoke %tmp.145 %tmp.146(%tmp.151, %tmp.152, %tmp.153, %tmp.154, %tmp.159);
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_125_120_151_4_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_129_120_155_4_stop:
     }
 }
-[ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 155; @symbol_functiondef = [estadoSincro,155,9,21]; @symbol_param<0> = [s,155,22,23]; @symbol_param<0>_type<0> = [SincroPrimerPlano,155,27,44]; @symbol_return<0> = [Array,155,49,54]; ]
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 159; @symbol_functiondef = [estadoSincro,159,9,21]; @symbol_param<0> = [s,159,22,23]; @symbol_param<0>_type<0> = [SincroPrimerPlano,159,27,44]; @symbol_return<0> = [Array,159,49,54]; ]
 function estadoSincro(s as SincroPrimerPlano) as Array {
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 156 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 160 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %gris.1 = local;
-    symbol [ gris %gris.1 156 8 12 ];
-    symbol [ Graphics %tmp.1 156 15 23 ];
+    symbol [ gris %gris.1 160 8 12 ];
+    symbol [ Graphics %tmp.1 160 15 23 ];
     %tmp.1 = getm $.Toybox.Graphics;
-    symbol [ COLOR_LT_GRAY %tmp.2 156 24 37 ];
+    symbol [ COLOR_LT_GRAY %tmp.2 160 24 37 ];
     %tmp.2 = getv %tmp.1 :COLOR_LT_GRAY;
     lputv %gris.1 %tmp.2;
-    symbol [ gris %gris.1 156 8 12 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 157 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+    symbol [ gris %gris.1 160 8 12 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 161 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %naranja.2 = local;
-    symbol [ naranja %naranja.2 157 8 15 ];
-    symbol [ Graphics %tmp.3 157 18 26 ];
+    symbol [ naranja %naranja.2 161 8 15 ];
+    symbol [ Graphics %tmp.3 161 18 26 ];
     %tmp.3 = getm $.Toybox.Graphics;
-    symbol [ COLOR_ORANGE %tmp.4 157 27 39 ];
+    symbol [ COLOR_ORANGE %tmp.4 161 27 39 ];
     %tmp.4 = getv %tmp.3 :COLOR_ORANGE;
     lputv %naranja.2 %tmp.4;
-    symbol [ naranja %naranja.2 157 8 15 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 158 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+    symbol [ naranja %naranja.2 161 8 15 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 162 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %rojo.3 = local;
-    symbol [ rojo %rojo.3 158 8 12 ];
-    symbol [ Graphics %tmp.5 158 15 23 ];
+    symbol [ rojo %rojo.3 162 8 12 ];
+    symbol [ Graphics %tmp.5 162 15 23 ];
     %tmp.5 = getm $.Toybox.Graphics;
-    symbol [ COLOR_RED %tmp.6 158 24 33 ];
+    symbol [ COLOR_RED %tmp.6 162 24 33 ];
     %tmp.6 = getv %tmp.5 :COLOR_RED;
     lputv %rojo.3 %tmp.6;
-    symbol [ rojo %rojo.3 158 8 12 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 159 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+    symbol [ rojo %rojo.3 162 8 12 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 163 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %verde.4 = local;
-    symbol [ verde %verde.4 159 8 13 ];
-    symbol [ Graphics %tmp.7 159 16 24 ];
+    symbol [ verde %verde.4 163 8 13 ];
+    symbol [ Graphics %tmp.7 163 16 24 ];
     %tmp.7 = getm $.Toybox.Graphics;
-    symbol [ COLOR_GREEN %tmp.8 159 25 36 ];
+    symbol [ COLOR_GREEN %tmp.8 163 25 36 ];
     %tmp.8 = getv %tmp.7 :COLOR_GREEN;
     lputv %verde.4 %tmp.8;
-    symbol [ verde %verde.4 159 8 13 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 160 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+    symbol [ verde %verde.4 163 8 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 164 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %cod.5 = local;
-    symbol [ cod %cod.5 160 8 11 ];
+    symbol [ cod %cod.5 164 8 11 ];
     %tmp.9 = lgetv %s;
-    symbol [ s %tmp.9 160 14 15 ];
-    symbol [ ultimoCod %tmp.10 160 16 25 ];
+    symbol [ s %tmp.9 164 14 15 ];
+    symbol [ ultimoCod %tmp.10 164 16 25 ];
     %tmp.10 = getv %tmp.9 :ultimoCod;
     lputv %cod.5 %tmp.10;
-    symbol [ cod %cod.5 160 8 11 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 161 4 ]
-    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop" ]
+    symbol [ cod %cod.5 164 8 11 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 165 4 ]
+    [ "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_start" "_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop" ]
     %n.6 = local;
-    symbol [ n %n.6 161 8 9 ];
+    symbol [ n %n.6 165 8 9 ];
     %tmp.11 = lgetv %s;
-    symbol [ s %tmp.11 161 12 13 ];
-    symbol [ pend %tmp.12 161 14 18 ];
+    symbol [ s %tmp.11 165 12 13 ];
+    symbol [ pend %tmp.12 165 14 18 ];
     %tmp.12 = getv %tmp.11 :pend;
     lputv %n.6 %tmp.12;
-    symbol [ n %n.6 161 8 9 ];
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 162 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_4_162_74_if_stmt:
-    symbol [ Almacen %tmp.14 162 8 15 ];
+    symbol [ n %n.6 165 8 9 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 166 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_4_166_74_if_stmt:
+    symbol [ Almacen %tmp.14 166 8 15 ];
     %tmp.14 = getv ? :Almacen;
-    symbol [ clave %tmp.15 162 16 21 ];
+    symbol [ clave %tmp.15 166 16 21 ];
     %tmp.15 = getv function %tmp.14 :clave;
     %tmp.16 = invoke %tmp.14 %tmp.15();
-    symbol [ length %tmp.17 162 24 30 ];
+    symbol [ length %tmp.17 166 24 30 ];
     %tmp.17 = getv function %tmp.16 :length;
     %tmp.18 = invoke %tmp.16 %tmp.17();
     %tmp.19 = 20;
     %tmp.20 = lt %tmp.18 %tmp.19;
-    bf %tmp.20 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_4_162_74_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_4_162_74_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_39_162_74_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 162 41 ]
+    bf %tmp.20 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_4_166_74_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_4_166_74_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_39_166_74_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 166 41 ]
     %tmp.21 = newa 2;
     %tmp.22 = "Falta la clave";
     %tmp.23 = dup %tmp.21;
     %tmp.24 = aputv %tmp.23 0 %tmp.22;
     %tmp.25 = lgetv %rojo.3;
-    symbol [ rojo %tmp.25 162 67 71 ];
+    symbol [ rojo %tmp.25 166 67 71 ];
     %tmp.26 = dup %tmp.24;
     %tmp.27 = aputv %tmp.26 1 %tmp.25;
     ret %tmp.27;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_39_162_74_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_4_162_74_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_162_4_162_74_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 163 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_4_163_67_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_39_166_74_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_4_166_74_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_4_166_74_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 167 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_4_167_67_if_stmt:
     %tmp.28 = lgetv %s;
-    symbol [ s %tmp.28 163 8 9 ];
-    symbol [ enviando %tmp.29 163 10 18 ];
+    symbol [ s %tmp.28 167 8 9 ];
+    symbol [ enviando %tmp.29 167 10 18 ];
     %tmp.29 = getv %tmp.28 :enviando;
-    bf %tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_4_163_67_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_4_163_67_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_20_163_67_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 163 22 ]
+    bf %tmp.29 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_4_167_67_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_4_167_67_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_20_167_67_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 167 22 ]
     %tmp.30 = newa 2;
     %tmp.31 = "Enviando...";
     %tmp.32 = dup %tmp.30;
     %tmp.33 = aputv %tmp.32 0 %tmp.31;
-    symbol [ Graphics %tmp.34 163 45 53 ];
+    symbol [ Graphics %tmp.34 167 45 53 ];
     %tmp.34 = getm $.Toybox.Graphics;
-    symbol [ COLOR_BLUE %tmp.35 163 54 64 ];
+    symbol [ COLOR_BLUE %tmp.35 167 54 64 ];
     %tmp.35 = getv %tmp.34 :COLOR_BLUE;
     %tmp.36 = dup %tmp.33;
     %tmp.37 = aputv %tmp.36 1 %tmp.35;
     ret %tmp.37;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_20_163_67_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_4_163_67_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_163_4_163_67_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 164 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_4_164_56_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_20_167_67_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_4_167_67_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_167_4_167_67_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 168 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_4_168_56_if_stmt:
     %tmp.38 = lgetv %cod.5;
-    symbol [ cod %tmp.38 164 8 11 ];
+    symbol [ cod %tmp.38 168 8 11 ];
     %tmp.39 = 401;
     %tmp.40 = eq %tmp.38 %tmp.39;
-    bf %tmp.40 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_4_164_56_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_4_164_56_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_20_164_56_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 164 22 ]
+    bf %tmp.40 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_4_168_56_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_4_168_56_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_20_168_56_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 168 22 ]
     %tmp.41 = newa 2;
     %tmp.42 = "Clave no válida";
     %tmp.43 = dup %tmp.41;
     %tmp.44 = aputv %tmp.43 0 %tmp.42;
     %tmp.45 = lgetv %rojo.3;
-    symbol [ rojo %tmp.45 164 49 53 ];
+    symbol [ rojo %tmp.45 168 49 53 ];
     %tmp.46 = dup %tmp.44;
     %tmp.47 = aputv %tmp.46 1 %tmp.45;
     ret %tmp.47;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_20_164_56_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_4_164_56_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_164_4_164_56_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 165 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_4_171_4_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_20_168_56_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_4_168_56_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_168_4_168_56_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 169 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_4_175_4_if_stmt:
     %tmp.48 = lgetv %n.6;
-    symbol [ n %tmp.48 165 8 9 ];
+    symbol [ n %tmp.48 169 8 9 ];
     %tmp.49 = 0;
     %tmp.50 = gt %tmp.48 %tmp.49;
-    bf %tmp.50 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_4_171_4_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_4_171_4_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_15_171_4_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 166 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_stmt:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_76_begin:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_63_begin:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_48_begin:
+    bf %tmp.50 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_4_175_4_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_4_175_4_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_15_175_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 170 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_76_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_63_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_48_begin:
     %tmp.51 = lgetv %cod.5;
-    symbol [ cod %tmp.51 166 12 15 ];
-    symbol [ Almacen %tmp.53 166 19 26 ];
+    symbol [ cod %tmp.51 170 12 15 ];
+    symbol [ Almacen %tmp.53 170 19 26 ];
     %tmp.53 = getv ? :Almacen;
-    symbol [ SIN_MOVIL %tmp.54 166 27 36 ];
+    symbol [ SIN_MOVIL %tmp.54 170 27 36 ];
     %tmp.54 = getv %tmp.53 :SIN_MOVIL;
     %tmp.55 = eq %tmp.51 %tmp.54;
-    bt %tmp.55 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_true;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_40_166_48_false:
+    bt %tmp.55 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_40_170_48_false:
     %tmp.56 = lgetv %cod.5;
-    symbol [ cod %tmp.56 166 40 43 ];
+    symbol [ cod %tmp.56 170 40 43 ];
     %tmp.57 = -104;
     %tmp.58 = eq %tmp.56 %tmp.57;
     push %tmp.58;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_40_166_48_end:
-    %tmp.59 = phi [%tmp.55 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_48_begin] [%tmp.58 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_40_166_48_false] [%tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_40_166_48_end];
-    bt %tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_true;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_55_166_63_false:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_40_170_48_end:
+    %tmp.59 = phi [%tmp.55 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_48_begin] [%tmp.58 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_40_170_48_false] [%tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_40_170_48_end];
+    bt %tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_55_170_63_false:
     %tmp.60 = lgetv %cod.5;
-    symbol [ cod %tmp.60 166 55 58 ];
+    symbol [ cod %tmp.60 170 55 58 ];
     %tmp.61 = -2;
     %tmp.62 = eq %tmp.60 %tmp.61;
     push %tmp.62;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_55_166_63_end:
-    %tmp.63 = phi [%tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_63_begin] [%tmp.62 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_55_166_63_false] [%tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_55_166_63_end];
-    bt %tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_true;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_68_166_76_false:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_55_170_63_end:
+    %tmp.63 = phi [%tmp.59 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_63_begin] [%tmp.62 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_55_170_63_false] [%tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_55_170_63_end];
+    bt %tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_68_170_76_false:
     %tmp.64 = lgetv %cod.5;
-    symbol [ cod %tmp.64 166 68 71 ];
+    symbol [ cod %tmp.64 170 68 71 ];
     %tmp.65 = -3;
     %tmp.66 = eq %tmp.64 %tmp.65;
     push %tmp.66;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_68_166_76_end:
-    %tmp.67 = phi [%tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_12_166_76_begin] [%tmp.66 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_68_166_76_false] [%tmp.67 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_68_166_76_end];
-    bf %tmp.67 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_79_168_8_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 167 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_68_170_76_end:
+    %tmp.67 = phi [%tmp.63 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_12_170_76_begin] [%tmp.66 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_68_170_76_false] [%tmp.67 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_68_170_76_end];
+    bf %tmp.67 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_79_172_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 171 12 ]
     %tmp.68 = newa 2;
     %tmp.69 = "Sin móvil - ";
     %tmp.70 = lgetv %n.6;
-    symbol [ n %tmp.70 167 37 38 ];
-    symbol [ toString %tmp.71 167 39 47 ];
+    symbol [ n %tmp.70 171 37 38 ];
+    symbol [ toString %tmp.71 171 39 47 ];
     %tmp.71 = getv function %tmp.70 :toString;
     %tmp.72 = invoke %tmp.70 %tmp.71();
     %tmp.73 = add %tmp.69 %tmp.72;
@@ -1642,46 +1698,46 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_79_168_8_start:
     %tmp.76 = dup %tmp.68;
     %tmp.77 = aputv %tmp.76 0 %tmp.75;
     %tmp.78 = lgetv %naranja.2;
-    symbol [ naranja %tmp.78 167 62 69 ];
+    symbol [ naranja %tmp.78 171 62 69 ];
     %tmp.79 = dup %tmp.77;
     %tmp.80 = aputv %tmp.79 1 %tmp.78;
     ret %tmp.80;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_79_168_8_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_166_8_168_8_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 169 8 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_79_172_8_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_170_8_172_8_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 173 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_80_if_stmt:
     %tmp.81 = lgetv %cod.5;
-    symbol [ cod %tmp.81 169 12 15 ];
+    symbol [ cod %tmp.81 173 12 15 ];
     %tmp.82 = 500;
     %tmp.83 = gte %tmp.81 %tmp.82;
-    bf %tmp.83 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_24_169_80_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 169 26 ]
+    bf %tmp.83 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_80_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_80_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_24_173_80_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 173 26 ]
     %tmp.84 = newa 2;
     %tmp.85 = "Error servidor - ";
     %tmp.86 = lgetv %n.6;
-    symbol [ n %tmp.86 169 56 57 ];
-    symbol [ toString %tmp.87 169 58 66 ];
+    symbol [ n %tmp.86 173 56 57 ];
+    symbol [ toString %tmp.87 173 58 66 ];
     %tmp.87 = getv function %tmp.86 :toString;
     %tmp.88 = invoke %tmp.86 %tmp.87();
     %tmp.89 = add %tmp.85 %tmp.88;
     %tmp.90 = dup %tmp.84;
     %tmp.91 = aputv %tmp.90 0 %tmp.89;
     %tmp.92 = lgetv %naranja.2;
-    symbol [ naranja %tmp.92 169 70 77 ];
+    symbol [ naranja %tmp.92 173 70 77 ];
     %tmp.93 = dup %tmp.91;
     %tmp.94 = aputv %tmp.93 1 %tmp.92;
     ret %tmp.94;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_24_169_80_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 170 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_24_173_80_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_80_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_80_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 174 8 ]
     %tmp.95 = newa 2;
     %tmp.96 = lgetv %n.6;
-    symbol [ n %tmp.96 170 16 17 ];
-    symbol [ toString %tmp.97 170 18 26 ];
+    symbol [ n %tmp.96 174 16 17 ];
+    symbol [ toString %tmp.97 174 18 26 ];
     %tmp.97 = getv function %tmp.96 :toString;
     %tmp.98 = invoke %tmp.96 %tmp.97();
     %tmp.99 = " sin enviar";
@@ -1689,107 +1745,107 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_8_169_80_if_end:
     %tmp.101 = dup %tmp.95;
     %tmp.102 = aputv %tmp.101 0 %tmp.100;
     %tmp.103 = lgetv %naranja.2;
-    symbol [ naranja %tmp.103 170 46 53 ];
+    symbol [ naranja %tmp.103 174 46 53 ];
     %tmp.104 = dup %tmp.102;
     %tmp.105 = aputv %tmp.104 1 %tmp.103;
     ret %tmp.105;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_15_171_4_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_4_171_4_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_165_4_171_4_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 172 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_4_172_54_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_15_175_4_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_4_175_4_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_169_4_175_4_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 176 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_4_176_54_if_stmt:
     %tmp.106 = lgetv %cod.5;
-    symbol [ cod %tmp.106 172 8 11 ];
+    symbol [ cod %tmp.106 176 8 11 ];
     %tmp.107 = 200;
     %tmp.108 = eq %tmp.106 %tmp.107;
-    bf %tmp.108 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_4_172_54_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_4_172_54_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_20_172_54_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 172 22 ]
+    bf %tmp.108 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_4_176_54_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_4_176_54_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_20_176_54_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 176 22 ]
     %tmp.109 = newa 2;
     %tmp.110 = "Sincronizado";
     %tmp.111 = dup %tmp.109;
     %tmp.112 = aputv %tmp.111 0 %tmp.110;
     %tmp.113 = lgetv %verde.4;
-    symbol [ verde %tmp.113 172 46 51 ];
+    symbol [ verde %tmp.113 176 46 51 ];
     %tmp.114 = dup %tmp.112;
     %tmp.115 = aputv %tmp.114 1 %tmp.113;
     ret %tmp.115;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_20_172_54_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_4_172_54_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_172_4_172_54_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 173 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_stmt:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_44_begin:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_20_176_54_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_4_176_54_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_176_4_176_54_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 177 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_8_177_44_begin:
     %tmp.116 = lgetv %cod.5;
-    symbol [ cod %tmp.116 173 8 11 ];
-    symbol [ Almacen %tmp.118 173 15 22 ];
+    symbol [ cod %tmp.116 177 8 11 ];
+    symbol [ Almacen %tmp.118 177 15 22 ];
     %tmp.118 = getv ? :Almacen;
-    symbol [ SIN_MOVIL %tmp.119 173 23 32 ];
+    symbol [ SIN_MOVIL %tmp.119 177 23 32 ];
     %tmp.119 = getv %tmp.118 :SIN_MOVIL;
     %tmp.120 = eq %tmp.116 %tmp.119;
-    bt %tmp.120 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_true;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_36_173_44_false:
+    bt %tmp.120 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_36_177_44_false:
     %tmp.121 = lgetv %cod.5;
-    symbol [ cod %tmp.121 173 36 39 ];
+    symbol [ cod %tmp.121 177 36 39 ];
     %tmp.122 = -104;
     %tmp.123 = eq %tmp.121 %tmp.122;
     push %tmp.123;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_36_173_44_end:
-    %tmp.124 = phi [%tmp.120 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_8_173_44_begin] [%tmp.123 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_36_173_44_false] [%tmp.124 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_36_173_44_end];
-    bf %tmp.124 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_49_173_79_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 173 51 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_36_177_44_end:
+    %tmp.124 = phi [%tmp.120 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_8_177_44_begin] [%tmp.123 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_36_177_44_false] [%tmp.124 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_36_177_44_end];
+    bf %tmp.124 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_49_177_79_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 177 51 ]
     %tmp.125 = newa 2;
     %tmp.126 = "Sin móvil";
     %tmp.127 = dup %tmp.125;
     %tmp.128 = aputv %tmp.127 0 %tmp.126;
     %tmp.129 = lgetv %gris.1;
-    symbol [ gris %tmp.129 173 72 76 ];
+    symbol [ gris %tmp.129 177 72 76 ];
     %tmp.130 = dup %tmp.128;
     %tmp.131 = aputv %tmp.130 1 %tmp.129;
     ret %tmp.131;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_49_173_79_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_173_4_173_79_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 174 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_4_174_54_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_49_177_79_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_177_4_177_79_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 178 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_4_178_54_if_stmt:
     %tmp.132 = lgetv %cod.5;
-    symbol [ cod %tmp.132 174 8 11 ];
+    symbol [ cod %tmp.132 178 8 11 ];
     %tmp.133 = 404;
     %tmp.134 = eq %tmp.132 %tmp.133;
-    bf %tmp.134 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_4_174_54_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_4_174_54_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_20_174_54_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 174 22 ]
+    bf %tmp.134 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_4_178_54_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_4_178_54_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_20_178_54_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 178 22 ]
     %tmp.135 = newa 2;
     %tmp.136 = "Dirección mal";
     %tmp.137 = dup %tmp.135;
     %tmp.138 = aputv %tmp.137 0 %tmp.136;
     %tmp.139 = lgetv %rojo.3;
-    symbol [ rojo %tmp.139 174 47 51 ];
+    symbol [ rojo %tmp.139 178 47 51 ];
     %tmp.140 = dup %tmp.138;
     %tmp.141 = aputv %tmp.140 1 %tmp.139;
     ret %tmp.141;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_20_174_54_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_4_174_54_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_174_4_174_54_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 175 4 ]
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_4_175_76_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_20_178_54_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_4_178_54_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_178_4_178_54_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 179 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_4_179_76_if_stmt:
     %tmp.142 = lgetv %cod.5;
-    symbol [ cod %tmp.142 175 8 11 ];
+    symbol [ cod %tmp.142 179 8 11 ];
     %tmp.143 = 0;
     %tmp.144 = ne %tmp.142 %tmp.143;
-    bf %tmp.144 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_4_175_76_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_4_175_76_if_true:
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_18_175_76_start:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 175 20 ]
+    bf %tmp.144 @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_4_179_76_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_4_179_76_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_18_179_76_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 179 20 ]
     %tmp.145 = newa 2;
     %tmp.146 = "Sin conexión (";
     %tmp.147 = lgetv %cod.5;
-    symbol [ cod %tmp.147 175 47 50 ];
-    symbol [ toString %tmp.148 175 51 59 ];
+    symbol [ cod %tmp.147 179 47 50 ];
+    symbol [ toString %tmp.148 179 51 59 ];
     %tmp.148 = getv function %tmp.147 :toString;
     %tmp.149 = invoke %tmp.147 %tmp.148();
     %tmp.150 = add %tmp.146 %tmp.149;
@@ -1798,24 +1854,24 @@ _home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_18_175_76_start:
     %tmp.153 = dup %tmp.145;
     %tmp.154 = aputv %tmp.153 0 %tmp.152;
     %tmp.155 = lgetv %gris.1;
-    symbol [ gris %tmp.155 175 69 73 ];
+    symbol [ gris %tmp.155 179 69 73 ];
     %tmp.156 = dup %tmp.154;
     %tmp.157 = aputv %tmp.156 1 %tmp.155;
     ret %tmp.157;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_18_175_76_stop:
-    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_4_175_76_if_end;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_175_4_175_76_if_end:
-[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 176 4 ]
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_18_179_76_stop:
+    goto @_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_4_179_76_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_179_4_179_76_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" 180 4 ]
     %tmp.158 = newa 2;
     %tmp.159 = "Nada pendiente";
     %tmp.160 = dup %tmp.158;
     %tmp.161 = aputv %tmp.160 0 %tmp.159;
     %tmp.162 = lgetv %gris.1;
-    symbol [ gris %tmp.162 176 30 34 ];
+    symbol [ gris %tmp.162 180 30 34 ];
     %tmp.163 = dup %tmp.161;
     %tmp.164 = aputv %tmp.163 1 %tmp.162;
     ret %tmp.164;
-_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_155_55_177_0_stop:
+_home_runner_work_Garmin_Garmin_crono_source_CronoVista_mc_159_55_181_0_stop:
 }
 [ @file = "/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc"; @line = 1; ]
 <init> {
