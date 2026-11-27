@@ -39,7 +39,7 @@ step "Compilar .prg (fenix6xpro)" monkeyc -r -w -d fenix6xpro -f crono/monkey.ju
 PRUEBAS="no ejecutadas"
 pruebas() {
   sudo apt-get update -qq >/dev/null 2>&1
-  for p in xvfb libusb-1.0-0 libsm6 libwebkit2gtk-4.1-0 libsoup-3.0-0 libjpeg-turbo8 libgtk-3-0t64 libsecret-1-0; do
+  for p in xvfb libusb-1.0-0 libsm6 libwebkit2gtk-4.0-37 libsoup2.4-1 libjavascriptcoregtk-4.0-18 libjpeg-turbo8 libgtk-3-0 libsecret-1-0; do
     sudo apt-get install -y -qq "$p" >/dev/null 2>&1 || echo "no se pudo instalar $p"
   done
   echo "Bibliotecas que faltan al simulador:"; ldd "$BIN/simulator" | grep "not found" || echo "(ninguna)"

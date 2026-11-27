@@ -26,7 +26,8 @@ env:
 
 jobs:
   compilar:
-    runs-on: ubuntu-latest
+    # 22.04: el simulador del SDK necesita libwebkit2gtk-4.0 y libsoup-2.4 (no están en 24.04)
+    runs-on: ubuntu-22.04
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
