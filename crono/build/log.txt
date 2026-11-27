@@ -1,0 +1,51 @@
+=== Clave de firma (12:05:51)
+Clave derivada: 2f22074e06c9
+--- código de salida: 0
+=== Instalar CLI (12:05:53)
+go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
+go: downloading github.com/Masterminds/semver/v3 v3.2.1
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/sirupsen/logrus v1.9.3
+go: downloading github.com/spf13/cobra v1.7.0
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading github.com/spf13/viper v1.16.0
+go: downloading github.com/deckarep/golang-set/v2 v2.3.1
+go: downloading github.com/olekukonko/tablewriter v0.0.5
+go: downloading golang.org/x/sys v0.10.0
+go: downloading github.com/fsnotify/fsnotify v1.6.0
+go: downloading github.com/mitchellh/mapstructure v1.5.0
+go: downloading github.com/spf13/afero v1.9.5
+go: downloading github.com/spf13/cast v1.5.1
+go: downloading github.com/spf13/jwalterweatherman v1.1.0
+go: downloading github.com/PuerkitoBio/goquery v1.8.1
+go: downloading gopkg.in/ini.v1 v1.67.0
+go: downloading github.com/mattn/go-runewidth v0.0.9
+go: downloading github.com/subosito/gotenv v1.4.2
+go: downloading github.com/hashicorp/hcl v1.0.0
+go: downloading github.com/magiconair/properties v1.8.7
+go: downloading github.com/pelletier/go-toml/v2 v2.0.8
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: downloading golang.org/x/text v0.10.0
+go: downloading github.com/andybalholm/cascadia v1.3.1
+go: downloading golang.org/x/net v0.11.0
+--- código de salida: 0
+=== Aceptar licencia (12:06:15)
+--- código de salida: 0
+=== Login Garmin (12:06:15)
+Successfully logged in
+--- código de salida: 0
+=== SDK (12:06:18)
+time="2026-11-27T12:06:18Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-27T12:06:18Z" level=info msg="SDK does not exist, downloading it"
+--- código de salida: 0
+=== Dispositivo fenix6xpro (12:06:23)
+time="2026-11-27T12:06:23Z" level=info msg="Downloading 1 devices"
+time="2026-11-27T12:06:23Z" level=info msg="Downloading device zip" device=fenix6xpro
+--- código de salida: 0
+=== Compilar .iq (tienda) (12:06:23)
+BUILDING FOR 1 DEVICES
+ERROR: fenix6xpro: /home/runner/work/Garmin/Garmin/crono/source/Envio.mc:61,8: Invalid '$.Toybox.Lang.Dictionary<$.Toybox.Lang.String,$.Toybox.Lang.Object>' passed as parameter 2 of type 'PolyType<Null or $.Toybox.Lang.Dictionary<$.Toybox.Lang.Object,$.Toybox.Lang.Object>>'.
+ERROR: fenix6xpro: /home/runner/work/Garmin/Garmin/crono/source/Envio.mc:61,8: Invalid '$.Toybox.Lang.Method(cod as $.Toybox.Lang.Number, datos as Any) as Void' passed as parameter 4 of type 'PolyType<($.Toybox.Lang.Method(responseCode as $.Toybox.Lang.Number, data as Null or $.Toybox.Lang.ByteArray or $.Toybox.Lang.Dictionary or $.Toybox.Lang.String or $.Toybox.PersistedContent.Iterator) as Void) or ($.Toybox.Lang.Method(responseCode as $.Toybox.Lang.Number, data as Null or $.Toybox.Lang.ByteArray or $.Toybox.Lang.Dictionary or $.Toybox.Lang.String or $.Toybox.PersistedContent.Iterator, context as $.Toybox.Lang.Object) as Void)>'.
+ERROR: Failed to export application for device id: 'fenix6xpro'.
+--- código de salida: 200
+ESTADO: FALLO en 'Compilar .iq'
