@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/runner/work/Garmin/Garmin/crono/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="2" lineNum="8" parent="globals" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="9" lineNum="14" parent="globals/CronoApp" pc="268435550" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="10" lineNum="112" parent="globals/FondoSincro" pc="268435569" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="11" lineNum="47" parent="globals/CronoApp" pc="268435588" symbol="onSettingsChanged"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="11" lineNum="48" parent="globals/CronoApp" pc="268435590" symbol="onSettingsChanged"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="11" lineNum="49" parent="globals/CronoApp" pc="268435603" symbol="onSettingsChanged"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="11" lineNum="50" parent="globals/CronoApp" pc="268435623" symbol="onSettingsChanged"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="11" lineNum="52" parent="globals/CronoApp" pc="268435635" symbol="onSettingsChanged"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="12" lineNum="33" parent="globals/CronoApp" pc="268435652" symbol="getServiceDelegate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="12" lineNum="34" parent="globals/CronoApp" pc="268435654" symbol="getServiceDelegate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="24" parent="globals/CronoApp" pc="268435691" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="25" parent="globals/CronoApp" pc="268435693" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="26" parent="globals/CronoApp" pc="268435749" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="27" parent="globals/CronoApp" pc="268435779" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="28" parent="globals/CronoApp" pc="268435809" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="29" parent="globals/CronoApp" pc="268435839" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="13" lineNum="30" parent="globals/CronoApp" pc="268435851" symbol="getInitialView"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="14" lineNum="20" parent="globals/CronoApp" pc="268435904" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="14" lineNum="21" parent="globals/CronoApp" pc="268435906" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="15" lineNum="38" parent="globals/CronoApp" pc="268435925" symbol="onBackgroundData"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="15" lineNum="39" parent="globals/CronoApp" pc="268435927" symbol="onBackgroundData"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="15" lineNum="40" parent="globals/CronoApp" pc="268435940" symbol="onBackgroundData"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="15" lineNum="41" parent="globals/CronoApp" pc="268435960" symbol="onBackgroundData"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="15" lineNum="42" parent="globals/CronoApp" pc="268435972" symbol="onBackgroundData"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="16" lineNum="55" parent="globals/CronoApp" pc="268435989" symbol="onStop"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="16" lineNum="56" parent="globals/CronoApp" pc="268435991" symbol="onStop"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="16" lineNum="57" parent="globals/CronoApp" pc="268436004" symbol="onStop"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="16" lineNum="58" parent="globals/CronoApp" pc="268436022" symbol="onStop"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="116" parent="globals/Almacen" pc="268436035" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="117" parent="globals/Almacen" pc="268436047" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="118" parent="globals/Almacen" pc="268436060" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="119" parent="globals/Almacen" pc="268436086" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="120" parent="globals/Almacen" pc="268436096" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="121" parent="globals/Almacen" pc="268436106" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="121" parent="globals/Almacen" pc="268436117" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="17" lineNum="122" parent="globals/Almacen" pc="268436127" symbol="apuntarSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="18" lineNum="139" parent="globals/Almacen" pc="268436151" symbol="servidor"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="18" lineNum="140" parent="globals/Almacen" pc="268436163" symbol="servidor"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="18" lineNum="141" parent="globals/Almacen" pc="268436185" symbol="servidor"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="18" lineNum="141" parent="globals/Almacen" pc="268436223" symbol="servidor"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="18" lineNum="142" parent="globals/Almacen" pc="268436226" symbol="servidor"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="126" parent="globals/Almacen" pc="268436232" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="127" parent="globals/Almacen" pc="268436244" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="128" parent="globals/Almacen" pc="268436266" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="128" parent="globals/Almacen" pc="268436285" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="129" parent="globals/Almacen" pc="268436291" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="130" parent="globals/Almacen" pc="268436304" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="131" parent="globals/Almacen" pc="268436311" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="132" parent="globals/Almacen" pc="268436335" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="133" parent="globals/Almacen" pc="268436351" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="133" parent="globals/Almacen" pc="268436373" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="134" parent="globals/Almacen" pc="268436383" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="134" parent="globals/Almacen" pc="268436427" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="19" lineNum="136" parent="globals/Almacen" pc="268436465" symbol="clave"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="20" lineNum="111" parent="globals/Almacen" pc="268436468" symbol="estadoSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="20" lineNum="112" parent="globals/Almacen" pc="268436480" symbol="estadoSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="20" lineNum="113" parent="globals/Almacen" pc="268436502" symbol="estadoSync"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="21" lineNum="41" parent="globals/Almacen" pc="268436532" symbol="num"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="21" lineNum="42" parent="globals/Almacen" pc="268436542" symbol="num"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="88" parent="globals/Almacen" pc="268436571" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="89" parent="globals/Almacen" pc="268436583" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="90" parent="globals/Almacen" pc="268436596" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="91" parent="globals/Almacen" pc="268436615" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="91" parent="globals/Almacen" pc="268436626" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="92" parent="globals/Almacen" pc="268436627" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="93" parent="globals/Almacen" pc="268436635" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="94" parent="globals/Almacen" pc="268436679" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="95" parent="globals/Almacen" pc="268436697" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="96" parent="globals/Almacen" pc="268436731" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="97" parent="globals/Almacen" pc="268436750" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="100" parent="globals/Almacen" pc="268436773" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="101" parent="globals/Almacen" pc="268436781" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="102" parent="globals/Almacen" pc="268436805" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="103" parent="globals/Almacen" pc="268436824" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="105" parent="globals/Almacen" pc="268436854" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="22" lineNum="108" parent="globals/Almacen" pc="268436884" symbol="podar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="56" parent="globals/Almacen" pc="268436908" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="57" parent="globals/Almacen" pc="268436920" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="58" parent="globals/Almacen" pc="268436930" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="59" parent="globals/Almacen" pc="268436956" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="60" parent="globals/Almacen" pc="268436969" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="61" parent="globals/Almacen" pc="268436987" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="62" parent="globals/Almacen" pc="268437011" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="62" parent="globals/Almacen" pc="268437031" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="64" parent="globals/Almacen" pc="268437061" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="23" lineNum="65" parent="globals/Almacen" pc="268437084" symbol="guardarNuevo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="24" lineNum="50" parent="globals/Almacen" pc="268437097" symbol="leer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="24" lineNum="51" parent="globals/Almacen" pc="268437109" symbol="leer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="24" lineNum="52" parent="globals/Almacen" pc="268437134" symbol="leer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="25" lineNum="45" parent="globals/Almacen" pc="268437159" symbol="ids"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="25" lineNum="46" parent="globals/Almacen" pc="268437171" symbol="ids"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="25" lineNum="47" parent="globals/Almacen" pc="268437193" symbol="ids"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="69" parent="globals/Almacen" pc="268437223" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="70" parent="globals/Almacen" pc="268437235" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="71" parent="globals/Almacen" pc="268437248" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="72" parent="globals/Almacen" pc="268437256" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="73" parent="globals/Almacen" pc="268437286" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="74" parent="globals/Almacen" pc="268437304" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="74" parent="globals/Almacen" pc="268437339" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="26" lineNum="76" parent="globals/Almacen" pc="268437369" symbol="pendientes"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="79" parent="globals/Almacen" pc="268437372" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="80" parent="globals/Almacen" pc="268437384" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="81" parent="globals/Almacen" pc="268437399" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="81" parent="globals/Almacen" pc="268437405" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="82" parent="globals/Almacen" pc="268437406" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="83" parent="globals/Almacen" pc="268437416" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="83" parent="globals/Almacen" pc="268437423" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" id="27" lineNum="84" parent="globals/Almacen" pc="268437433" symbol="marcar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="33" parent="globals/Envio" pc="268437460" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="34" parent="globals/Envio" pc="268437464" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="35" parent="globals/Envio" pc="268437481" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="35" parent="globals/Envio" pc="268437501" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="36" parent="globals/Envio" pc="268437507" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="37" parent="globals/Envio" pc="268437524" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="37" parent="globals/Envio" pc="268437555" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="38" parent="globals/Envio" pc="268437561" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="38" parent="globals/Envio" pc="268437586" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="40" parent="globals/Envio" pc="268437592" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="41" parent="globals/Envio" pc="268437600" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="42" parent="globals/Envio" pc="268437628" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="43" parent="globals/Envio" pc="268437650" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="44" parent="globals/Envio" pc="268437672" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="45" parent="globals/Envio" pc="268437679" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="46" parent="globals/Envio" pc="268437699" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="47" parent="globals/Envio" pc="268437707" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="48" parent="globals/Envio" pc="268437754" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="49" parent="globals/Envio" pc="268437776" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="49" parent="globals/Envio" pc="268437783" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="51" parent="globals/Envio" pc="268437810" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="52" parent="globals/Envio" pc="268437829" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="54" parent="globals/Envio" pc="268437836" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="62" parent="globals/Envio" pc="268437913" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="28" lineNum="63" parent="globals/Envio" pc="268437967" symbol="enviar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="66" parent="globals/Envio" pc="268437973" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="67" parent="globals/Envio" pc="268437977" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="68" parent="globals/Envio" pc="268437984" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="69" parent="globals/Envio" pc="268437992" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="70" parent="globals/Envio" pc="268437996" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="71" parent="globals/Envio" pc="268438014" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="72" parent="globals/Envio" pc="268438018" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="74" parent="globals/Envio" pc="268438031" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="75" parent="globals/Envio" pc="268438047" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="76" parent="globals/Envio" pc="268438057" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="77" parent="globals/Envio" pc="268438075" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="78" parent="globals/Envio" pc="268438099" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="79" parent="globals/Envio" pc="268438120" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="80" parent="globals/Envio" pc="268438147" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="84" parent="globals/Envio" pc="268438170" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="85" parent="globals/Envio" pc="268438180" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="86" parent="globals/Envio" pc="268438198" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="87" parent="globals/Envio" pc="268438222" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="88" parent="globals/Envio" pc="268438229" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="89" parent="globals/Envio" pc="268438271" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="90" parent="globals/Envio" pc="268438313" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="91" parent="globals/Envio" pc="268438344" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="95" parent="globals/Envio" pc="268438367" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="96" parent="globals/Envio" pc="268438378" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="98" parent="globals/Envio" pc="268438385" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="99" parent="globals/Envio" pc="268438403" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="100" parent="globals/Envio" pc="268438419" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="102" parent="globals/Envio" pc="268438438" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="103" parent="globals/Envio" pc="268438477" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="103" parent="globals/Envio" pc="268438497" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="105" parent="globals/Envio" pc="268438498" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="29" lineNum="105" parent="globals/Envio" pc="268438511" symbol="alResponder"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="30" lineNum="27" parent="globals/Envio" pc="268438532" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="30" lineNum="28" parent="globals/Envio" pc="268438534" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="30" lineNum="29" parent="globals/Envio" pc="268438544" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="31" lineNum="131" parent="globals/FondoSincro" pc="268438555" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="31" lineNum="132" parent="globals/FondoSincro" pc="268438557" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="120" parent="globals/FondoSincro" pc="268438576" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="121" parent="globals/FondoSincro" pc="268438580" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="122" parent="globals/FondoSincro" pc="268438628" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="123" parent="globals/FondoSincro" pc="268438647" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="124" parent="globals/FondoSincro" pc="268438658" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="125" parent="globals/FondoSincro" pc="268438680" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="32" lineNum="127" parent="globals/FondoSincro" pc="268438696" symbol="onTemporalEvent"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="33" lineNum="116" parent="globals/FondoSincro" pc="268438715" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Envio.mc" id="33" lineNum="117" parent="globals/FondoSincro" pc="268438717" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="132" parent="globals" pc="268438736" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="133" parent="globals" pc="268438748" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="134" parent="globals" pc="268438761" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="135" parent="globals" pc="268438771" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="136" parent="globals" pc="268438781" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="138" parent="globals" pc="268438796" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="139" parent="globals" pc="268438817" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="140" parent="globals" pc="268438821" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="141" parent="globals" pc="268438834" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="142" parent="globals" pc="268438850" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="144" parent="globals" pc="268438853" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="145" parent="globals" pc="268438865" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="146" parent="globals" pc="268438875" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="147" parent="globals" pc="268438884" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="148" parent="globals" pc="268438896" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="149" parent="globals" pc="268438913" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="150" parent="globals" pc="268438931" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="151" parent="globals" pc="268438943" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="34" lineNum="152" parent="globals" pc="268438957" symbol="guardarSesion"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="35" lineNum="200" parent="globals" pc="268438974" symbol="textoTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="35" lineNum="201" parent="globals" pc="268438986" symbol="textoTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="35" lineNum="202" parent="globals" pc="268439001" symbol="textoTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="35" lineNum="202" parent="globals" pc="268439012" symbol="textoTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="35" lineNum="203" parent="globals" pc="268439021" symbol="textoTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/build/gen/006-B3291-00/source/Rez.mcgen" id="36" lineNum="631" parent="globals/Rez" pc="268439045" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="205" parent="globals" pc="268439069" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="206" parent="globals" pc="268439081" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="207" parent="globals" pc="268439098" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="208" parent="globals" pc="268439145" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="209" parent="globals" pc="268439165" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="211" parent="globals" pc="268439219" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="212" parent="globals" pc="268439243" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="213" parent="globals" pc="268439265" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="214" parent="globals" pc="268439272" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="37" lineNum="220" parent="globals" pc="268439432" symbol="abrirRegistros"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="38" lineNum="294" parent="globals/RegistroDelegado" pc="268439478" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="39" lineNum="223" parent="globals/RegistrosDelegado" pc="268439497" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="40" lineNum="17" parent="globals/CronoVista" pc="268439516" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="41" lineNum="110" parent="globals" pc="268439535" symbol="abrirMenuTipo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="41" lineNum="111" parent="globals" pc="268439547" symbol="abrirMenuTipo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="41" lineNum="112" parent="globals" pc="268439594" symbol="abrirMenuTipo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="41" lineNum="113" parent="globals" pc="268439624" symbol="abrirMenuTipo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="41" lineNum="115" parent="globals" pc="268439690" symbol="abrirMenuTipo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="68" parent="globals" pc="268439736" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="69" parent="globals" pc="268439748" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="69" parent="globals" pc="268439764" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="70" parent="globals" pc="268439765" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="71" parent="globals" pc="268439833" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="72" parent="globals" pc="268439850" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="73" parent="globals" pc="268439861" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="74" parent="globals" pc="268439909" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="42" lineNum="75" parent="globals" pc="268439922" symbol="programarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="43" lineNum="315" parent="globals/EstadoVista" pc="268439939" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="156" parent="globals" pc="268439958" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="157" parent="globals" pc="268439970" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="158" parent="globals" pc="268439983" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="159" parent="globals" pc="268439993" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="160" parent="globals" pc="268440003" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="161" parent="globals" pc="268440050" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="162" parent="globals" pc="268440138" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="163" parent="globals" pc="268440210" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="164" parent="globals" pc="268440264" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="165" parent="globals" pc="268440281" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="44" lineNum="167" parent="globals" pc="268440335" symbol="abrirMenuPrincipal"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="45" lineNum="63" parent="globals" pc="268440381" symbol="app"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="45" lineNum="64" parent="globals" pc="268440391" symbol="app"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="155" parent="globals" pc="268440407" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="156" parent="globals" pc="268440419" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="157" parent="globals" pc="268440426" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="158" parent="globals" pc="268440433" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="159" parent="globals" pc="268440440" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="160" parent="globals" pc="268440447" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="161" parent="globals" pc="268440457" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="162" parent="globals" pc="268440467" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="162" parent="globals" pc="268440500" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="163" parent="globals" pc="268440530" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="163" parent="globals" pc="268440541" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="164" parent="globals" pc="268440574" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="164" parent="globals" pc="268440585" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="165" parent="globals" pc="268440615" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="166" parent="globals" pc="268440626" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="167" parent="globals" pc="268440670" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="169" parent="globals" pc="268440718" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="169" parent="globals" pc="268440729" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="170" parent="globals" pc="268440771" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="172" parent="globals" pc="268440813" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="172" parent="globals" pc="268440824" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="173" parent="globals" pc="268440854" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="173" parent="globals" pc="268440876" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="174" parent="globals" pc="268440906" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="174" parent="globals" pc="268440917" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="175" parent="globals" pc="268440947" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="175" parent="globals" pc="268440958" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="46" lineNum="176" parent="globals" pc="268441006" symbol="estadoSincro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="47" lineNum="94" parent="globals/DescartarDelegado" pc="268441036" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="48" lineNum="170" parent="globals/MenuPrincipalDelegado" pc="268441055" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="49" lineNum="31" parent="globals/Cronometro" pc="268441074" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="50" lineNum="118" parent="globals/MenuTipoDelegado" pc="268441089" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="51" lineNum="180" parent="globals" pc="268441108" symbol="nuevoId"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="51" lineNum="181" parent="globals" pc="268441120" symbol="nuevoId"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="51" lineNum="182" parent="globals" pc="268441143" symbol="nuevoId"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="51" lineNum="183" parent="globals" pc="268441166" symbol="nuevoId"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="161" parent="globals" pc="268441251" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="162" parent="globals" pc="268441263" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="163" parent="globals" pc="268441271" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="164" parent="globals" pc="268441279" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="164" parent="globals" pc="268441299" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="165" parent="globals" pc="268441326" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="166" parent="globals" pc="268441333" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="167" parent="globals" pc="268441357" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="168" parent="globals" pc="268441364" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="169" parent="globals" pc="268441381" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="170" parent="globals" pc="268441395" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="172" parent="globals" pc="268441412" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="173" parent="globals" pc="268441420" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="174" parent="globals" pc="268441437" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="52" lineNum="176" parent="globals" pc="268441451" symbol="vueltasYParciales"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="53" lineNum="239" parent="globals/RegistroVista" pc="268441478" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="187" parent="globals" pc="268441497" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="188" parent="globals" pc="268441509" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="188" parent="globals" pc="268441520" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="189" parent="globals" pc="268441527" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="190" parent="globals" pc="268441537" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="191" parent="globals" pc="268441553" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="192" parent="globals" pc="268441563" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="193" parent="globals" pc="268441579" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="194" parent="globals" pc="268441589" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="54" lineNum="197" parent="globals" pc="268441701" symbol="partesTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="55" lineNum="73" parent="globals/MenuFinDelegado" pc="268441742" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="65" parent="globals" pc="268441761" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="66" parent="globals" pc="268441773" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="67" parent="globals" pc="268441820" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="68" parent="globals" pc="268441874" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="69" parent="globals" pc="268441928" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="56" lineNum="70" parent="globals" pc="268441982" symbol="abrirMenuFin"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="57" lineNum="17" parent="globals/CronoDelegado" pc="268442028" symbol="&lt;init&gt;"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="198" parent="globals" pc="268442047" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="199" parent="globals" pc="268442059" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="200" parent="globals" pc="268442084" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="200" parent="globals" pc="268442095" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="201" parent="globals" pc="268442101" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="201" parent="globals" pc="268442112" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="58" lineNum="202" parent="globals" pc="268442118" symbol="textoEstado"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="80" parent="globals" pc="268442124" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="81" parent="globals" pc="268442136" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="82" parent="globals" pc="268442177" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="87" parent="globals" pc="268442445" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="89" parent="globals" pc="268442463" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="59" lineNum="90" parent="globals" pc="268442504" symbol="aviso"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="60" lineNum="192" parent="globals" pc="268442564" symbol="fechaCorta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="60" lineNum="193" parent="globals" pc="268442576" symbol="fechaCorta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="60" lineNum="194" parent="globals" pc="268442626" symbol="fechaCorta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="61" lineNum="308" parent="globals/RegistroDelegado" pc="268442736" symbol="onPreviousPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="61" lineNum="309" parent="globals/RegistroDelegado" pc="268442738" symbol="onPreviousPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="61" lineNum="309" parent="globals/RegistroDelegado" pc="268442761" symbol="onPreviousPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="61" lineNum="309" parent="globals/RegistroDelegado" pc="268442795" symbol="onPreviousPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="61" lineNum="310" parent="globals/RegistroDelegado" pc="268442811" symbol="onPreviousPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="62" lineNum="297" parent="globals/RegistroDelegado" pc="268442814" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="62" lineNum="298" parent="globals/RegistroDelegado" pc="268442816" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="62" lineNum="299" parent="globals/RegistroDelegado" pc="268442834" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="302" parent="globals/RegistroDelegado" pc="268442845" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="303" parent="globals/RegistroDelegado" pc="268442849" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="304" parent="globals/RegistroDelegado" pc="268442874" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="304" parent="globals/RegistroDelegado" pc="268442894" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="304" parent="globals/RegistroDelegado" pc="268442928" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="63" lineNum="305" parent="globals/RegistroDelegado" pc="268442944" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="64" lineNum="224" parent="globals/RegistrosDelegado" pc="268442947" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="64" lineNum="225" parent="globals/RegistrosDelegado" pc="268442949" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="228" parent="globals/RegistrosDelegado" pc="268442968" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="229" parent="globals/RegistrosDelegado" pc="268442972" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="230" parent="globals/RegistrosDelegado" pc="268442985" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="230" parent="globals/RegistrosDelegado" pc="268443004" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="231" parent="globals/RegistrosDelegado" pc="268443005" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="232" parent="globals/RegistrosDelegado" pc="268443024" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="232" parent="globals/RegistrosDelegado" pc="268443030" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="233" parent="globals/RegistrosDelegado" pc="268443031" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="65" lineNum="234" parent="globals/RegistrosDelegado" pc="268443057" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="66" lineNum="27" parent="globals/CronoVista" pc="268443105" symbol="onShow"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="66" lineNum="28" parent="globals/CronoVista" pc="268443107" symbol="onShow"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="66" lineNum="29" parent="globals/CronoVista" pc="268443120" symbol="onShow"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="66" lineNum="30" parent="globals/CronoVista" pc="268443132" symbol="onShow"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="38" parent="globals/CronoVista" pc="268443162" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="39" parent="globals/CronoVista" pc="268443166" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="40" parent="globals/CronoVista" pc="268443213" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="41" parent="globals/CronoVista" pc="268443227" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="42" parent="globals/CronoVista" pc="268443245" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="67" lineNum="43" parent="globals/CronoVista" pc="268443283" symbol="ajustarTimer"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="125" parent="globals/CronoVista" pc="268443294" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="126" parent="globals/CronoVista" pc="268443298" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="127" parent="globals/CronoVista" pc="268443313" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="128" parent="globals/CronoVista" pc="268443323" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="129" parent="globals/CronoVista" pc="268443333" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="130" parent="globals/CronoVista" pc="268443393" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="131" parent="globals/CronoVista" pc="268443453" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="132" parent="globals/CronoVista" pc="268443463" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="133" parent="globals/CronoVista" pc="268443473" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="134" parent="globals/CronoVista" pc="268443480" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="135" parent="globals/CronoVista" pc="268443487" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="136" parent="globals/CronoVista" pc="268443511" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="137" parent="globals/CronoVista" pc="268443518" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="138" parent="globals/CronoVista" pc="268443525" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="139" parent="globals/CronoVista" pc="268443542" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="140" parent="globals/CronoVista" pc="268443559" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="140" parent="globals/CronoVista" pc="268443576" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="142" parent="globals/CronoVista" pc="268443592" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="143" parent="globals/CronoVista" pc="268443607" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="144" parent="globals/CronoVista" pc="268443622" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="145" parent="globals/CronoVista" pc="268443644" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="146" parent="globals/CronoVista" pc="268443663" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="148" parent="globals/CronoVista" pc="268443688" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="149" parent="globals/CronoVista" pc="268443710" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="68" lineNum="150" parent="globals/CronoVista" pc="268443755" symbol="dibujarTiempo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="69" lineNum="22" parent="globals/CronoVista" pc="268443790" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="69" lineNum="23" parent="globals/CronoVista" pc="268443792" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="69" lineNum="24" parent="globals/CronoVista" pc="268443810" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="70" lineNum="33" parent="globals/CronoVista" pc="268443845" symbol="onHide"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="70" lineNum="34" parent="globals/CronoVista" pc="268443847" symbol="onHide"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="70" lineNum="35" parent="globals/CronoVista" pc="268443865" symbol="onHide"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="71" lineNum="47" parent="globals/CronoVista" pc="268443879" symbol="tick"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="71" lineNum="48" parent="globals/CronoVista" pc="268443883" symbol="tick"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="71" lineNum="49" parent="globals/CronoVista" pc="268443902" symbol="tick"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="71" lineNum="49" parent="globals/CronoVista" pc="268443931" symbol="tick"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="71" lineNum="50" parent="globals/CronoVista" pc="268443945" symbol="tick"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="53" parent="globals/CronoVista" pc="268443962" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="54" parent="globals/CronoVista" pc="268443966" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="55" parent="globals/CronoVista" pc="268443979" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="56" parent="globals/CronoVista" pc="268443992" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="57" parent="globals/CronoVista" pc="268444002" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="58" parent="globals/CronoVista" pc="268444021" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="59" parent="globals/CronoVista" pc="268444040" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="60" parent="globals/CronoVista" pc="268444053" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="62" parent="globals/CronoVista" pc="268444060" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="63" parent="globals/CronoVista" pc="268444082" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="66" parent="globals/CronoVista" pc="268444094" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="67" parent="globals/CronoVista" pc="268444109" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="68" parent="globals/CronoVista" pc="268444125" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="69" parent="globals/CronoVista" pc="268444148" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="70" parent="globals/CronoVista" pc="268444170" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="71" parent="globals/CronoVista" pc="268444204" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="72" parent="globals/CronoVista" pc="268444229" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="75" parent="globals/CronoVista" pc="268444271" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="76" parent="globals/CronoVista" pc="268444287" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="77" parent="globals/CronoVista" pc="268444294" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="78" parent="globals/CronoVista" pc="268444301" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="78" parent="globals/CronoVista" pc="268444318" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="78" parent="globals/CronoVista" pc="268444325" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="79" parent="globals/CronoVista" pc="268444335" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="79" parent="globals/CronoVista" pc="268444352" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="79" parent="globals/CronoVista" pc="268444359" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="80" parent="globals/CronoVista" pc="268444366" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="81" parent="globals/CronoVista" pc="268444385" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="84" parent="globals/CronoVista" pc="268444410" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="88" parent="globals/CronoVista" pc="268444480" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="89" parent="globals/CronoVista" pc="268444496" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="90" parent="globals/CronoVista" pc="268444512" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="91" parent="globals/CronoVista" pc="268444531" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="92" parent="globals/CronoVista" pc="268444553" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="93" parent="globals/CronoVista" pc="268444570" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="94" parent="globals/CronoVista" pc="268444592" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="95" parent="globals/CronoVista" pc="268444623" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="96" parent="globals/CronoVista" pc="268444634" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="97" parent="globals/CronoVista" pc="268444709" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="98" parent="globals/CronoVista" pc="268444731" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="100" parent="globals/CronoVista" pc="268444785" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="101" parent="globals/CronoVista" pc="268444807" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="105" parent="globals/CronoVista" pc="268444860" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="106" parent="globals/CronoVista" pc="268444876" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="107" parent="globals/CronoVista" pc="268444889" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="108" parent="globals/CronoVista" pc="268444911" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="109" parent="globals/CronoVista" pc="268444945" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="110" parent="globals/CronoVista" pc="268444975" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="111" parent="globals/CronoVista" pc="268444985" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="112" parent="globals/CronoVista" pc="268445007" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="113" parent="globals/CronoVista" pc="268445073" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="114" parent="globals/CronoVista" pc="268445090" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="115" parent="globals/CronoVista" pc="268445112" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="119" parent="globals/CronoVista" pc="268445140" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoVista.mc" id="72" lineNum="120" parent="globals/CronoVista" pc="268445165" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="73" lineNum="316" parent="globals/EstadoVista" pc="268445209" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="73" lineNum="317" parent="globals/EstadoVista" pc="268445211" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="320" parent="globals/EstadoVista" pc="268445230" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="321" parent="globals/EstadoVista" pc="268445234" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="322" parent="globals/EstadoVista" pc="268445247" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="323" parent="globals/EstadoVista" pc="268445266" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="324" parent="globals/EstadoVista" pc="268445273" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="325" parent="globals/EstadoVista" pc="268445292" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="326" parent="globals/EstadoVista" pc="268445309" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="327" parent="globals/EstadoVista" pc="268445326" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="328" parent="globals/EstadoVista" pc="268445351" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="329" parent="globals/EstadoVista" pc="268445358" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="330" parent="globals/EstadoVista" pc="268445369" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="331" parent="globals/EstadoVista" pc="268445404" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="333" parent="globals/EstadoVista" pc="268445475" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="341" parent="globals/EstadoVista" pc="268445700" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="342" parent="globals/EstadoVista" pc="268445722" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="343" parent="globals/EstadoVista" pc="268445734" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="344" parent="globals/EstadoVista" pc="268445758" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="74" lineNum="345" parent="globals/EstadoVista" pc="268445799" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="99" parent="globals/DescartarDelegado" pc="268445862" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="100" parent="globals/DescartarDelegado" pc="268445864" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="101" parent="globals/DescartarDelegado" pc="268445875" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="102" parent="globals/DescartarDelegado" pc="268445902" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="103" parent="globals/DescartarDelegado" pc="268445929" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="75" lineNum="105" parent="globals/DescartarDelegado" pc="268445945" symbol="onResponse"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="76" lineNum="95" parent="globals/DescartarDelegado" pc="268445948" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="76" lineNum="96" parent="globals/DescartarDelegado" pc="268445950" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="77" lineNum="171" parent="globals/MenuPrincipalDelegado" pc="268445969" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="77" lineNum="172" parent="globals/MenuPrincipalDelegado" pc="268445971" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="175" parent="globals/MenuPrincipalDelegado" pc="268445990" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="176" parent="globals/MenuPrincipalDelegado" pc="268445994" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="177" parent="globals/MenuPrincipalDelegado" pc="268446007" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="178" parent="globals/MenuPrincipalDelegado" pc="268446028" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="179" parent="globals/MenuPrincipalDelegado" pc="268446039" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="180" parent="globals/MenuPrincipalDelegado" pc="268446052" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="181" parent="globals/MenuPrincipalDelegado" pc="268446063" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="182" parent="globals/MenuPrincipalDelegado" pc="268446093" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="183" parent="globals/MenuPrincipalDelegado" pc="268446104" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="184" parent="globals/MenuPrincipalDelegado" pc="268446174" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="185" parent="globals/MenuPrincipalDelegado" pc="268446185" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="78" lineNum="186" parent="globals/MenuPrincipalDelegado" pc="268446212" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="131" parent="globals/SincroPrimerPlano" pc="268446229" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="132" parent="globals/SincroPrimerPlano" pc="268446233" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="133" parent="globals/SincroPrimerPlano" pc="268446243" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="134" parent="globals/SincroPrimerPlano" pc="268446253" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="135" parent="globals/SincroPrimerPlano" pc="268446262" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="136" parent="globals/SincroPrimerPlano" pc="268446274" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="137" parent="globals/SincroPrimerPlano" pc="268446296" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="138" parent="globals/SincroPrimerPlano" pc="268446315" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="139" parent="globals/SincroPrimerPlano" pc="268446332" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="141" parent="globals/SincroPrimerPlano" pc="268446387" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="79" lineNum="142" parent="globals/SincroPrimerPlano" pc="268446399" symbol="alAcabar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="115" parent="globals/SincroPrimerPlano" pc="268446416" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="116" parent="globals/SincroPrimerPlano" pc="268446420" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="116" parent="globals/SincroPrimerPlano" pc="268446431" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="117" parent="globals/SincroPrimerPlano" pc="268446432" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="118" parent="globals/SincroPrimerPlano" pc="268446458" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="118" parent="globals/SincroPrimerPlano" pc="268446484" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="119" parent="globals/SincroPrimerPlano" pc="268446485" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="120" parent="globals/SincroPrimerPlano" pc="268446495" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="121" parent="globals/SincroPrimerPlano" pc="268446543" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="122" parent="globals/SincroPrimerPlano" pc="268446562" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="123" parent="globals/SincroPrimerPlano" pc="268446573" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="125" parent="globals/SincroPrimerPlano" pc="268446586" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="126" parent="globals/SincroPrimerPlano" pc="268446596" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="80" lineNum="128" parent="globals/SincroPrimerPlano" pc="268446605" symbol="intentar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="81" lineNum="145" parent="globals/SincroPrimerPlano" pc="268446622" symbol="alTerminarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="81" lineNum="146" parent="globals/SincroPrimerPlano" pc="268446624" symbol="alTerminarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="81" lineNum="146" parent="globals/SincroPrimerPlano" pc="268446653" symbol="alTerminarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="81" lineNum="147" parent="globals/SincroPrimerPlano" pc="268446663" symbol="alTerminarFondo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="82" lineNum="105" parent="globals/SincroPrimerPlano" pc="268446676" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="82" lineNum="106" parent="globals/SincroPrimerPlano" pc="268446680" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="82" lineNum="107" parent="globals/SincroPrimerPlano" pc="268446697" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="82" lineNum="108" parent="globals/SincroPrimerPlano" pc="268446728" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="83" lineNum="111" parent="globals/SincroPrimerPlano" pc="268446741" symbol="recontar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/CronoApp.mc" id="83" lineNum="112" parent="globals/SincroPrimerPlano" pc="268446743" symbol="recontar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="115" parent="globals/Cronometro" pc="268446776" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="116" parent="globals/Cronometro" pc="268446778" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="117" parent="globals/Cronometro" pc="268446791" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="118" parent="globals/Cronometro" pc="268446804" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="119" parent="globals/Cronometro" pc="268446818" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="120" parent="globals/Cronometro" pc="268446831" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="84" lineNum="121" parent="globals/Cronometro" pc="268446844" symbol="reiniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="79" parent="globals/Cronometro" pc="268446857" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="80" parent="globals/Cronometro" pc="268446859" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="81" parent="globals/Cronometro" pc="268446872" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="82" parent="globals/Cronometro" pc="268446886" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="83" parent="globals/Cronometro" pc="268446918" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="84" parent="globals/Cronometro" pc="268446931" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="85" parent="globals/Cronometro" pc="268446943" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="85" lineNum="86" parent="globals/Cronometro" pc="268446956" symbol="iniciar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="86" lineNum="74" parent="globals/Cronometro" pc="268446969" symbol="anclar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="86" lineNum="75" parent="globals/Cronometro" pc="268446971" symbol="anclar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="86" lineNum="76" parent="globals/Cronometro" pc="268446994" symbol="anclar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="97" parent="globals/Cronometro" pc="268447027" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="98" parent="globals/Cronometro" pc="268447029" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="98" parent="globals/Cronometro" pc="268447046" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="99" parent="globals/Cronometro" pc="268447047" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="100" parent="globals/Cronometro" pc="268447059" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="87" lineNum="101" parent="globals/Cronometro" pc="268447072" symbol="reanudar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="89" parent="globals/Cronometro" pc="268447085" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="90" parent="globals/Cronometro" pc="268447087" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="90" parent="globals/Cronometro" pc="268447104" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="91" parent="globals/Cronometro" pc="268447105" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="92" parent="globals/Cronometro" pc="268447133" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="93" parent="globals/Cronometro" pc="268447165" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="88" lineNum="94" parent="globals/Cronometro" pc="268447178" symbol="pausar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="105" parent="globals/Cronometro" pc="268447191" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="106" parent="globals/Cronometro" pc="268447195" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="106" parent="globals/Cronometro" pc="268447238" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="107" parent="globals/Cronometro" pc="268447241" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="108" parent="globals/Cronometro" pc="268447254" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="109" parent="globals/Cronometro" pc="268447322" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="109" parent="globals/Cronometro" pc="268447336" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="110" parent="globals/Cronometro" pc="268447339" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="111" parent="globals/Cronometro" pc="268447359" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="89" lineNum="112" parent="globals/Cronometro" pc="268447371" symbol="vuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="139" parent="globals/Cronometro" pc="268447374" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="140" parent="globals/Cronometro" pc="268447378" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="141" parent="globals/Cronometro" pc="268447391" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="142" parent="globals/Cronometro" pc="268447414" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="143" parent="globals/Cronometro" pc="268447440" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="90" lineNum="144" parent="globals/Cronometro" pc="268447489" symbol="registro"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="130" parent="globals/Cronometro" pc="268447638" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="131" parent="globals/Cronometro" pc="268447642" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="132" parent="globals/Cronometro" pc="268447661" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="132" parent="globals/Cronometro" pc="268447672" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="133" parent="globals/Cronometro" pc="268447678" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="134" parent="globals/Cronometro" pc="268447697" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="91" lineNum="135" parent="globals/Cronometro" pc="268447735" symbol="ultimaVuelta"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="61" parent="globals/Cronometro" pc="268447741" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="62" parent="globals/Cronometro" pc="268447745" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="63" parent="globals/Cronometro" pc="268447771" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="64" parent="globals/Cronometro" pc="268447812" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="65" parent="globals/Cronometro" pc="268447819" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="65" parent="globals/Cronometro" pc="268447830" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="66" parent="globals/Cronometro" pc="268447840" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="66" parent="globals/Cronometro" pc="268447862" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="92" lineNum="67" parent="globals/Cronometro" pc="268447865" symbol="tramo"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="93" lineNum="53" parent="globals/Cronometro" pc="268447887" symbol="persistir"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="93" lineNum="54" parent="globals/Cronometro" pc="268447889" symbol="persistir"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="40" parent="globals/Cronometro" pc="268448029" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="41" parent="globals/Cronometro" pc="268448033" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="42" parent="globals/Cronometro" pc="268448055" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="42" parent="globals/Cronometro" pc="268448074" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="43" parent="globals/Cronometro" pc="268448075" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="44" parent="globals/Cronometro" pc="268448106" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="45" parent="globals/Cronometro" pc="268448137" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="46" parent="globals/Cronometro" pc="268448168" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="47" parent="globals/Cronometro" pc="268448199" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="48" parent="globals/Cronometro" pc="268448230" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="49" parent="globals/Cronometro" pc="268448261" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="50" parent="globals/Cronometro" pc="268448310" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="94" lineNum="50" parent="globals/Cronometro" pc="268448344" symbol="cargar"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="95" lineNum="125" parent="globals/Cronometro" pc="268448358" symbol="vueltaActual"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="95" lineNum="126" parent="globals/Cronometro" pc="268448362" symbol="vueltaActual"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="95" lineNum="127" parent="globals/Cronometro" pc="268448430" symbol="vueltaActual"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="96" lineNum="34" parent="globals/Cronometro" pc="268448445" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="96" lineNum="35" parent="globals/Cronometro" pc="268448449" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="96" lineNum="36" parent="globals/Cronometro" pc="268448461" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="96" lineNum="37" parent="globals/Cronometro" pc="268448478" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="96" lineNum="37" parent="globals/Cronometro" pc="268448498" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="97" lineNum="70" parent="globals/Cronometro" pc="268448530" symbol="transcurrido"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Cronometro.mc" id="97" lineNum="71" parent="globals/Cronometro" pc="268448532" symbol="transcurrido"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="98" lineNum="119" parent="globals/MenuTipoDelegado" pc="268448581" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="98" lineNum="120" parent="globals/MenuTipoDelegado" pc="268448583" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="99" lineNum="123" parent="globals/MenuTipoDelegado" pc="268448602" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="99" lineNum="124" parent="globals/MenuTipoDelegado" pc="268448606" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="99" lineNum="125" parent="globals/MenuTipoDelegado" pc="268448619" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="99" lineNum="126" parent="globals/MenuTipoDelegado" pc="268448640" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="100" lineNum="248" parent="globals/RegistroVista" pc="268448664" symbol="nVueltas"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="100" lineNum="249" parent="globals/RegistroVista" pc="268448668" symbol="nVueltas"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="100" lineNum="250" parent="globals/RegistroVista" pc="268448684" symbol="nVueltas"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="101" lineNum="243" parent="globals/RegistroVista" pc="268448722" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="101" lineNum="244" parent="globals/RegistroVista" pc="268448724" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="101" lineNum="245" parent="globals/RegistroVista" pc="268448742" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="253" parent="globals/RegistroVista" pc="268448753" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="254" parent="globals/RegistroVista" pc="268448757" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="255" parent="globals/RegistroVista" pc="268448770" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="256" parent="globals/RegistroVista" pc="268448783" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="257" parent="globals/RegistroVista" pc="268448793" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="258" parent="globals/RegistroVista" pc="268448800" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="259" parent="globals/RegistroVista" pc="268448822" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="260" parent="globals/RegistroVista" pc="268448834" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="261" parent="globals/RegistroVista" pc="268448856" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="262" parent="globals/RegistroVista" pc="268448931" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="263" parent="globals/RegistroVista" pc="268449006" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="264" parent="globals/RegistroVista" pc="268449028" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="266" parent="globals/RegistroVista" pc="268449103" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="267" parent="globals/RegistroVista" pc="268449116" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="268" parent="globals/RegistroVista" pc="268449127" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="269" parent="globals/RegistroVista" pc="268449149" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="271" parent="globals/RegistroVista" pc="268449192" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="272" parent="globals/RegistroVista" pc="268449208" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="273" parent="globals/RegistroVista" pc="268449259" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="274" parent="globals/RegistroVista" pc="268449297" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="275" parent="globals/RegistroVista" pc="268449310" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="276" parent="globals/RegistroVista" pc="268449335" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="277" parent="globals/RegistroVista" pc="268449357" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="278" parent="globals/RegistroVista" pc="268449409" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="279" parent="globals/RegistroVista" pc="268449469" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="280" parent="globals/RegistroVista" pc="268449491" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="282" parent="globals/RegistroVista" pc="268449589" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="283" parent="globals/RegistroVista" pc="268449600" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="284" parent="globals/RegistroVista" pc="268449622" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="287" parent="globals/RegistroVista" pc="268449753" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="288" parent="globals/RegistroVista" pc="268449821" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="102" lineNum="289" parent="globals/RegistroVista" pc="268449843" symbol="onUpdate"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="103" lineNum="74" parent="globals/MenuFinDelegado" pc="268449893" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="103" lineNum="75" parent="globals/MenuFinDelegado" pc="268449895" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="78" parent="globals/MenuFinDelegado" pc="268449914" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="79" parent="globals/MenuFinDelegado" pc="268449918" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="80" parent="globals/MenuFinDelegado" pc="268449931" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="81" parent="globals/MenuFinDelegado" pc="268449952" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="82" parent="globals/MenuFinDelegado" pc="268449963" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="83" parent="globals/MenuFinDelegado" pc="268449978" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="84" parent="globals/MenuFinDelegado" pc="268449989" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="85" parent="globals/MenuFinDelegado" pc="268450016" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="86" parent="globals/MenuFinDelegado" pc="268450033" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="87" parent="globals/MenuFinDelegado" pc="268450063" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="88" parent="globals/MenuFinDelegado" pc="268450074" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="104" lineNum="90" parent="globals/MenuFinDelegado" pc="268450148" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="36" parent="globals/CronoDelegado" pc="268450165" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="37" parent="globals/CronoDelegado" pc="268450169" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="38" parent="globals/CronoDelegado" pc="268450188" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="39" parent="globals/CronoDelegado" pc="268450205" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="39" parent="globals/CronoDelegado" pc="268450219" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="40" parent="globals/CronoDelegado" pc="268450236" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="41" parent="globals/CronoDelegado" pc="268450252" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="43" parent="globals/CronoDelegado" pc="268450255" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="44" parent="globals/CronoDelegado" pc="268450272" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="45" parent="globals/CronoDelegado" pc="268450284" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="105" lineNum="47" parent="globals/CronoDelegado" pc="268450287" symbol="onBack"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="106" lineNum="50" parent="globals/CronoDelegado" pc="268450290" symbol="onMenu"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="106" lineNum="51" parent="globals/CronoDelegado" pc="268450292" symbol="onMenu"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="106" lineNum="52" parent="globals/CronoDelegado" pc="268450304" symbol="onMenu"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="107" lineNum="19" parent="globals/CronoDelegado" pc="268450307" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="107" lineNum="20" parent="globals/CronoDelegado" pc="268450309" symbol="initialize"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="23" parent="globals/CronoDelegado" pc="268450328" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="24" parent="globals/CronoDelegado" pc="268450332" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="25" parent="globals/CronoDelegado" pc="268450345" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="26" parent="globals/CronoDelegado" pc="268450355" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="27" parent="globals/CronoDelegado" pc="268450365" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="28" parent="globals/CronoDelegado" pc="268450374" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="28" parent="globals/CronoDelegado" pc="268450391" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="28" parent="globals/CronoDelegado" pc="268450403" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="29" parent="globals/CronoDelegado" pc="268450423" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="29" parent="globals/CronoDelegado" pc="268450440" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="29" parent="globals/CronoDelegado" pc="268450452" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="30" parent="globals/CronoDelegado" pc="268450472" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="30" parent="globals/CronoDelegado" pc="268450484" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="31" parent="globals/CronoDelegado" pc="268450501" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="32" parent="globals/CronoDelegado" pc="268450519" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="108" lineNum="33" parent="globals/CronoDelegado" pc="268450535" symbol="onSelect"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="109" lineNum="55" parent="globals/CronoDelegado" pc="268450538" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="109" lineNum="56" parent="globals/CronoDelegado" pc="268450540" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="109" lineNum="57" parent="globals/CronoDelegado" pc="268450572" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="109" lineNum="58" parent="globals/CronoDelegado" pc="268450584" symbol="onNextPage"/>
+        <entry filename="/home/runner/work/Garmin/Garmin/crono/source/Botones.mc" id="109" lineNum="60" parent="globals/CronoDelegado" pc="268450587" symbol="onNextPage"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="23" method="true" symbol="abrirMenuFin"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="102" symbol="ajClaveAyuda"/>
+        <entry id="28" method="true" symbol="aviso"/>
+        <entry id="108" symbol="sincronizar"/>
+        <entry field="true" id="56" symbol="confirmados"/>
+        <entry field="true" id="54" symbol="&lt;globals/Envio/&lt;&gt;_rondas&gt;"/>
+        <entry id="45" method="true" symbol="ids"/>
+        <entry field="true" id="62" symbol="&lt;globals/CronoVista/&lt;&gt;_timer&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="70" method="true" symbol="intentar"/>
+        <entry id="64" method="true" symbol="dibujarTiempo"/>
+        <entry id="8" object="true" symbol="CronoDelegado"/>
+        <entry id="42" method="true" symbol="clave"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="85" method="true" symbol="pausar"/>
+        <entry id="68" method="true" symbol="alTerminarFondo"/>
+        <entry field="true" id="101" symbol="ajClave"/>
+        <entry field="true" id="74" symbol="ultimoCod"/>
+        <entry id="48" method="true" symbol="num"/>
+        <entry id="34" method="true" symbol="programarFondo"/>
+        <entry id="9" object="true" symbol="CronoVista"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="53" symbol="&lt;globals/Envio/&lt;&gt;_fondo&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8389108" method="true" symbol="onResponse"/>
+        <entry id="8388649" module="true" object="true" symbol="Test"/>
+        <entry id="2" module="true" symbol="globals/Almacen"/>
+        <entry id="27" method="true" symbol="app"/>
+        <entry field="true" id="58" symbol="&lt;globals/FondoSincro/&lt;&gt;_envio&gt;"/>
+        <entry id="94" method="true" symbol="vuelta"/>
+        <entry field="true" id="100" symbol="AppName"/>
+        <entry field="true" id="60" symbol="&lt;globals/RegistroDelegado/&lt;&gt;_v&gt;"/>
+        <entry id="12" object="true" symbol="Envio"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="11" object="true" symbol="DescartarDelegado"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="87" method="true" symbol="reanudar"/>
+        <entry id="90" method="true" symbol="tramo"/>
+        <entry field="true" id="105" symbol="ajVibrar"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="44" method="true" symbol="guardarNuevo"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="30" method="true" symbol="fechaCorta"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry id="8390148" method="true" symbol="onTemporalEvent"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="71" symbol="mensaje"/>
+        <entry id="109" symbol="salir"/>
+        <entry id="19" object="true" symbol="RegistroVista"/>
+        <entry id="88" method="true" symbol="registro"/>
+        <entry field="true" id="67" symbol="&lt;globals/SincroPrimerPlano/&lt;&gt;_ultimoIntento&gt;"/>
+        <entry id="110" symbol="guardar"/>
+        <entry id="79" method="true" symbol="cargar"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="57" method="true" symbol="enviar"/>
+        <entry id="8390169" method="true" symbol="getServiceDelegate"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry field="true" id="66" symbol="&lt;globals/SincroPrimerPlano/&lt;&gt;_envio&gt;"/>
+        <entry id="59" method="true" symbol="alAcabar"/>
+        <entry field="true" id="40" symbol="vista"/>
+        <entry field="true" id="39" symbol="sincro"/>
+        <entry id="13" object="true" symbol="EstadoVista"/>
+        <entry field="true" id="72" symbol="pend"/>
+        <entry id="15" object="true" symbol="MenuFinDelegado"/>
+        <entry field="true" id="103" symbol="ajServidor"/>
+        <entry id="8388987" method="true" symbol="vibrate"/>
+        <entry id="16" object="true" symbol="MenuPrincipalDelegado"/>
+        <entry field="true" id="83" symbol="parciales"/>
+        <entry id="21" object="true" symbol="SincroPrimerPlano"/>
+        <entry field="true" id="75" symbol="acum"/>
+        <entry id="73" method="true" symbol="recontar"/>
+        <entry field="true" id="93" symbol="ultimo"/>
+        <entry id="65" method="true" symbol="tick"/>
+        <entry id="47" method="true" symbol="marcar"/>
+        <entry id="41" method="true" symbol="apuntarSync"/>
+        <entry id="35" method="true" symbol="textoEstado"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="17" object="true" symbol="MenuTipoDelegado"/>
+        <entry field="true" id="82" symbol="inicio"/>
+        <entry id="20" object="true" symbol="RegistrosDelegado"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8390170" method="true" symbol="onBackgroundData"/>
+        <entry id="24" method="true" symbol="abrirMenuPrincipal"/>
+        <entry id="51" method="true" symbol="servidor"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry id="25" method="true" symbol="abrirMenuTipo"/>
+        <entry id="8388985" method="true" symbol="playTone"/>
+        <entry id="43" method="true" symbol="estadoSync"/>
+        <entry id="18" object="true" symbol="RegistroDelegado"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry id="29" method="true" symbol="estadoSincro"/>
+        <entry id="49" method="true" symbol="pendientes"/>
+        <entry id="95" method="true" symbol="vueltaActual"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="84" symbol="pausadoEn"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry field="true" id="98" symbol="reg"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="107" symbol="registros"/>
+        <entry field="true" id="80" symbol="estado"/>
+        <entry id="33" method="true" symbol="partesTiempo"/>
+        <entry id="6" module="true" symbol="Almacen"/>
+        <entry id="91" method="true" symbol="transcurrido"/>
+        <entry field="true" id="52" symbol="&lt;globals/Envio/&lt;&gt;_alFinal&gt;"/>
+        <entry id="10" object="true" symbol="Cronometro"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="99" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="89" method="true" symbol="reiniciar"/>
+        <entry field="true" id="22" symbol="TIPOS"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="37" method="true" symbol="vueltasYParciales"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="112" symbol="descartar"/>
+        <entry id="8390146" module="true" symbol="Background"/>
+        <entry id="55" method="true" symbol="alResponder"/>
+        <entry id="26" method="true" symbol="abrirRegistros"/>
+        <entry id="7" object="true" symbol="CronoApp"/>
+        <entry id="8389953" module="true" symbol="PersistedContent"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="31" method="true" symbol="guardarSesion"/>
+        <entry id="50" method="true" symbol="podar"/>
+        <entry id="86" method="true" symbol="persistir"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="14" object="true" symbol="FondoSincro"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry field="true" id="38" symbol="crono"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="104" symbol="ajSonido"/>
+        <entry id="106" symbol="nada"/>
+        <entry id="81" method="true" symbol="iniciar"/>
+        <entry id="63" method="true" symbol="ajustarTimer"/>
+        <entry id="32" method="true" symbol="nuevoId"/>
+        <entry id="78" method="true" symbol="anclar"/>
+        <entry field="true" id="77" symbol="anclaT"/>
+        <entry field="true" id="76" symbol="anclaE"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="46" method="true" symbol="leer"/>
+        <entry field="true" id="69" symbol="enviando"/>
+        <entry id="92" method="true" symbol="ultimaVuelta"/>
+        <entry id="36" method="true" symbol="textoTiempo"/>
+        <entry id="111" symbol="seguir"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="61" symbol="&lt;globals/CronoVista/&lt;&gt;_periodo&gt;"/>
+        <entry id="97" method="true" symbol="nVueltas"/>
+        <entry field="true" id="96" symbol="desde"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435988" name="data" stackId="1" startPc="268435925"/>
+        <entry arg="true" endPc="268436034" name="state" stackId="1" startPc="268435989"/>
+        <entry arg="true" endPc="268436150" name="cod" stackId="1" startPc="268436035"/>
+        <entry endPc="268436149" name="s" stackId="2" startPc="268436047"/>
+        <entry endPc="268436149" name="ahora" stackId="3" startPc="268436047"/>
+        <entry endPc="268436231" name="v" stackId="1" startPc="268436163"/>
+        <entry endPc="268436467" name="v" stackId="1" startPc="268436244"/>
+        <entry endPc="268436467" name="cs" stackId="2" startPc="268436244"/>
+        <entry endPc="268436467" name="out" stackId="3" startPc="268436244"/>
+        <entry endPc="268436464" name="i" stackId="4" startPc="268436335"/>
+        <entry endPc="268436451" name="n" stackId="5" startPc="268436335"/>
+        <entry endPc="268436531" name="v" stackId="1" startPc="268436480"/>
+        <entry arg="true" endPc="268436570" name="v" stackId="1" startPc="268436532"/>
+        <entry endPc="268436906" name="l" stackId="1" startPc="268436583"/>
+        <entry endPc="268436906" name="sobran" stackId="2" startPc="268436583"/>
+        <entry endPc="268436906" name="fuera" stackId="3" startPc="268436583"/>
+        <entry endPc="268436772" name="i" stackId="4" startPc="268436679"/>
+        <entry endPc="268436759" name="r" stackId="5" startPc="268436679"/>
+        <entry endPc="268436906" name="quedan" stackId="6" startPc="268436583"/>
+        <entry endPc="268436883" name="j" stackId="7" startPc="268436805"/>
+        <entry arg="true" endPc="268437096" name="reg" stackId="1" startPc="268436908"/>
+        <entry endPc="268437095" name="id" stackId="2" startPc="268436920"/>
+        <entry endPc="268437095" name="l" stackId="3" startPc="268436920"/>
+        <entry endPc="268437095" name="nueva" stackId="4" startPc="268436920"/>
+        <entry endPc="268437060" name="i" stackId="5" startPc="268437011"/>
+        <entry arg="true" endPc="268437158" name="id" stackId="1" startPc="268437097"/>
+        <entry endPc="268437158" name="v" stackId="2" startPc="268437109"/>
+        <entry endPc="268437222" name="v" stackId="1" startPc="268437171"/>
+        <entry endPc="268437371" name="l" stackId="1" startPc="268437235"/>
+        <entry endPc="268437371" name="out" stackId="2" startPc="268437235"/>
+        <entry endPc="268437368" name="i" stackId="3" startPc="268437286"/>
+        <entry endPc="268437355" name="r" stackId="4" startPc="268437286"/>
+        <entry arg="true" endPc="268437459" name="id" stackId="1" startPc="268437372"/>
+        <entry arg="true" endPc="268437459" name="est" stackId="2" startPc="268437372"/>
+        <entry arg="true" endPc="268437459" name="motivo" stackId="3" startPc="268437372"/>
+        <entry endPc="268437458" name="r" stackId="4" startPc="268437384"/>
+        <entry endPc="268437972" name="clave" stackId="1" startPc="268437464"/>
+        <entry endPc="268437972" name="pend" stackId="2" startPc="268437464"/>
+        <entry endPc="268437972" name="params" stackId="3" startPc="268437464"/>
+        <entry endPc="268437972" name="ruta" stackId="4" startPc="268437464"/>
+        <entry endPc="268437835" name="lote" stackId="5" startPc="268437699"/>
+        <entry endPc="268437809" name="i" stackId="6" startPc="268437754"/>
+        <entry endPc="268437796" name="r" stackId="7" startPc="268437754"/>
+        <entry endPc="268437972" name="opciones" stackId="8" startPc="268437464"/>
+        <entry arg="true" endPc="268438531" name="cod" stackId="1" startPc="268437973"/>
+        <entry arg="true" endPc="268438531" name="datos" stackId="2" startPc="268437973"/>
+        <entry endPc="268438530" name="nuevos" stackId="3" startPc="268437977"/>
+        <entry endPc="268438530" name="d" stackId="4" startPc="268437977"/>
+        <entry endPc="268438530" name="valida" stackId="5" startPc="268437977"/>
+        <entry endPc="268438366" name="conf" stackId="6" startPc="268438047"/>
+        <entry endPc="268438169" name="i" stackId="7" startPc="268438099"/>
+        <entry endPc="268438366" name="rech" stackId="8" startPc="268438047"/>
+        <entry endPc="268438366" name="j" stackId="9" startPc="268438222"/>
+        <entry endPc="268438353" name="x" stackId="10" startPc="268438222"/>
+        <entry endPc="268438353" name="motivo" stackId="11" startPc="268438271"/>
+        <entry arg="true" endPc="268438554" name="alFinal" stackId="1" startPc="268438532"/>
+        <entry arg="true" endPc="268438554" name="fondo" stackId="2" startPc="268438532"/>
+        <entry arg="true" endPc="268438575" name="cod" stackId="1" startPc="268438555"/>
+        <entry endPc="268438713" name="r" stackId="1" startPc="268438580"/>
+        <entry arg="true" endPc="268438973" name="tipo" stackId="1" startPc="268438736"/>
+        <entry endPc="268438972" name="a" stackId="2" startPc="268438748"/>
+        <entry endPc="268438972" name="c" stackId="3" startPc="268438748"/>
+        <entry endPc="268438972" name="s" stackId="4" startPc="268438748"/>
+        <entry endPc="268438972" name="reg" stackId="5" startPc="268438748"/>
+        <entry endPc="268438851" name="e" stackId="6" startPc="268438817"/>
+        <entry arg="true" endPc="268439044" name="ms" stackId="1" startPc="268438974"/>
+        <entry endPc="268439044" name="p" stackId="2" startPc="268438986"/>
+        <entry endPc="268439476" name="l" stackId="1" startPc="268439081"/>
+        <entry endPc="268439476" name="m" stackId="2" startPc="268439081"/>
+        <entry endPc="268439431" name="i" stackId="3" startPc="268439243"/>
+        <entry endPc="268439418" name="r" stackId="4" startPc="268439243"/>
+        <entry endPc="268439734" name="m" stackId="1" startPc="268439547"/>
+        <entry endPc="268439689" name="i" stackId="2" startPc="268439624"/>
+        <entry endPc="268439937" name="hace" stackId="1" startPc="268439748"/>
+        <entry endPc="268439937" name="cuando" stackId="2" startPc="268439748"/>
+        <entry endPc="268440379" name="a" stackId="1" startPc="268439970"/>
+        <entry endPc="268440379" name="c" stackId="2" startPc="268439970"/>
+        <entry endPc="268440379" name="s" stackId="3" startPc="268439970"/>
+        <entry endPc="268440379" name="m" stackId="4" startPc="268439970"/>
+        <entry arg="true" endPc="268441035" name="s" stackId="1" startPc="268440407"/>
+        <entry endPc="268441035" name="gris" stackId="2" startPc="268440419"/>
+        <entry endPc="268441035" name="naranja" stackId="3" startPc="268440419"/>
+        <entry endPc="268441035" name="rojo" stackId="4" startPc="268440419"/>
+        <entry endPc="268441035" name="verde" stackId="5" startPc="268440419"/>
+        <entry endPc="268441035" name="cod" stackId="6" startPc="268440419"/>
+        <entry endPc="268441035" name="n" stackId="7" startPc="268440419"/>
+        <entry endPc="268441250" name="a" stackId="1" startPc="268441120"/>
+        <entry endPc="268441250" name="b" stackId="2" startPc="268441120"/>
+        <entry arg="true" endPc="268441477" name="par" stackId="1" startPc="268441251"/>
+        <entry arg="true" endPc="268441477" name="total" stackId="2" startPc="268441251"/>
+        <entry endPc="268441477" name="vueltas" stackId="3" startPc="268441263"/>
+        <entry endPc="268441477" name="parc" stackId="4" startPc="268441263"/>
+        <entry endPc="268441477" name="antes" stackId="5" startPc="268441263"/>
+        <entry endPc="268441411" name="i" stackId="6" startPc="268441357"/>
+        <entry endPc="268441398" name="p" stackId="7" startPc="268441357"/>
+        <entry arg="true" endPc="268441741" name="ms" stackId="1" startPc="268441497"/>
+        <entry endPc="268441741" name="s" stackId="2" startPc="268441509"/>
+        <entry endPc="268441741" name="cs" stackId="3" startPc="268441509"/>
+        <entry endPc="268441741" name="h" stackId="4" startPc="268441509"/>
+        <entry endPc="268441741" name="m" stackId="5" startPc="268441509"/>
+        <entry endPc="268441741" name="seg" stackId="6" startPc="268441509"/>
+        <entry endPc="268441741" name="principal" stackId="7" startPc="268441509"/>
+        <entry endPc="268442026" name="m" stackId="1" startPc="268441773"/>
+        <entry arg="true" endPc="268442123" name="r" stackId="1" startPc="268442047"/>
+        <entry endPc="268442123" name="e" stackId="2" startPc="268442059"/>
+        <entry arg="true" endPc="268442563" name="tipo" stackId="1" startPc="268442124"/>
+        <entry endPc="268442462" name="perfil" stackId="2" startPc="268442177"/>
+        <entry arg="true" endPc="268442735" name="epoch" stackId="1" startPc="268442564"/>
+        <entry endPc="268442735" name="d" stackId="2" startPc="268442576"/>
+        <entry arg="true" endPc="268442844" name="v" stackId="1" startPc="268442814"/>
+        <entry endPc="268442946" name="max" stackId="1" startPc="268442849"/>
+        <entry arg="true" endPc="268443104" name="item" stackId="1" startPc="268442968"/>
+        <entry endPc="268443103" name="id" stackId="2" startPc="268442972"/>
+        <entry endPc="268443103" name="r" stackId="3" startPc="268442972"/>
+        <entry endPc="268443103" name="v" stackId="4" startPc="268442972"/>
+        <entry endPc="268443292" name="p" stackId="1" startPc="268443166"/>
+        <entry arg="true" endPc="268443789" name="dc" stackId="1" startPc="268443294"/>
+        <entry arg="true" endPc="268443789" name="cx" stackId="2" startPc="268443294"/>
+        <entry arg="true" endPc="268443789" name="cy" stackId="3" startPc="268443294"/>
+        <entry arg="true" endPc="268443789" name="ancho" stackId="4" startPc="268443294"/>
+        <entry arg="true" endPc="268443789" name="ms" stackId="5" startPc="268443294"/>
+        <entry arg="true" endPc="268443789" name="color" stackId="6" startPc="268443294"/>
+        <entry endPc="268443788" name="p" stackId="7" startPc="268443298"/>
+        <entry endPc="268443788" name="principal" stackId="8" startPc="268443298"/>
+        <entry endPc="268443788" name="cent" stackId="9" startPc="268443298"/>
+        <entry endPc="268443788" name="grandes" stackId="10" startPc="268443298"/>
+        <entry endPc="268443788" name="peques" stackId="11" startPc="268443298"/>
+        <entry endPc="268443788" name="fG" stackId="12" startPc="268443298"/>
+        <entry endPc="268443788" name="fP" stackId="13" startPc="268443298"/>
+        <entry endPc="268443788" name="wG" stackId="14" startPc="268443298"/>
+        <entry endPc="268443788" name="wP" stackId="15" startPc="268443298"/>
+        <entry endPc="268443591" name="i" stackId="16" startPc="268443511"/>
+        <entry endPc="268443788" name="hG" stackId="17" startPc="268443298"/>
+        <entry endPc="268443788" name="hP" stackId="18" startPc="268443298"/>
+        <entry endPc="268443788" name="x0" stackId="19" startPc="268443298"/>
+        <entry endPc="268443788" name="yP" stackId="20" startPc="268443298"/>
+        <entry endPc="268443960" name="s" stackId="1" startPc="268443883"/>
+        <entry arg="true" endPc="268445208" name="dc" stackId="1" startPc="268443962"/>
+        <entry endPc="268445207" name="w" stackId="2" startPc="268443966"/>
+        <entry endPc="268445207" name="h" stackId="3" startPc="268443966"/>
+        <entry endPc="268445207" name="cx" stackId="4" startPc="268443966"/>
+        <entry endPc="268445207" name="c" stackId="5" startPc="268443966"/>
+        <entry endPc="268445207" name="s" stackId="6" startPc="268443966"/>
+        <entry endPc="268445207" name="t" stackId="7" startPc="268443966"/>
+        <entry endPc="268445207" name="J" stackId="8" startPc="268443966"/>
+        <entry endPc="268445207" name="est" stackId="9" startPc="268443966"/>
+        <entry endPc="268445207" name="yT" stackId="10" startPc="268443966"/>
+        <entry endPc="268445207" name="tw" stackId="11" startPc="268443966"/>
+        <entry endPc="268445207" name="yE" stackId="12" startPc="268443966"/>
+        <entry endPc="268445207" name="txtE" stackId="13" startPc="268443966"/>
+        <entry endPc="268445207" name="colE" stackId="14" startPc="268443966"/>
+        <entry endPc="268445207" name="y1" stackId="15" startPc="268443966"/>
+        <entry endPc="268445207" name="y2" stackId="16" startPc="268443966"/>
+        <entry endPc="268445207" name="nv" stackId="17" startPc="268443966"/>
+        <entry endPc="268445207" name="y3" stackId="18" startPc="268443966"/>
+        <entry endPc="268445069" name="u" stackId="19" startPc="268444975"/>
+        <entry arg="true" endPc="268445861" name="dc" stackId="1" startPc="268445230"/>
+        <entry endPc="268445860" name="h" stackId="2" startPc="268445234"/>
+        <entry endPc="268445860" name="cx" stackId="3" startPc="268445234"/>
+        <entry endPc="268445860" name="J" stackId="4" startPc="268445234"/>
+        <entry endPc="268445860" name="s" stackId="5" startPc="268445234"/>
+        <entry endPc="268445860" name="clave" stackId="6" startPc="268445234"/>
+        <entry endPc="268445860" name="sy" stackId="7" startPc="268445234"/>
+        <entry endPc="268445860" name="ok" stackId="8" startPc="268445234"/>
+        <entry endPc="268445860" name="hace" stackId="9" startPc="268445234"/>
+        <entry endPc="268445474" name="min" stackId="10" startPc="268445369"/>
+        <entry endPc="268445860" name="lineas" stackId="11" startPc="268445234"/>
+        <entry endPc="268445860" name="i" stackId="12" startPc="268445758"/>
+        <entry arg="true" endPc="268445947" name="respuesta" stackId="1" startPc="268445862"/>
+        <entry arg="true" endPc="268446228" name="item" stackId="1" startPc="268445990"/>
+        <entry endPc="268446227" name="id" stackId="2" startPc="268445994"/>
+        <entry arg="true" endPc="268446415" name="cod" stackId="1" startPc="268446229"/>
+        <entry endPc="268446386" name="c" stackId="2" startPc="268446296"/>
+        <entry endPc="268446386" name="l" stackId="3" startPc="268446296"/>
+        <entry arg="true" endPc="268446621" name="forzar" stackId="1" startPc="268446416"/>
+        <entry endPc="268446620" name="ahora" stackId="2" startPc="268446420"/>
+        <entry endPc="268446620" name="r" stackId="3" startPc="268446420"/>
+        <entry arg="true" endPc="268446675" name="data" stackId="1" startPc="268446622"/>
+        <entry endPc="268446739" name="s" stackId="1" startPc="268446680"/>
+        <entry endPc="268447373" name="t" stackId="1" startPc="268447195"/>
+        <entry endPc="268447373" name="antes" stackId="2" startPc="268447195"/>
+        <entry arg="true" endPc="268447637" name="tipo" stackId="1" startPc="268447374"/>
+        <entry endPc="268447637" name="total" stackId="2" startPc="268447378"/>
+        <entry endPc="268447637" name="vp" stackId="3" startPc="268447378"/>
+        <entry endPc="268447637" name="ahora" stackId="4" startPc="268447378"/>
+        <entry endPc="268447637" name="fin" stackId="5" startPc="268447378"/>
+        <entry endPc="268447740" name="n" stackId="1" startPc="268447642"/>
+        <entry endPc="268447740" name="a" stackId="2" startPc="268447642"/>
+        <entry endPc="268447740" name="b" stackId="3" startPc="268447642"/>
+        <entry endPc="268447886" name="dt" stackId="1" startPc="268447745"/>
+        <entry endPc="268447886" name="de" stackId="2" startPc="268447745"/>
+        <entry endPc="268447886" name="dif" stackId="3" startPc="268447745"/>
+        <entry endPc="268448356" name="d" stackId="1" startPc="268448033"/>
+        <entry endPc="268448444" name="antes" stackId="1" startPc="268448362"/>
+        <entry endPc="268448528" name="l" stackId="1" startPc="268448449"/>
+        <entry arg="true" endPc="268448663" name="item" stackId="1" startPc="268448602"/>
+        <entry endPc="268448662" name="i" stackId="2" startPc="268448606"/>
+        <entry endPc="268448721" name="v" stackId="1" startPc="268448668"/>
+        <entry arg="true" endPc="268448752" name="r" stackId="1" startPc="268448722"/>
+        <entry arg="true" endPc="268449892" name="dc" stackId="1" startPc="268448753"/>
+        <entry endPc="268449891" name="w" stackId="2" startPc="268448757"/>
+        <entry endPc="268449891" name="h" stackId="3" startPc="268448757"/>
+        <entry endPc="268449891" name="cx" stackId="4" startPc="268448757"/>
+        <entry endPc="268449891" name="J" stackId="5" startPc="268448757"/>
+        <entry endPc="268449891" name="n" stackId="6" startPc="268448757"/>
+        <entry endPc="268449752" name="vs" stackId="7" startPc="268449192"/>
+        <entry endPc="268449752" name="ps" stackId="8" startPc="268449192"/>
+        <entry endPc="268449588" name="i" stackId="9" startPc="268449297"/>
+        <entry endPc="268449575" name="k" stackId="10" startPc="268449297"/>
+        <entry endPc="268449575" name="y" stackId="11" startPc="268449297"/>
+        <entry arg="true" endPc="268450164" name="item" stackId="1" startPc="268449914"/>
+        <entry endPc="268450163" name="id" stackId="2" startPc="268449918"/>
+        <entry endPc="268450289" name="c" stackId="1" startPc="268450169"/>
+        <entry endPc="268450537" name="a" stackId="1" startPc="268450332"/>
+        <entry endPc="268450537" name="c" stackId="2" startPc="268450332"/>
+        <entry endPc="268450537" name="s" stackId="3" startPc="268450332"/>
+    </localVars>
+    <deviceInfo deviceVersion="3d0fb192a2cf01699aefd0f384af3f527e5885bd" partNumber="006-B3291-00"/>
+    <annotations>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="PENDIENTE"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="VERSION_APP"/>
+        <annotationEntry annotation="background" class="FondoSincro" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="MODELO"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="confirmados"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="_fondo"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ajServidor"/>
+        <annotationEntry annotation="background" class="FondoSincro" module="globals" symbol="alAcabar"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="getInitialView"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="RESPUESTA_RARA"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="enviar"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="crono"/>
+        <annotationEntry annotation="background" class="FondoSincro" module="globals" symbol="_envio"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ajClave"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="NADA"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="alResponder"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="ids"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="leer"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="SIN_CLAVE"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="onStop"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="SIN_MOVIL"/>
+        <annotationEntry annotation="background" class="FondoSincro" module="globals" symbol="onTemporalEvent"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="MAX_LOCAL"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="podar"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ajClaveAyuda"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="apuntarSync"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="sincro"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ajVibrar"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="_alFinal"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="vista"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="ENVIADO"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="RECHAZADO"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="onBackgroundData"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ajSonido"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="guardarNuevo"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="clave"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="marcar"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="servidor"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="getServiceDelegate"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="LOTE"/>
+        <annotationEntry annotation="background" class="Envio" module="globals" symbol="_rondas"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="pendientes"/>
+        <annotationEntry annotation="background" class="CronoApp" module="globals" symbol="onSettingsChanged"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="URL_POR_DEFECTO"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="estadoSync"/>
+        <annotationEntry annotation="background" class="Almacen" module="globals" symbol="num"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/CronoApp" offset="366" parentId="globals" symbolId="CronoApp" type="class"/>
+        <dataEntry label="globals/Almacen" offset="477" parentId="globals" symbolId="Almacen" type="module"/>
+        <dataEntry label="globals/Envio" offset="596" parentId="globals" symbolId="Envio" type="class"/>
+        <dataEntry label="globals/FondoSincro" offset="691" parentId="globals" symbolId="FondoSincro" type="class"/>
+        <dataEntry label="globals/Rez" offset="1158" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/RegistroDelegado" offset="1205" parentId="globals" symbolId="RegistroDelegado" type="class"/>
+        <dataEntry label="globals/RegistrosDelegado" offset="1276" parentId="globals" symbolId="RegistrosDelegado" type="class"/>
+        <dataEntry label="globals/CronoVista" offset="1331" parentId="globals" symbolId="CronoVista" type="class"/>
+        <dataEntry label="globals/EstadoVista" offset="1442" parentId="globals" symbolId="EstadoVista" type="class"/>
+        <dataEntry label="globals/DescartarDelegado" offset="1497" parentId="globals" symbolId="DescartarDelegado" type="class"/>
+        <dataEntry label="globals/MenuPrincipalDelegado" offset="1552" parentId="globals" symbolId="MenuPrincipalDelegado" type="class"/>
+        <dataEntry label="globals/SincroPrimerPlano" offset="1607" parentId="globals" symbolId="SincroPrimerPlano" type="class"/>
+        <dataEntry label="globals/Cronometro" offset="1734" parentId="globals" symbolId="Cronometro" type="class"/>
+        <dataEntry label="globals/MenuTipoDelegado" offset="1949" parentId="globals" symbolId="MenuTipoDelegado" type="class"/>
+        <dataEntry label="globals/RegistroVista" offset="2004" parentId="globals" symbolId="RegistroVista" type="class"/>
+        <dataEntry label="globals/MenuFinDelegado" offset="2083" parentId="globals" symbolId="MenuFinDelegado" type="class"/>
+        <dataEntry label="globals/CronoDelegado" offset="2138" parentId="globals" symbolId="CronoDelegado" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="2217" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2256" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435568" name="&lt;init&gt;" parent="CronoApp" startPc="268435550">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Almacen">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Envio">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435587" name="&lt;init&gt;" parent="FondoSincro" startPc="268435569">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435651" name="onSettingsChanged" parent="CronoApp" startPc="268435588">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435690" name="getServiceDelegate" parent="CronoApp" startPc="268435652">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435903" name="getInitialView" parent="CronoApp" startPc="268435691">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435924" name="initialize" parent="CronoApp" startPc="268435904">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435988" name="onBackgroundData" parent="CronoApp" startPc="268435925">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436034" name="onStop" parent="CronoApp" startPc="268435989">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436150" name="apuntarSync" parent="Almacen" startPc="268436035">
+            <param id="cod"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436231" name="servidor" parent="Almacen" startPc="268436151">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436467" name="clave" parent="Almacen" startPc="268436232">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436531" name="estadoSync" parent="Almacen" startPc="268436468">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436570" name="num" parent="Almacen" startPc="268436532">
+            <param id="v"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436907" name="podar" parent="Almacen" startPc="268436571">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437096" name="guardarNuevo" parent="Almacen" startPc="268436908">
+            <param id="reg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437158" name="leer" parent="Almacen" startPc="268437097">
+            <param id="id"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437222" name="ids" parent="Almacen" startPc="268437159">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437371" name="pendientes" parent="Almacen" startPc="268437223">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437459" name="marcar" parent="Almacen" startPc="268437372">
+            <param id="id"/>
+            <param id="est"/>
+            <param id="motivo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437972" name="enviar" parent="Envio" startPc="268437460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438531" name="alResponder" parent="Envio" startPc="268437973">
+            <param id="cod"/>
+            <param id="datos"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438554" name="initialize" parent="Envio" startPc="268438532">
+            <param id="alFinal"/>
+            <param id="fondo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438575" name="alAcabar" parent="FondoSincro" startPc="268438555">
+            <param id="cod"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438714" name="onTemporalEvent" parent="FondoSincro" startPc="268438576">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438735" name="initialize" parent="FondoSincro" startPc="268438715">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438973" name="guardarSesion" startPc="268438736">
+            <param id="tipo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439044" name="textoTiempo" startPc="268438974">
+            <param id="ms"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439068" name="&lt;init&gt;" parent="Rez" startPc="268439045">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439477" name="abrirRegistros" startPc="268439069">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439496" name="&lt;init&gt;" parent="RegistroDelegado" startPc="268439478">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439515" name="&lt;init&gt;" parent="RegistrosDelegado" startPc="268439497">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439534" name="&lt;init&gt;" parent="CronoVista" startPc="268439516">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439735" name="abrirMenuTipo" startPc="268439535">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439938" name="programarFondo" startPc="268439736">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439957" name="&lt;init&gt;" parent="EstadoVista" startPc="268439939">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440380" name="abrirMenuPrincipal" startPc="268439958">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440406" name="app" startPc="268440381">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441035" name="estadoSincro" startPc="268440407">
+            <param id="s"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441054" name="&lt;init&gt;" parent="DescartarDelegado" startPc="268441036">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441073" name="&lt;init&gt;" parent="MenuPrincipalDelegado" startPc="268441055">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="SincroPrimerPlano">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441088" name="&lt;init&gt;" parent="Cronometro" startPc="268441074">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441107" name="&lt;init&gt;" parent="MenuTipoDelegado" startPc="268441089">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441250" name="nuevoId" startPc="268441108">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441477" name="vueltasYParciales" startPc="268441251">
+            <param id="par"/>
+            <param id="total"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441496" name="&lt;init&gt;" parent="RegistroVista" startPc="268441478">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441741" name="partesTiempo" startPc="268441497">
+            <param id="ms"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441760" name="&lt;init&gt;" parent="MenuFinDelegado" startPc="268441742">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442027" name="abrirMenuFin" startPc="268441761">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442046" name="&lt;init&gt;" parent="CronoDelegado" startPc="268442028">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442123" name="textoEstado" startPc="268442047">
+            <param id="r"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442563" name="aviso" startPc="268442124">
+            <param id="tipo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442735" name="fechaCorta" startPc="268442564">
+            <param id="epoch"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442813" name="onPreviousPage" parent="RegistroDelegado" startPc="268442736">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442844" name="initialize" parent="RegistroDelegado" startPc="268442814">
+            <param id="v"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442946" name="onNextPage" parent="RegistroDelegado" startPc="268442845">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442967" name="initialize" parent="RegistrosDelegado" startPc="268442947">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443104" name="onSelect" parent="RegistrosDelegado" startPc="268442968">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443161" name="onShow" parent="CronoVista" startPc="268443105">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443293" name="ajustarTimer" parent="CronoVista" startPc="268443162">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443789" name="dibujarTiempo" parent="CronoVista" startPc="268443294">
+            <param id="dc"/>
+            <param id="cx"/>
+            <param id="cy"/>
+            <param id="ancho"/>
+            <param id="ms"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443844" name="initialize" parent="CronoVista" startPc="268443790">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443878" name="onHide" parent="CronoVista" startPc="268443845">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443961" name="tick" parent="CronoVista" startPc="268443879">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445208" name="onUpdate" parent="CronoVista" startPc="268443962">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445229" name="initialize" parent="EstadoVista" startPc="268445209">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445861" name="onUpdate" parent="EstadoVista" startPc="268445230">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445947" name="onResponse" parent="DescartarDelegado" startPc="268445862">
+            <param id="respuesta"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445968" name="initialize" parent="DescartarDelegado" startPc="268445948">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445989" name="initialize" parent="MenuPrincipalDelegado" startPc="268445969">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446228" name="onSelect" parent="MenuPrincipalDelegado" startPc="268445990">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446415" name="alAcabar" parent="SincroPrimerPlano" startPc="268446229">
+            <param id="cod"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446621" name="intentar" parent="SincroPrimerPlano" startPc="268446416">
+            <param id="forzar"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446675" name="alTerminarFondo" parent="SincroPrimerPlano" startPc="268446622">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446740" name="initialize" parent="SincroPrimerPlano" startPc="268446676">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446775" name="recontar" parent="SincroPrimerPlano" startPc="268446741">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446856" name="reiniciar" parent="Cronometro" startPc="268446776">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446968" name="iniciar" parent="Cronometro" startPc="268446857">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447026" name="anclar" parent="Cronometro" startPc="268446969">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447084" name="reanudar" parent="Cronometro" startPc="268447027">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447190" name="pausar" parent="Cronometro" startPc="268447085">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447373" name="vuelta" parent="Cronometro" startPc="268447191">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447637" name="registro" parent="Cronometro" startPc="268447374">
+            <param id="tipo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447740" name="ultimaVuelta" parent="Cronometro" startPc="268447638">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447886" name="tramo" parent="Cronometro" startPc="268447741">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448028" name="persistir" parent="Cronometro" startPc="268447887">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448357" name="cargar" parent="Cronometro" startPc="268448029">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448444" name="vueltaActual" parent="Cronometro" startPc="268448358">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448529" name="initialize" parent="Cronometro" startPc="268448445">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448580" name="transcurrido" parent="Cronometro" startPc="268448530">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448601" name="initialize" parent="MenuTipoDelegado" startPc="268448581">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448663" name="onSelect" parent="MenuTipoDelegado" startPc="268448602">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448721" name="nVueltas" parent="RegistroVista" startPc="268448664">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448752" name="initialize" parent="RegistroVista" startPc="268448722">
+            <param id="r"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449892" name="onUpdate" parent="RegistroVista" startPc="268448753">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449913" name="initialize" parent="MenuFinDelegado" startPc="268449893">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450164" name="onSelect" parent="MenuFinDelegado" startPc="268449914">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450289" name="onBack" parent="CronoDelegado" startPc="268450165">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450306" name="onMenu" parent="CronoDelegado" startPc="268450290">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450327" name="initialize" parent="CronoDelegado" startPc="268450307">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450537" name="onSelect" parent="CronoDelegado" startPc="268450328">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450589" name="onNextPage" parent="CronoDelegado" startPc="268450538">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

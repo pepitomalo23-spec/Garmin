@@ -1,0 +1,74 @@
+{
+  "settings" : [ {
+    "key" : "clave",
+    "valueType" : "string",
+    "defaultValue" : "",
+    "configTitle" : "ajClave",
+    "configPrompt" : "ajClaveAyuda",
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "vibrar",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "ajVibrar",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "sonido",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "ajSonido",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "servidor",
+    "valueType" : "string",
+    "defaultValue" : "https://tsjaaqkvncgxqtpmlugv.supabase.co/functions/v1/garmin-api",
+    "configTitle" : "ajServidor",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ajVibrar" : "Vibrar al pulsar",
+      "ajSonido" : "Pitar al pulsar",
+      "ajServidor" : "Dirección de la API",
+      "ajClaveAyuda" : "Pega la clave que te da pj.fire en GARMIN / CRONÓMETRO",
+      "ajClave" : "Clave del reloj",
+      "AppName" : "Crono pj.fire"
+    }
+  }
+}

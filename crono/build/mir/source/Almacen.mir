@@ -1,0 +1,1090 @@
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Time,3,14,18]; ]
+import Toybox.Time;
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 23; background = true; @symbol_moduledef = [Almacen,23,7,14]; ]
+module Almacen {
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 23; ]
+    <init> {
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 25; @position = 10; @symbol_constdef = [PENDIENTE,25,10,19]; ]
+    const PENDIENTE = 0;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 26; @position = 10; @symbol_constdef = [ENVIADO,26,10,17]; ]
+    const ENVIADO = 1;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 27; @position = 10; @symbol_constdef = [RECHAZADO,27,10,19]; ]
+    const RECHAZADO = 2;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 28; @position = 10; @symbol_constdef = [MAX_LOCAL,28,10,19]; ]
+    const MAX_LOCAL = 40;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 29; @position = 10; @symbol_constdef = [LOTE,29,10,14]; ]
+    const LOTE = 5;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 32; @position = 10; @symbol_constdef = [SIN_CLAVE,32,10,19]; ]
+    const SIN_CLAVE = -9001;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 33; @position = 10; @symbol_constdef = [SIN_MOVIL,33,10,19]; ]
+    const SIN_MOVIL = -9002;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 34; @position = 10; @symbol_constdef = [RESPUESTA_RARA,34,10,24]; ]
+    const RESPUESTA_RARA = -9003;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 35; @position = 10; @symbol_constdef = [NADA,35,10,14]; ]
+    const NADA = -9004;
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 37; @position = 10; @symbol_constdef = [VERSION_APP,37,10,21]; ]
+    const VERSION_APP = "1.0.0";
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 38; @position = 10; @symbol_constdef = [MODELO,38,10,16]; ]
+    const MODELO = "fenix6xpro";
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 39; @position = 10; @symbol_constdef = [URL_POR_DEFECTO,39,10,25]; ]
+    const URL_POR_DEFECTO = "https://tsjaaqkvncgxqtpmlugv.supabase.co/functions/v1/garmin-api";
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 41; @symbol_functiondef = [num,41,13,16]; @symbol_param<0> = [v,41,17,18]; @symbol_return<0> = [Number,41,23,29]; ]
+    function num(v) as Number {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_41_30_43_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 42 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_begin:
+        %tmp.1 = lgetv %v;
+        symbol [ v %tmp.1 42 16 17 ];
+        symbol [ Number %tmp.3 42 29 35 ];
+        %tmp.3 = getv ? :Number;
+        %tmp.4 = isa %tmp.1 %tmp.3;
+        bf %tmp.4 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_true:
+        %tmp.5 = lgetv %v;
+        symbol [ v %tmp.5 42 39 40 ];
+        %tmp.6 = as %tmp.5 { (Number) };
+        %tmp.7 = as %tmp.6 Number;
+        symbol [ Number %tmp.7 42 44 50 ];
+        push %tmp.7;
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_else_false:
+        %tmp.8 = 0;
+        push %tmp.8;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_end:
+        %tmp.9 = phi [%tmp.4 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_begin] [%tmp.7 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_true] [%tmp.8 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_else_false] [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_42_15_42_53_end];
+        ret %tmp.9;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_41_30_43_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 45; @symbol_functiondef = [ids,45,13,16]; @symbol_return<0> = [Array,45,22,27]; ]
+    function ids() as Array {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_45_28_48_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 46 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_45_28_48_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_45_28_48_4_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 46 12 13 ];
+        symbol [ Application %tmp.1 46 16 27 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 46 28 35 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ getValue %tmp.3 46 36 44 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "ids";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %v.1 %tmp.5;
+        symbol [ v %v.1 46 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 47 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_begin:
+        %tmp.6 = lgetv %v.1;
+        symbol [ v %tmp.6 47 16 17 ];
+        symbol [ Array %tmp.8 47 29 34 ];
+        %tmp.8 = getv ? :Array;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        bf %tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_true:
+        %tmp.10 = lgetv %v.1;
+        symbol [ v %tmp.10 47 38 39 ];
+        %tmp.11 = as %tmp.10 { (Array) };
+        %tmp.12 = as %tmp.11 Array;
+        symbol [ Array %tmp.12 47 43 48 ];
+        push %tmp.12;
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_else_false:
+        %tmp.13 = newa 0;
+        push %tmp.13;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_end:
+        %tmp.14 = phi [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_begin] [%tmp.12 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_true] [%tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_else_false] [%tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_47_15_47_52_end];
+        ret %tmp.14;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_45_28_48_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 50; @symbol_functiondef = [leer,50,13,17]; @symbol_param<0> = [id,50,18,20]; @symbol_param<0>_type<0> = [String,50,24,30]; @symbol_return<0> = [Dictionary,50,35,45]; ]
+    function leer(id as String) as Dictionary or Null {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_50_54_53_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 51 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_50_54_53_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_50_54_53_4_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 51 12 13 ];
+        symbol [ Application %tmp.1 51 16 27 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 51 28 35 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ getValue %tmp.3 51 36 44 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "r_";
+        %tmp.5 = lgetv %id;
+        symbol [ id %tmp.5 51 52 54 ];
+        %tmp.6 = add %tmp.4 %tmp.5;
+        %tmp.7 = invoke %tmp.2 %tmp.3(%tmp.6);
+        lputv %v.1 %tmp.7;
+        symbol [ v %v.1 51 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 52 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_begin:
+        %tmp.8 = lgetv %v.1;
+        symbol [ v %tmp.8 52 16 17 ];
+        symbol [ Dictionary %tmp.10 52 29 39 ];
+        %tmp.10 = getv ? :Dictionary;
+        %tmp.11 = isa %tmp.8 %tmp.10;
+        bf %tmp.11 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_true:
+        %tmp.12 = lgetv %v.1;
+        symbol [ v %tmp.12 52 43 44 ];
+        %tmp.13 = as %tmp.12 { (Dictionary) };
+        %tmp.14 = as %tmp.13 Dictionary;
+        symbol [ Dictionary %tmp.14 52 48 58 ];
+        push %tmp.14;
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_else_false:
+        %tmp.15 = null;
+        push %tmp.15;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_end:
+        %tmp.16 = phi [%tmp.11 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_begin] [%tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_true] [%tmp.15 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_else_false] [%tmp.16 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_52_15_52_61_end];
+        ret %tmp.16;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_50_54_53_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 56; @symbol_functiondef = [guardarNuevo,56,13,25]; @symbol_param<0> = [reg,56,26,29]; @symbol_param<0>_type<0> = [Dictionary,56,33,43]; ]
+    function guardarNuevo(reg as Dictionary) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 57 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 57 12 14 ];
+        %tmp.1 = lgetv %reg;
+        symbol [ reg %tmp.1 57 17 20 ];
+        %tmp.2 = "id";
+        %tmp.3 = agetv %tmp.1 %tmp.2;
+        %tmp.4 = as %tmp.3 String;
+        symbol [ String %tmp.4 57 30 36 ];
+        lputv %id.1 %tmp.4;
+        symbol [ id %id.1 57 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 58 8 ]
+        symbol [ Application %tmp.5 58 8 19 ];
+        %tmp.5 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.6 58 20 27 ];
+        %tmp.6 = getv %tmp.5 :Storage;
+        symbol [ setValue %tmp.7 58 28 36 ];
+        %tmp.7 = getv function %tmp.6 :setValue;
+        %tmp.8 = "r_";
+        %tmp.9 = lgetv %id.1;
+        symbol [ id %tmp.9 58 44 46 ];
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.11 = lgetv %reg;
+        symbol [ reg %tmp.11 58 48 51 ];
+        invoke %tmp.6 %tmp.7(%tmp.10, %tmp.11);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 59 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_stop" ]
+        %l.2 = local;
+        symbol [ l %l.2 59 12 13 ];
+        %tmp.12 = self;
+        symbol [ ids %tmp.13 59 16 19 ];
+        %tmp.13 = getv function %tmp.12 :ids;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %l.2 %tmp.14;
+        symbol [ l %l.2 59 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 60 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_stop" ]
+        %nueva.3 = local;
+        symbol [ nueva %nueva.3 60 12 17 ];
+        %tmp.15 = newa 1;
+        %tmp.16 = lgetv %id.1;
+        symbol [ id %tmp.16 60 21 23 ];
+        %tmp.17 = dup %tmp.15;
+        %tmp.18 = aputv %tmp.17 0 %tmp.16;
+        lputv %nueva.3 %tmp.18;
+        symbol [ nueva %nueva.3 60 12 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 61 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 61 17 18 ];
+        %tmp.19 = 0;
+        lputv %i.4 %tmp.19;
+        symbol [ i %i.4 61 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_test:
+        %tmp.20 = lgetv %i.4;
+        symbol [ i %tmp.20 61 24 25 ];
+        %tmp.21 = lgetv %l.2;
+        symbol [ l %tmp.21 61 28 29 ];
+        symbol [ size %tmp.22 61 30 34 ];
+        %tmp.22 = getv function %tmp.21 :size;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = lt %tmp.20 %tmp.23;
+        bf %tmp.24 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_43_63_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 62 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_12_62_55_if_stmt:
+        %tmp.25 = lgetv %id.1;
+        symbol [ id %tmp.25 62 18 20 ];
+        symbol [ equals %tmp.26 62 21 27 ];
+        %tmp.26 = getv function %tmp.25 :equals;
+        %tmp.27 = lgetv %l.2;
+        symbol [ l %tmp.27 62 28 29 ];
+        %tmp.28 = lgetv %i.4;
+        symbol [ i %tmp.28 62 30 31 ];
+        %tmp.29 = agetv %tmp.27 %tmp.28;
+        %tmp.30 = invoke %tmp.25 %tmp.26(%tmp.29);
+        %tmp.31 = not %tmp.30;
+        bf %tmp.31 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_12_62_55_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_12_62_55_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_36_62_55_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 62 38 ]
+        %tmp.32 = lgetv %nueva.3;
+        symbol [ nueva %tmp.32 62 38 43 ];
+        symbol [ add %tmp.33 62 44 47 ];
+        %tmp.33 = getv function %tmp.32 :add;
+        %tmp.34 = lgetv %l.2;
+        symbol [ l %tmp.34 62 48 49 ];
+        %tmp.35 = lgetv %i.4;
+        symbol [ i %tmp.35 62 50 51 ];
+        %tmp.36 = agetv %tmp.34 %tmp.35;
+        invoke %tmp.32 %tmp.33(%tmp.36);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_36_62_55_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_12_62_55_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_62_12_62_55_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_43_63_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 61 ]
+        %tmp.39 = lgetv %i.4;
+        symbol [ i %tmp.39 61 38 39 ];
+        %tmp.40 = add %tmp.39 1;
+        lputv %i.4 %tmp.40;
+        symbol [ i %i.4 61 38 39 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_61_8_63_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 64 8 ]
+        symbol [ Application %tmp.41 64 8 19 ];
+        %tmp.41 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.42 64 20 27 ];
+        %tmp.42 = getv %tmp.41 :Storage;
+        symbol [ setValue %tmp.43 64 28 36 ];
+        %tmp.43 = getv function %tmp.42 :setValue;
+        %tmp.44 = "ids";
+        %tmp.45 = lgetv %nueva.3;
+        symbol [ nueva %tmp.45 64 44 49 ];
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 65 8 ]
+        %tmp.46 = self;
+        symbol [ podar %tmp.47 65 8 13 ];
+        %tmp.47 = getv function %tmp.46 :podar;
+        invoke %tmp.46 %tmp.47();
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_56_53_66_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 69; @symbol_functiondef = [pendientes,69,13,23]; @symbol_return<0> = [Array,69,29,34]; ]
+    function pendientes() as Array {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 70 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_stop" ]
+        %l.1 = local;
+        symbol [ l %l.1 70 12 13 ];
+        %tmp.1 = self;
+        symbol [ ids %tmp.2 70 16 19 ];
+        %tmp.2 = getv function %tmp.1 :ids;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %l.1 %tmp.3;
+        symbol [ l %l.1 70 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 71 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_stop" ]
+        %out.2 = local;
+        symbol [ out %out.2 71 12 15 ];
+        %tmp.4 = newa 0;
+        lputv %out.2 %tmp.4;
+        symbol [ out %out.2 71 12 15 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 72 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 72 17 18 ];
+        %tmp.5 = lgetv %l.1;
+        symbol [ l %tmp.5 72 21 22 ];
+        symbol [ size %tmp.6 72 23 27 ];
+        %tmp.6 = getv function %tmp.5 :size;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = 1;
+        %tmp.9 = sub %tmp.7 %tmp.8;
+        lputv %i.3 %tmp.9;
+        symbol [ i %i.3 72 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_test:
+        %tmp.10 = lgetv %i.3;
+        symbol [ i %tmp.10 72 35 36 ];
+        %tmp.11 = 0;
+        %tmp.12 = gte %tmp.10 %tmp.11;
+        bf %tmp.12 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_48_75_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 73 12 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_48_75_8_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_48_75_8_stop" ]
+        %r.4 = local;
+        symbol [ r %r.4 73 16 17 ];
+        %tmp.13 = self;
+        symbol [ leer %tmp.14 73 20 24 ];
+        %tmp.14 = getv function %tmp.13 :leer;
+        %tmp.15 = lgetv %l.1;
+        symbol [ l %tmp.15 73 25 26 ];
+        %tmp.16 = lgetv %i.3;
+        symbol [ i %tmp.16 73 27 28 ];
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        %tmp.18 = as %tmp.17 String;
+        symbol [ String %tmp.18 73 33 39 ];
+        %tmp.19 = invoke %tmp.13 %tmp.14(%tmp.18);
+        lputv %r.4 %tmp.19;
+        symbol [ r %r.4 73 16 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 74 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_16_74_46_begin:
+        %tmp.20 = lgetv %r.4;
+        symbol [ r %tmp.20 74 16 17 ];
+        %tmp.21 = null;
+        %tmp.22 = ne %tmp.20 %tmp.21;
+        bf %tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_29_74_46_true:
+        %tmp.23 = self;
+        symbol [ num %tmp.24 74 29 32 ];
+        %tmp.24 = getv function %tmp.23 :num;
+        %tmp.25 = lgetv %r.4;
+        symbol [ r %tmp.25 74 33 34 ];
+        %tmp.26 = as %tmp.25 { (!Null) };
+        %tmp.27 = "est";
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        symbol [ PENDIENTE %tmp.31 74 46 55 ];
+        %tmp.31 = getv ? :PENDIENTE;
+        %tmp.32 = eq %tmp.29 %tmp.31;
+        push %tmp.32;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_29_74_46_end:
+        %tmp.33 = phi [%tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_16_74_46_begin] [%tmp.32 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_29_74_46_true] [%tmp.33 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_29_74_46_end];
+        bf %tmp.33 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_57_74_74_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 74 59 ]
+        %tmp.34 = lgetv %out.2;
+        symbol [ out %tmp.34 74 59 62 ];
+        symbol [ add %tmp.35 74 63 66 ];
+        %tmp.35 = getv function %tmp.34 :add;
+        %tmp.36 = lgetv %l.1;
+        symbol [ l %tmp.36 74 67 68 ];
+        %tmp.37 = lgetv %i.3;
+        symbol [ i %tmp.37 74 69 70 ];
+        %tmp.38 = agetv %tmp.36 %tmp.37;
+        invoke %tmp.34 %tmp.35(%tmp.38);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_57_74_74_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_74_12_74_74_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_48_75_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 72 ]
+        %tmp.41 = lgetv %i.3;
+        symbol [ i %tmp.41 72 43 44 ];
+        %tmp.42 = sub %tmp.41 1;
+        lputv %i.3 %tmp.42;
+        symbol [ i %i.3 72 43 44 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_72_8_75_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 76 8 ]
+        %tmp.43 = lgetv %out.2;
+        symbol [ out %tmp.43 76 15 18 ];
+        ret %tmp.43;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_69_35_77_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 79; @symbol_functiondef = [marcar,79,13,19]; @symbol_param<0> = [id,79,20,22]; @symbol_param<0>_type<0> = [String,79,26,32]; @symbol_param<1> = [est,79,34,37]; @symbol_param<1>_type<0> = [Number,79,41,47]; @symbol_param<2> = [motivo,79,49,55]; @symbol_param<2>_type<0> = [String,79,59,65]; ]
+    function marcar(id as String, est as Number, motivo as String or Null) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_79_83_85_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 80 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_79_83_85_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_79_83_85_4_stop" ]
+        %r.1 = local;
+        symbol [ r %r.1 80 12 13 ];
+        %tmp.1 = self;
+        symbol [ leer %tmp.2 80 16 20 ];
+        %tmp.2 = getv function %tmp.1 :leer;
+        %tmp.3 = lgetv %id;
+        symbol [ id %tmp.3 80 21 23 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %r.1 %tmp.4;
+        symbol [ r %r.1 80 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 81 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_8_81_33_if_stmt:
+        %tmp.5 = lgetv %r.1;
+        symbol [ r %tmp.5 81 12 13 ];
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_8_81_33_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_8_81_33_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_23_81_33_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 81 25 ]
+        ret ?;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_23_81_33_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_8_81_33_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_81_8_81_33_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 82 8 ]
+        %tmp.8 = lgetv %r.1;
+        symbol [ r %tmp.8 82 8 9 ];
+        %tmp.9 = lgetv %est;
+        symbol [ est %tmp.9 82 19 22 ];
+        %tmp.10 = "est";
+        aputv %tmp.8 %tmp.10 %tmp.9;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 83 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_8_83_52_if_stmt:
+        %tmp.11 = lgetv %motivo;
+        symbol [ motivo %tmp.11 83 12 18 ];
+        %tmp.12 = null;
+        %tmp.13 = ne %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_8_83_52_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_8_83_52_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_28_83_52_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 83 30 ]
+        %tmp.14 = lgetv %r.1;
+        symbol [ r %tmp.14 83 30 31 ];
+        %tmp.15 = lgetv %motivo;
+        symbol [ motivo %tmp.15 83 44 50 ];
+        %tmp.16 = as %tmp.15 { (!Null) };
+        %tmp.17 = "motivo";
+        aputv %tmp.14 %tmp.17 %tmp.16;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_28_83_52_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_8_83_52_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_83_8_83_52_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 84 8 ]
+        symbol [ Application %tmp.18 84 8 19 ];
+        %tmp.18 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.19 84 20 27 ];
+        %tmp.19 = getv %tmp.18 :Storage;
+        symbol [ setValue %tmp.20 84 28 36 ];
+        %tmp.20 = getv function %tmp.19 :setValue;
+        %tmp.21 = "r_";
+        %tmp.22 = lgetv %id;
+        symbol [ id %tmp.22 84 44 46 ];
+        %tmp.23 = add %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %r.1;
+        symbol [ r %tmp.24 84 48 49 ];
+        invoke %tmp.19 %tmp.20(%tmp.23, %tmp.24);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_79_83_85_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 88; @symbol_functiondef = [podar,88,13,18]; ]
+    function podar() as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 89 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_stop" ]
+        %l.1 = local;
+        symbol [ l %l.1 89 12 13 ];
+        %tmp.1 = self;
+        symbol [ ids %tmp.2 89 16 19 ];
+        %tmp.2 = getv function %tmp.1 :ids;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %l.1 %tmp.3;
+        symbol [ l %l.1 89 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 90 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_stop" ]
+        %sobran.2 = local;
+        symbol [ sobran %sobran.2 90 12 18 ];
+        %tmp.4 = lgetv %l.1;
+        symbol [ l %tmp.4 90 21 22 ];
+        symbol [ size %tmp.5 90 23 27 ];
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ MAX_LOCAL %tmp.8 90 32 41 ];
+        %tmp.8 = getv ? :MAX_LOCAL;
+        %tmp.9 = sub %tmp.6 %tmp.8;
+        lputv %sobran.2 %tmp.9;
+        symbol [ sobran %sobran.2 90 12 18 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 91 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_8_91_35_if_stmt:
+        %tmp.10 = lgetv %sobran.2;
+        symbol [ sobran %tmp.10 91 12 18 ];
+        %tmp.11 = 0;
+        %tmp.12 = lte %tmp.10 %tmp.11;
+        bf %tmp.12 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_8_91_35_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_8_91_35_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_25_91_35_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 91 27 ]
+        ret ?;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_25_91_35_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_8_91_35_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_91_8_91_35_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 92 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_stop" ]
+        %fuera.3 = local;
+        symbol [ fuera %fuera.3 92 12 17 ];
+        %tmp.13 = newd 0;
+        lputv %fuera.3 %tmp.13;
+        symbol [ fuera %fuera.3 92 12 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 93 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 93 17 18 ];
+        %tmp.14 = lgetv %l.1;
+        symbol [ l %tmp.14 93 21 22 ];
+        symbol [ size %tmp.15 93 23 27 ];
+        %tmp.15 = getv function %tmp.14 :size;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = 1;
+        %tmp.18 = sub %tmp.16 %tmp.17;
+        lputv %i.4 %tmp.18;
+        symbol [ i %i.4 93 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_test:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_35_93_54_begin:
+        %tmp.19 = lgetv %i.4;
+        symbol [ i %tmp.19 93 35 36 ];
+        %tmp.20 = 0;
+        %tmp.21 = gte %tmp.19 %tmp.20;
+        %tmp.22 = dup %tmp.21;
+        bf %tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_45_93_54_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_45_93_54_true:
+        %tmp.23 = lgetv %sobran.2;
+        symbol [ sobran %tmp.23 93 45 51 ];
+        %tmp.24 = 0;
+        %tmp.25 = gt %tmp.23 %tmp.24;
+        %tmp.26 = and %tmp.21 %tmp.25;
+        push %tmp.26;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_45_93_54_end:
+        %tmp.27 = phi [%tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_35_93_54_begin] [%tmp.26 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_45_93_54_true] [%tmp.27 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_45_93_54_end];
+        bf %tmp.27 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_62_99_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 94 12 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_62_99_8_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_62_99_8_stop" ]
+        %r.5 = local;
+        symbol [ r %r.5 94 16 17 ];
+        %tmp.28 = self;
+        symbol [ leer %tmp.29 94 20 24 ];
+        %tmp.29 = getv function %tmp.28 :leer;
+        %tmp.30 = lgetv %l.1;
+        symbol [ l %tmp.30 94 25 26 ];
+        %tmp.31 = lgetv %i.4;
+        symbol [ i %tmp.31 94 27 28 ];
+        %tmp.32 = agetv %tmp.30 %tmp.31;
+        %tmp.33 = as %tmp.32 String;
+        symbol [ String %tmp.33 94 33 39 ];
+        %tmp.34 = invoke %tmp.28 %tmp.29(%tmp.33);
+        lputv %r.5 %tmp.34;
+        symbol [ r %r.5 94 16 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 95 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_16_95_46_begin:
+        %tmp.35 = lgetv %r.5;
+        symbol [ r %tmp.35 95 16 17 ];
+        %tmp.36 = null;
+        %tmp.37 = eq %tmp.35 %tmp.36;
+        bt %tmp.37 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_29_95_46_false:
+        %tmp.38 = self;
+        symbol [ num %tmp.39 95 29 32 ];
+        %tmp.39 = getv function %tmp.38 :num;
+        %tmp.40 = lgetv %r.5;
+        symbol [ r %tmp.40 95 33 34 ];
+        %tmp.41 = as %tmp.40 { (!Null) };
+        %tmp.42 = "est";
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.44 = invoke %tmp.38 %tmp.39(%tmp.43);
+        symbol [ PENDIENTE %tmp.46 95 46 55 ];
+        %tmp.46 = getv ? :PENDIENTE;
+        %tmp.47 = ne %tmp.44 %tmp.46;
+        push %tmp.47;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_29_95_46_end:
+        %tmp.48 = phi [%tmp.37 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_16_95_46_begin] [%tmp.47 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_29_95_46_false] [%tmp.48 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_29_95_46_end];
+        bf %tmp.48 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_57_98_12_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 96 16 ]
+        %tmp.49 = lgetv %fuera.3;
+        symbol [ fuera %tmp.49 96 16 21 ];
+        symbol [ put %tmp.50 96 22 25 ];
+        %tmp.50 = getv function %tmp.49 :put;
+        %tmp.51 = lgetv %l.1;
+        symbol [ l %tmp.51 96 26 27 ];
+        %tmp.52 = lgetv %i.4;
+        symbol [ i %tmp.52 96 28 29 ];
+        %tmp.53 = agetv %tmp.51 %tmp.52;
+        %tmp.54 = true;
+        invoke %tmp.49 %tmp.50(%tmp.53, %tmp.54);
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 97 16 ]
+        %tmp.57 = lgetv %sobran.2;
+        symbol [ sobran %tmp.57 97 16 22 ];
+        %tmp.58 = sub %tmp.57 1;
+        lputv %sobran.2 %tmp.58;
+        symbol [ sobran %sobran.2 97 16 22 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_57_98_12_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_95_12_98_12_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_62_99_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 93 ]
+        %tmp.61 = lgetv %i.4;
+        symbol [ i %tmp.61 93 57 58 ];
+        %tmp.62 = sub %tmp.61 1;
+        lputv %i.4 %tmp.62;
+        symbol [ i %i.4 93 57 58 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_93_8_99_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 100 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_stop" ]
+        %quedan.6 = local;
+        symbol [ quedan %quedan.6 100 12 18 ];
+        %tmp.63 = newa 0;
+        lputv %quedan.6 %tmp.63;
+        symbol [ quedan %quedan.6 100 12 18 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 101 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_end" ]
+        %j.7 = local;
+        symbol [ j %j.7 101 17 18 ];
+        %tmp.64 = 0;
+        lputv %j.7 %tmp.64;
+        symbol [ j %j.7 101 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_test:
+        %tmp.65 = lgetv %j.7;
+        symbol [ j %tmp.65 101 24 25 ];
+        %tmp.66 = lgetv %l.1;
+        symbol [ l %tmp.66 101 28 29 ];
+        symbol [ size %tmp.67 101 30 34 ];
+        %tmp.67 = getv function %tmp.66 :size;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.69 = lt %tmp.65 %tmp.68;
+        bf %tmp.69 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_43_107_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 102 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_stmt:
+        %tmp.70 = lgetv %fuera.3;
+        symbol [ fuera %tmp.70 102 16 21 ];
+        symbol [ hasKey %tmp.71 102 22 28 ];
+        %tmp.71 = getv function %tmp.70 :hasKey;
+        %tmp.72 = lgetv %l.1;
+        symbol [ l %tmp.72 102 29 30 ];
+        %tmp.73 = lgetv %j.7;
+        symbol [ j %tmp.73 102 31 32 ];
+        %tmp.74 = agetv %tmp.72 %tmp.73;
+        %tmp.75 = invoke %tmp.70 %tmp.71(%tmp.74);
+        bf %tmp.75 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_36_104_12_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 103 16 ]
+        symbol [ Application %tmp.76 103 16 27 ];
+        %tmp.76 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.77 103 28 35 ];
+        %tmp.77 = getv %tmp.76 :Storage;
+        symbol [ deleteValue %tmp.78 103 36 47 ];
+        %tmp.78 = getv function %tmp.77 :deleteValue;
+        %tmp.79 = "r_";
+        %tmp.80 = lgetv %l.1;
+        symbol [ l %tmp.80 103 56 57 ];
+        %tmp.81 = lgetv %j.7;
+        symbol [ j %tmp.81 103 58 59 ];
+        %tmp.82 = agetv %tmp.80 %tmp.81;
+        %tmp.83 = as %tmp.82 String;
+        symbol [ String %tmp.83 103 64 70 ];
+        %tmp.84 = add %tmp.79 %tmp.83;
+        invoke %tmp.77 %tmp.78(%tmp.84);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_36_104_12_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_else_false:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_104_19_106_12_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 105 16 ]
+        %tmp.85 = lgetv %quedan.6;
+        symbol [ quedan %tmp.85 105 16 22 ];
+        symbol [ add %tmp.86 105 23 26 ];
+        %tmp.86 = getv function %tmp.85 :add;
+        %tmp.87 = lgetv %l.1;
+        symbol [ l %tmp.87 105 27 28 ];
+        %tmp.88 = lgetv %j.7;
+        symbol [ j %tmp.88 105 29 30 ];
+        %tmp.89 = agetv %tmp.87 %tmp.88;
+        invoke %tmp.85 %tmp.86(%tmp.89);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_104_19_106_12_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_102_12_106_12_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_43_107_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 101 ]
+        %tmp.92 = lgetv %j.7;
+        symbol [ j %tmp.92 101 38 39 ];
+        %tmp.93 = add %tmp.92 1;
+        lputv %j.7 %tmp.93;
+        symbol [ j %j.7 101 38 39 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_101_8_107_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 108 8 ]
+        symbol [ Application %tmp.94 108 8 19 ];
+        %tmp.94 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.95 108 20 27 ];
+        %tmp.95 = getv %tmp.94 :Storage;
+        symbol [ setValue %tmp.96 108 28 36 ];
+        %tmp.96 = getv function %tmp.95 :setValue;
+        %tmp.97 = "ids";
+        %tmp.98 = lgetv %quedan.6;
+        symbol [ quedan %tmp.98 108 44 50 ];
+        invoke %tmp.95 %tmp.96(%tmp.97, %tmp.98);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_88_29_109_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 111; @symbol_functiondef = [estadoSync,111,13,23]; @symbol_return<0> = [Dictionary,111,29,39]; ]
+    function estadoSync() as Dictionary {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_111_40_114_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 112 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_111_40_114_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_111_40_114_4_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 112 12 13 ];
+        symbol [ Application %tmp.1 112 16 27 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 112 28 35 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ getValue %tmp.3 112 36 44 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "sync";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %v.1 %tmp.5;
+        symbol [ v %v.1 112 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 113 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_begin:
+        %tmp.6 = lgetv %v.1;
+        symbol [ v %tmp.6 113 16 17 ];
+        symbol [ Dictionary %tmp.8 113 29 39 ];
+        %tmp.8 = getv ? :Dictionary;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        bf %tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_else_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_true:
+        %tmp.10 = lgetv %v.1;
+        symbol [ v %tmp.10 113 43 44 ];
+        %tmp.11 = as %tmp.10 { (Dictionary) };
+        %tmp.12 = as %tmp.11 Dictionary;
+        symbol [ Dictionary %tmp.12 113 48 58 ];
+        push %tmp.12;
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_else_false:
+        %tmp.13 = newd 0;
+        push %tmp.13;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_end:
+        %tmp.14 = phi [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_begin] [%tmp.12 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_true] [%tmp.13 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_else_false] [%tmp.14 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_113_15_113_62_end];
+        ret %tmp.14;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_111_40_114_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 116; @symbol_functiondef = [apuntarSync,116,13,24]; @symbol_param<0> = [cod,116,25,28]; @symbol_param<0>_type<0> = [Number,116,32,38]; ]
+    function apuntarSync(cod as Number) as Void {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 117 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_stop" ]
+        %s.1 = local;
+        symbol [ s %s.1 117 12 13 ];
+        %tmp.1 = self;
+        symbol [ estadoSync %tmp.2 117 16 26 ];
+        %tmp.2 = getv function %tmp.1 :estadoSync;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %s.1 %tmp.3;
+        symbol [ s %s.1 117 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 118 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_stop" ]
+        %ahora.2 = local;
+        symbol [ ahora %ahora.2 118 12 17 ];
+        symbol [ Time %tmp.4 118 20 24 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 118 25 28 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ value %tmp.7 118 31 36 ];
+        %tmp.7 = getv function %tmp.6 :value;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %ahora.2 %tmp.8;
+        symbol [ ahora %ahora.2 118 12 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 119 8 ]
+        %tmp.9 = lgetv %s.1;
+        symbol [ s %tmp.9 119 8 9 ];
+        %tmp.10 = lgetv %ahora.2;
+        symbol [ ahora %tmp.10 119 17 22 ];
+        %tmp.11 = "t";
+        aputv %tmp.9 %tmp.11 %tmp.10;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 120 8 ]
+        %tmp.12 = lgetv %s.1;
+        symbol [ s %tmp.12 120 8 9 ];
+        %tmp.13 = lgetv %cod;
+        symbol [ cod %tmp.13 120 19 22 ];
+        %tmp.14 = "cod";
+        aputv %tmp.12 %tmp.14 %tmp.13;
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 121 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_8_121_43_if_stmt:
+        %tmp.15 = lgetv %cod;
+        symbol [ cod %tmp.15 121 12 15 ];
+        %tmp.16 = 200;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bf %tmp.17 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_8_121_43_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_8_121_43_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_24_121_43_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 121 26 ]
+        %tmp.18 = lgetv %s.1;
+        symbol [ s %tmp.18 121 26 27 ];
+        %tmp.19 = lgetv %ahora.2;
+        symbol [ ahora %tmp.19 121 36 41 ];
+        %tmp.20 = "ok";
+        aputv %tmp.18 %tmp.20 %tmp.19;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_24_121_43_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_8_121_43_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_121_8_121_43_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 122 8 ]
+        symbol [ Application %tmp.21 122 8 19 ];
+        %tmp.21 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.22 122 20 27 ];
+        %tmp.22 = getv %tmp.21 :Storage;
+        symbol [ setValue %tmp.23 122 28 36 ];
+        %tmp.23 = getv function %tmp.22 :setValue;
+        %tmp.24 = "sync";
+        %tmp.25 = lgetv %s.1;
+        symbol [ s %tmp.25 122 45 46 ];
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25);
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_116_48_123_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 126; @symbol_functiondef = [clave,126,13,18]; @symbol_return<0> = [String,126,24,30]; ]
+    function clave() as String {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 127 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 127 12 13 ];
+        symbol [ Application %tmp.1 127 16 27 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 127 28 38 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 127 39 47 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "clave";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %v.1 %tmp.5;
+        symbol [ v %v.1 127 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 128 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_8_128_49_if_stmt:
+        %tmp.6 = lgetv %v.1;
+        symbol [ v %tmp.6 128 14 15 ];
+        symbol [ String %tmp.8 128 27 33 ];
+        %tmp.8 = getv ? :String;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        %tmp.10 = not %tmp.9;
+        bf %tmp.10 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_8_128_49_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_8_128_49_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_36_128_49_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 128 38 ]
+        %tmp.11 = "";
+        ret %tmp.11;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_36_128_49_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_8_128_49_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_128_8_128_49_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 129 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_stop" ]
+        %cs.2 = local;
+        symbol [ cs %cs.2 129 12 14 ];
+        %tmp.12 = lgetv %v.1;
+        symbol [ v %tmp.12 129 18 19 ];
+        %tmp.13 = as %tmp.12 String;
+        symbol [ String %tmp.13 129 23 29 ];
+        symbol [ toCharArray %tmp.14 129 31 42 ];
+        %tmp.14 = getv function %tmp.13 :toCharArray;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %cs.2 %tmp.15;
+        symbol [ cs %cs.2 129 12 14 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 130 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_stop" ]
+        %out.3 = local;
+        symbol [ out %out.3 130 12 15 ];
+        %tmp.16 = "";
+        lputv %out.3 %tmp.16;
+        symbol [ out %out.3 130 12 15 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 131 8 ]
+        for @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_test @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_incr @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_init:
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_begin" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_end" ]
+        %i.4 = local;
+        symbol [ i %i.4 131 17 18 ];
+        %tmp.17 = 0;
+        lputv %i.4 %tmp.17;
+        symbol [ i %i.4 131 17 18 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_test:
+        %tmp.18 = lgetv %i.4;
+        symbol [ i %tmp.18 131 24 25 ];
+        %tmp.19 = lgetv %cs.2;
+        symbol [ cs %tmp.19 131 28 30 ];
+        symbol [ size %tmp.20 131 31 35 ];
+        %tmp.20 = getv function %tmp.19 :size;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = lt %tmp.18 %tmp.21;
+        bf %tmp.22 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_44_135_8_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 132 12 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_44_135_8_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_44_135_8_stop" ]
+        %n.5 = local;
+        symbol [ n %n.5 132 16 17 ];
+        %tmp.23 = lgetv %cs.2;
+        symbol [ cs %tmp.23 132 20 22 ];
+        %tmp.24 = lgetv %i.4;
+        symbol [ i %tmp.24 132 23 24 ];
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        symbol [ toNumber %tmp.26 132 26 34 ];
+        %tmp.26 = getv function %tmp.25 :toNumber;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        lputv %n.5 %tmp.27;
+        symbol [ n %n.5 132 16 17 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 133 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_16_133_32_begin:
+        %tmp.28 = lgetv %n.5;
+        symbol [ n %tmp.28 133 16 17 ];
+        %tmp.29 = 97;
+        %tmp.30 = gte %tmp.28 %tmp.29;
+        bf %tmp.30 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_27_133_32_true:
+        %tmp.31 = lgetv %n.5;
+        symbol [ n %tmp.31 133 27 28 ];
+        %tmp.32 = 122;
+        %tmp.33 = lte %tmp.31 %tmp.32;
+        push %tmp.33;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_27_133_32_end:
+        %tmp.34 = phi [%tmp.30 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_16_133_32_begin] [%tmp.33 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_27_133_32_true] [%tmp.34 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_27_133_32_end];
+        bf %tmp.34 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_37_133_51_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 133 39 ]
+        %tmp.35 = lgetv %n.5;
+        symbol [ n %tmp.35 133 43 44 ];
+        %tmp.36 = 32;
+        %tmp.37 = sub %tmp.35 %tmp.36;
+        lputv %n.5 %tmp.37;
+        symbol [ n %n.5 133 39 40 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_37_133_51_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_133_12_133_51_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 134 12 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_16_134_59_begin:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_17_134_33_begin:
+        %tmp.38 = lgetv %n.5;
+        symbol [ n %tmp.38 134 17 18 ];
+        %tmp.39 = 65;
+        %tmp.40 = gte %tmp.38 %tmp.39;
+        bf %tmp.40 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_40_134_59_false;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_28_134_33_true:
+        %tmp.41 = lgetv %n.5;
+        symbol [ n %tmp.41 134 28 29 ];
+        %tmp.42 = 90;
+        %tmp.43 = lte %tmp.41 %tmp.42;
+        push %tmp.43;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_28_134_33_end:
+        %tmp.44 = phi [%tmp.40 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_17_134_33_begin] [%tmp.43 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_28_134_33_true] [%tmp.44 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_28_134_33_end];
+        bt %tmp.44 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_true;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_40_134_59_false:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_41_134_57_begin:
+        %tmp.45 = lgetv %n.5;
+        symbol [ n %tmp.45 134 41 42 ];
+        %tmp.46 = 48;
+        %tmp.47 = gte %tmp.45 %tmp.46;
+        bf %tmp.47 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_52_134_57_true:
+        %tmp.48 = lgetv %n.5;
+        symbol [ n %tmp.48 134 52 53 ];
+        %tmp.49 = 57;
+        %tmp.50 = lte %tmp.48 %tmp.49;
+        push %tmp.50;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_52_134_57_end:
+        %tmp.51 = phi [%tmp.47 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_41_134_57_begin] [%tmp.50 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_52_134_57_true] [%tmp.51 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_52_134_57_end];
+        push %tmp.51;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_40_134_59_end:
+        %tmp.52 = phi [%tmp.44 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_16_134_59_begin] [%tmp.51 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_40_134_59_false] [%tmp.52 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_40_134_59_end];
+        bf %tmp.52 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_62_134_99_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 134 64 ]
+        %tmp.53 = lgetv %out.3;
+        symbol [ out %tmp.53 134 70 73 ];
+        %tmp.54 = lgetv %n.5;
+        symbol [ n %tmp.54 134 76 77 ];
+        symbol [ toChar %tmp.55 134 78 84 ];
+        %tmp.55 = getv function %tmp.54 :toChar;
+        %tmp.56 = invoke %tmp.54 %tmp.55();
+        symbol [ toString %tmp.57 134 87 95 ];
+        %tmp.57 = getv function %tmp.56 :toString;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        %tmp.59 = add %tmp.53 %tmp.58;
+        lputv %out.3 %tmp.59;
+        symbol [ out %out.3 134 64 67 ];
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_62_134_99_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_134_12_134_99_if_end:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_44_135_8_stop:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_incr:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 131 ]
+        %tmp.62 = lgetv %i.4;
+        symbol [ i %tmp.62 131 39 40 ];
+        %tmp.63 = add %tmp.62 1;
+        lputv %i.4 %tmp.63;
+        symbol [ i %i.4 131 39 40 ];
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_test;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_131_8_135_8_for_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 136 8 ]
+        %tmp.64 = lgetv %out.3;
+        symbol [ out %tmp.64 136 15 18 ];
+        ret %tmp.64;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_126_31_137_4_stop:
+    }
+    [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 139; @symbol_functiondef = [servidor,139,13,21]; @symbol_return<0> = [String,139,27,33]; ]
+    function servidor() as String {
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_139_34_143_4_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 140 8 ]
+        [ "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_139_34_143_4_start" "_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_139_34_143_4_stop" ]
+        %v.1 = local;
+        symbol [ v %v.1 140 12 13 ];
+        symbol [ Application %tmp.1 140 16 27 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 140 28 38 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 140 39 47 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "servidor";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %v.1 %tmp.5;
+        symbol [ v %v.1 140 12 13 ];
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 141 8 ]
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_stmt:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_12_141_60_begin:
+        %tmp.6 = lgetv %v.1;
+        symbol [ v %tmp.6 141 12 13 ];
+        symbol [ String %tmp.8 141 25 31 ];
+        %tmp.8 = getv ? :String;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        bf %tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_35_141_60_true:
+        %tmp.10 = lgetv %v.1;
+        symbol [ v %tmp.10 141 36 37 ];
+        %tmp.11 = as %tmp.10 { (String) };
+        %tmp.12 = as %tmp.11 String;
+        symbol [ String %tmp.12 141 41 47 ];
+        symbol [ length %tmp.13 141 49 55 ];
+        %tmp.13 = getv function %tmp.12 :length;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = 10;
+        %tmp.16 = gt %tmp.14 %tmp.15;
+        push %tmp.16;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_35_141_60_end:
+        %tmp.17 = phi [%tmp.9 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_12_141_60_begin] [%tmp.16 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_35_141_60_true] [%tmp.17 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_35_141_60_end];
+        bf %tmp.17 @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_true:
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_64_141_86_start:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 141 66 ]
+        %tmp.18 = lgetv %v.1;
+        symbol [ v %tmp.18 141 73 74 ];
+        %tmp.19 = as %tmp.18 { (String) };
+        %tmp.20 = as %tmp.19 String;
+        symbol [ String %tmp.20 141 78 84 ];
+        ret %tmp.20;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_64_141_86_stop:
+        goto @_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_end;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_141_8_141_86_if_end:
+[ "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc" 142 8 ]
+        symbol [ URL_POR_DEFECTO %tmp.22 142 15 30 ];
+        %tmp.22 = getv ? :URL_POR_DEFECTO;
+        ret %tmp.22;
+_home_runner_work_Garmin_Garmin_crono_source_Almacen_mc_139_34_143_4_stop:
+    }
+}
+[ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 1; ]
+<init> {
+}
