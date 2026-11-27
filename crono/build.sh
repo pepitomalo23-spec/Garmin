@@ -28,7 +28,7 @@ export PATH="$(go env GOPATH)/bin:$PATH"
 step "Aceptar licencia" connect-iq-sdk-manager-cli agreement accept || fail "Aceptar licencia"
 step "Login Garmin" connect-iq-sdk-manager-cli login || fail "Login Garmin"
 step "SDK" connect-iq-sdk-manager-cli sdk set "${SDK_VERSION}" || fail "SDK"
-step "Dispositivo fenix6xpro" connect-iq-sdk-manager-cli device download --device=fenix6xpro || fail "Dispositivo"
+step "Dispositivo fenix6xpro (con sus letras, para el simulador)" connect-iq-sdk-manager-cli device download --device=fenix6xpro --include-fonts || fail "Dispositivo"
 BIN="$(connect-iq-sdk-manager-cli sdk current-path --bin)"
 export PATH="$BIN:$PATH"
 
