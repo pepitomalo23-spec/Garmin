@@ -1,7 +1,7 @@
-=== Clave de firma (12:07:14)
+=== Clave de firma (12:09:35)
 Clave derivada: 2f22074e06c9
 --- código de salida: 0
-=== Instalar CLI (12:07:15)
+=== Instalar CLI (12:09:37)
 go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
 go: downloading github.com/Masterminds/semver/v3 v3.2.1
 go: downloading github.com/pkg/errors v0.9.1
@@ -29,35 +29,34 @@ go: downloading gopkg.in/yaml.v3 v3.0.1
 go: downloading github.com/andybalholm/cascadia v1.3.1
 go: downloading golang.org/x/net v0.11.0
 --- código de salida: 0
-=== Aceptar licencia (12:07:29)
+=== Aceptar licencia (12:10:00)
 --- código de salida: 0
-=== Login Garmin (12:07:29)
+=== Login Garmin (12:10:00)
 Successfully logged in
 --- código de salida: 0
-=== SDK (12:07:32)
-time="2026-11-27T12:07:32Z" level=info msg="Setting 9.3.0 to be the current SDK"
-time="2026-11-27T12:07:32Z" level=info msg="SDK does not exist, downloading it"
+=== SDK (12:10:03)
+time="2026-11-27T12:10:03Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-27T12:10:03Z" level=info msg="SDK does not exist, downloading it"
 --- código de salida: 0
-=== Dispositivo fenix6xpro (12:07:35)
-time="2026-11-27T12:07:35Z" level=info msg="Downloading 1 devices"
-time="2026-11-27T12:07:35Z" level=info msg="Downloading device zip" device=fenix6xpro
+=== Dispositivo fenix6xpro (12:10:08)
+time="2026-11-27T12:10:08Z" level=info msg="Downloading 1 devices"
+time="2026-11-27T12:10:08Z" level=info msg="Downloading device zip" device=fenix6xpro
 --- código de salida: 0
-=== Compilar .iq (tienda) (12:07:35)
+=== Compilar .iq (tienda) (12:10:08)
 BUILDING FOR 1 DEVICES
 1 OUT OF 1 DEVICES BUILT
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Compilar .prg (fenix6xpro) (12:07:40)
+=== Compilar .prg (fenix6xpro) (12:10:16)
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Pruebas en el simulador (12:07:43)
+=== Pruebas en el simulador (12:10:20)
 Bibliotecas que faltan al simulador:
-	libwebkit2gtk-4.0.so.37 => not found
-	libsoup-2.4.so.1 => not found
-	libjavascriptcoregtk-4.0.so.18 => not found
+(ninguna)
 BUILD SUCCESSFUL
 Unable to connect to simulator.
 --- simulador:
-/home/runner/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-9.3.0-2026-10-20-95888f262/bin/simulator: error while loading shared libraries: libwebkit2gtk-4.0.so.37: cannot open shared object file: No such file or directory
+
+(simulator:5737): dbind-WARNING **: 12:10:58.801: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
 --- código de salida: 2
 ESTADO: OK (pruebas: no se pudieron ejecutar)
