@@ -45,7 +45,10 @@ pruebas() {
   echo "Bibliotecas que faltan al simulador:"; ldd "$BIN/simulator" | grep "not found" || echo "(ninguna)"
   monkeyc --unit-test -w -d fenix6xpro -f crono/pruebas.jungle -y /tmp/developer_key.der -o /tmp/pruebas.prg || return 1
   export NO_AT_BRIDGE=1
-  (xvfb-run -a -s "-screen 0 1280x1024x24" "$BIN/simulator" > /tmp/sim.log 2>&1 &)
+  (Xvfb :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &)
+  sleep 2
+  export DISPLAY=:99
+  ("$BIN/simulator" > /tmp/sim.log 2>&1 &)
   # Espera a que el simulador abra su puerto (1234) antes de mandarle las pruebas.
   for i in $(seq 1 60); do
     ss -ltn 2>/dev/null | grep -q ':1234 ' && break
@@ -67,4 +70,23 @@ elif grep -qE '^FAILED|FAIL$' /tmp/resultado.txt 2>/dev/null; then
 else
   PRUEBAS="no se pudieron ejecutar"
 fi
+# ---- Capturas de la app en el simulador (para ver la pantalla sin el reloj) ----
+captura() {
+  export DISPLAY=:99
+  sudo apt-get install -y -qq imagemagick xdotool > /dev/null 2>&1
+  (monkeydo "$OUT/CronoPjfire.prg" fenix6xpro > /tmp/app.log 2>&1 &)
+  sleep 15
+  import -window root "$OUT/sim_1_preparado.png"
+  local w
+  w=$(xdotool search --name "Simulator" 2>/dev/null | head -n1)
+  [ -n "$w" ] && xdotool windowactivate --sync "$w" 2>/dev/null
+  xdotool key Return; sleep 3.4
+  xdotool key Escape; sleep 1.2
+  xdotool key Escape; sleep 0.8
+  import -window root "$OUT/sim_2_marcha.png"
+  xdotool key Return; sleep 1.5
+  import -window root "$OUT/sim_3_pausa.png"
+  ls -la "$OUT"/sim_*.png
+}
+step "Capturas del simulador" captura || true
 echo "ESTADO: OK (pruebas: $PRUEBAS)" | tee -a "$LOG"
