@@ -34,7 +34,7 @@ module Almacen {
     const RESPUESTA_RARA = -9003;
     const NADA = -9004;
 
-    const VERSION_APP = "1.2.0";
+    const VERSION_APP = "1.3.0";
     const MODELO = "fenix6xpro";
     const URL_POR_DEFECTO = "https://tsjaaqkvncgxqtpmlugv.supabase.co/functions/v1/garmin-api";
 

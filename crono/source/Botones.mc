@@ -5,7 +5,8 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.WatchUi;
 
-const TIPOS = ["Libre", "Carrera", "Natación", "Series", "Fuerza", "Otro"];
+// Los cuatro primeros son estudio: su tiempo es tu tiempo de estudio en pj.fire (Inicio, «Hoy has estudiado»).
+const TIPOS = ["Estudio", "Legislación", "Específico", "Callejero", "Libre", "Carrera", "Natación", "Series", "Fuerza", "Otro"];
 const FILAS_REG = 4;     // vueltas a la vista en el detalle de un registro
 
 // Botones de la pantalla principal (el Fenix 6X Pro no tiene pantalla táctil):
