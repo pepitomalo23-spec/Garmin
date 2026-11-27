@@ -1,0 +1,6 @@
+<properties>
+    <property id="clave" type="string"></property>
+    <property id="servidor" type="string">https://tsjaaqkvncgxqtpmlugv.supabase.co/functions/v1/garmin-api</property>
+    <property id="vibrar" type="boolean">true</property>
+    <property id="sonido" type="boolean">false</property>
+</properties>

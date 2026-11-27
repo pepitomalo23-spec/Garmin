@@ -1,0 +1,62 @@
+name: Compilar Crono pj.fire
+
+# Compila la app «Crono pj.fire» (cronómetro conectado a pj.fire) para el
+# Fenix 6X Pro y deja en crono/build/:
+#   CronoPjfire.iq   -> paquete para subir como app beta a la tienda Connect IQ
+#   CronoPjfire.prg  -> la app suelta
+#   log.txt          -> registro de la compilación y de las pruebas
+# Usa los mismos secretos que la esfera: GARMIN_USERNAME, GARMIN_PASSWORD y CLAVE_FIRMA.
+
+on:
+  push:
+    branches: ["main"]
+    paths: ["crono/**", "!crono/build/**", ".github/workflows/compilar-crono.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compilar-crono
+  cancel-in-progress: true
+
+env:
+  SDK_VERSION: "9.3.0"
+  SDK_MANAGER_VERSION: "v0.8.4"
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+          cache: false
+
+      - name: Compilar y probar
+        env:
+          GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          CLAVE_FIRMA: ${{ secrets.CLAVE_FIRMA }}
+        run: |
+          mkdir -p crono/build
+          pip install --quiet pycryptodome
+          bash crono/build.sh
+
+      - name: Guardar resultado y registro en el repositorio
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f crono/build/ || true
+          git commit -m "Crono $(date -u +%Y-%m-%dT%H:%MZ): $(tail -n1 crono/build/log.txt 2>/dev/null)" || echo "Sin cambios"
+          git pull --rebase || true
+          git push

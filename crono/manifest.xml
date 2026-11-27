@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- Crono pj.fire: cronómetro manual que manda cada sesión a pj.fire (GARMIN / CRONÓMETRO).
+     Solo para el Fenix 6X Pro (Connect IQ 3.4). minApiLevel 3.2.0: hace falta para escribir
+     en Application.Storage desde el proceso en segundo plano. -->
+<iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+    <iq:application id="3eff0890a4d04d9293870043ae2b2cff" type="watch-app" name="@Strings.AppName" entry="CronoApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+        <iq:products>
+            <iq:product id="fenix6xpro"/>
+        </iq:products>
+        <iq:permissions>
+            <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Background"/>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language>spa</iq:language>
+        </iq:languages>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>

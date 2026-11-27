@@ -1,0 +1,8 @@
+<strings>
+    <string id="AppName">Crono pj.fire</string>
+    <string id="ajClave">Clave del reloj</string>
+    <string id="ajClaveAyuda">Pega la clave que te da pj.fire en GARMIN / CRONÓMETRO</string>
+    <string id="ajServidor">Dirección de la API</string>
+    <string id="ajVibrar">Vibrar al pulsar</string>
+    <string id="ajSonido">Pitar al pulsar</string>
+</strings>

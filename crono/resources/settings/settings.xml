@@ -1,0 +1,14 @@
+<settings>
+    <setting propertyKey="@Properties.clave" title="@Strings.ajClave" prompt="@Strings.ajClaveAyuda">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+    <setting propertyKey="@Properties.vibrar" title="@Strings.ajVibrar">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.sonido" title="@Strings.ajSonido">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.servidor" title="@Strings.ajServidor">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+</settings>

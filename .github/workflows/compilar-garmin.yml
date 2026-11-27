@@ -9,7 +9,7 @@ name: Compilar esfera Garmin
 on:
   push:
     branches: ["main"]
-    paths-ignore: ["build/**"]
+    paths-ignore: ["build/**", "crono/**", ".github/workflows/compilar-crono.yml"]
   workflow_dispatch:
 
 permissions:
