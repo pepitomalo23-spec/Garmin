@@ -76,17 +76,18 @@ captura() {
   sudo apt-get install -y -qq imagemagick xdotool > /dev/null 2>&1
   (monkeydo "$OUT/CronoPjfire.prg" fenix6xpro > /tmp/app.log 2>&1 &)
   sleep 15
-  import -window root "$OUT/sim_1_preparado.png"
-  local w
-  w=$(xdotool search --name "Simulator" 2>/dev/null | head -n1)
-  [ -n "$w" ] && xdotool windowactivate --sync "$w" 2>/dev/null
-  xdotool key Return; sleep 3.4
-  xdotool key Escape; sleep 1.2
-  xdotool key Escape; sleep 0.8
-  import -window root "$OUT/sim_2_marcha.png"
-  xdotool key Return; sleep 1.5
-  import -window root "$OUT/sim_3_pausa.png"
-  ls -la "$OUT"/sim_*.png
+  # Botones del Fenix 6X dibujado en el simulador (pantalla de 1280x1024): START arriba a la derecha, BACK abajo.
+  start() { xdotool mousemove 397 231 click 1; }
+  back()  { xdotool mousemove 394 372 click 1; }
+  foto()  { import -window root "$OUT/sim_$1.png"; }
+  foto 1_preparado
+  start; sleep 3.4; back; sleep 1.3; back; sleep 0.8; foto 2_marcha
+  start; sleep 1.2; foto 3_pausa
+  back; sleep 1.2; foto 4_menu_sesion
+  start; sleep 1.2; foto 5_tipo
+  start; sleep 2; foto 6_guardado
+  echo "--- salida de la app:"; tail -n 30 /tmp/app.log
+  ls "$OUT"/sim_*.png
 }
 step "Capturas del simulador" captura || true
 echo "ESTADO: OK (pruebas: $PRUEBAS)" | tee -a "$LOG"
