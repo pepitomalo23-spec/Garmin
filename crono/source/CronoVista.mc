@@ -48,7 +48,11 @@ class CronoVista extends WatchUi.View {
     function tick() as Void {
         var c = app().crono as Cronometro;
         c.afinarAncla();
-        if (app().directo != null) { (app().directo as Directo).alTick(c); }
+        if (app().directo != null) {
+            var d = app().directo as Directo;
+            d.afinarBase();
+            d.alTick(c);
+        }
         var s = app().sincro as SincroPrimerPlano;
         if (s.pend > 0 && !s.enviando) { s.intentar(false); }
         WatchUi.requestUpdate();

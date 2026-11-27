@@ -115,3 +115,11 @@ function pruebaAfinarAncla(logger as Logger) as Boolean {
     logger.debug(r.toString() + " " + r2.toString() + " " + r3.toString());
     return r[0] == 420 && r[1] == 999 && r2[0] == 420 && r2[1] == 420 && r3[0] == 420 && r3[1] == 420;
 }
+
+// Reloj 1 s por detrás del servidor, 300 ms de ida, 300 de vuelta y 100 de proceso.
+(:test)
+function pruebaDesfaseNtp(logger as Logger) as Boolean {
+    var r = calcularDesfase(10000l, 11300l, 11400l, 10700l);
+    logger.debug(r.toString());
+    return r[0] == 1000 && r[1] == 600;
+}
