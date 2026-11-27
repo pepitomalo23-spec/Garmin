@@ -25,9 +25,9 @@ class CronoDelegado extends WatchUi.BehaviorDelegate {
         var c = a.crono as Cronometro;
         var s = a.sincro as SincroPrimerPlano;
         s.mensaje = null;
-        if (c.estado == E_LISTO) { c.iniciar(); aviso(1); }
-        else if (c.estado == E_MARCHA) { c.pausar(); aviso(2); }
-        else { c.reanudar(); aviso(1); }
+        if (c.estado == E_LISTO) { c.iniciar(); aviso(1); avisarDirecto(true); }
+        else if (c.estado == E_MARCHA) { c.pausar(); aviso(2); avisarDirecto(false); }
+        else { c.reanudar(); aviso(1); avisarDirecto(true); }
         (a.vista as CronoVista).ajustarTimer();
         WatchUi.requestUpdate();
         return true;
@@ -36,7 +36,7 @@ class CronoDelegado extends WatchUi.BehaviorDelegate {
     function onBack() as Boolean {
         var c = app().crono as Cronometro;
         if (c.estado == E_MARCHA) {
-            if (c.vuelta()) { aviso(3); }
+            if (c.vuelta()) { aviso(3); avisarDirecto(false); }
             WatchUi.requestUpdate();
             return true;
         }
@@ -83,6 +83,7 @@ class MenuFinDelegado extends WatchUi.Menu2InputDelegate {
         } else if (id == :seguir) {
             (app().crono as Cronometro).reanudar();
             aviso(1);
+            avisarDirecto(true);
             (app().vista as CronoVista).ajustarTimer();
         } else if (id == :descartar) {
             WatchUi.pushView(new WatchUi.Confirmation("¿Descartar la sesión?"), new DescartarDelegado(), WatchUi.SLIDE_IMMEDIATE);
@@ -99,6 +100,7 @@ class DescartarDelegado extends WatchUi.ConfirmationDelegate {
     function onResponse(respuesta) as Boolean {
         if (respuesta == WatchUi.CONFIRM_YES) {
             (app().crono as Cronometro).reiniciar();
+            avisarDirecto(false);
             (app().vista as CronoVista).ajustarTimer();
             WatchUi.requestUpdate();
         }
@@ -142,6 +144,7 @@ function guardarSesion(tipo as String) as Void {
         return;
     }
     c.reiniciar();
+    avisarDirecto(false);
     c.ultimo = reg;
     s.mensaje = null;
     s.recontar();

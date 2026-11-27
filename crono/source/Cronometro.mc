@@ -29,6 +29,8 @@ class Cronometro {
     var inicio as Number = 0;        // hora real (s) de la primera salida
     var pausadoEn as Number = 0;     // hora real (s) de la última pausa
     var parciales as Array = [];     // ms acumulados en cada pulsación de vuelta
+    var anclaLo as Number = 0;       // ms (0-999) dentro del segundo anclaE en que arrancó
+    var anclaHi as Number = 999;     // el tramo: se afina con afinarAncla() (para el directo)
     var ultimo = null;               // último registro guardado (para la pantalla)
 
     function initialize() {
@@ -47,13 +49,15 @@ class Cronometro {
         inicio = Almacen.num(d["i"]);
         pausadoEn = Almacen.num(d["pE"]);
         parciales = (d["p"] instanceof Array) ? d["p"] as Array : [];
+        anclaLo = (d["aL"] instanceof Number) ? d["aL"] as Number : 0;
+        anclaHi = (d["aH"] instanceof Number) ? d["aH"] as Number : 999;
         if (estado != E_MARCHA && estado != E_PAUSA) { estado = E_LISTO; }
     }
 
     function persistir() as Void {
         Application.Storage.setValue("crono", {
             "e" => estado, "a" => acum, "aT" => anclaT, "aE" => anclaE,
-            "i" => inicio, "pE" => pausadoEn, "p" => parciales
+            "i" => inicio, "pE" => pausadoEn, "p" => parciales, "aL" => anclaLo, "aH" => anclaHi
         });
     }
 
@@ -74,6 +78,24 @@ class Cronometro {
     function anclar() as Void {
         anclaT = System.getTimer();
         anclaE = Time.now().value();
+        anclaLo = 0;
+        anclaHi = 999;
+    }
+
+    // Hora real del arranque al milisegundo (para que la web cuente igual que el
+    // reloj). Time.now() solo da segundos; pero cada vez que se mira, con
+    // getTimer() se sabe entre qué ms del segundo anclaE pudo arrancar. Mirándolo
+    // en cada repintado (50 ms), en cuanto cambia el segundo el margen baja de
+    // 1 s a unos 50 ms.
+    function afinarAncla() as Void {
+        if (estado != E_MARCHA) { return; }
+        var r = cruzarAncla(anclaLo, anclaHi, Time.now().value() - anclaE, System.getTimer() - anclaT);
+        anclaLo = r[0] as Number;
+        anclaHi = r[1] as Number;
+    }
+
+    function offsetAncla() as Number {
+        return (anclaLo + anclaHi) / 2;
     }
 
     function iniciar() as Void {
@@ -153,6 +175,18 @@ class Cronometro {
             "est" => Almacen.PENDIENTE
         };
     }
+}
+
+// [lo, hi] del ms de arranque dentro de su segundo, sabiendo que «seg» segundos
+// enteros (de Time.now) y «dt» ms (de getTimer) después del arranque. Si no
+// cuadra (reloj reiniciado, deriva tras muchas horas), se deja como estaba.
+function cruzarAncla(lo as Number, hi as Number, seg as Number, dt as Number) as Array {
+    if (dt < 0 || seg < 0) { return [lo, hi]; }
+    var a = seg * 1000 - dt;
+    var b = a + 999;
+    if (a < lo) { a = lo; }
+    if (b > hi) { b = hi; }
+    return (a <= b) ? [a, b] : [lo, hi];
 }
 
 // Vueltas (lo que dura cada una) y parciales (acumulado al cerrar cada una).

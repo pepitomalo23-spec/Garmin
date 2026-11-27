@@ -16,6 +16,7 @@ class CronoApp extends Application.AppBase {
     var crono = null;    // Cronometro (solo con la app abierta)
     var sincro = null;   // SincroPrimerPlano
     var vista = null;    // CronoVista
+    var directo = null;  // Directo (el crono en directo en la web)
 
     function initialize() {
         AppBase.initialize();
@@ -25,6 +26,7 @@ class CronoApp extends Application.AppBase {
         Math.srand(Time.now().value() ^ System.getTimer());
         crono = new Cronometro();
         sincro = new SincroPrimerPlano();
+        directo = new Directo();
         vista = new CronoVista();
         programarFondo();
         return [vista, new CronoDelegado()];
@@ -62,6 +64,13 @@ class CronoApp extends Application.AppBase {
 
 function app() as CronoApp {
     return Application.getApp() as CronoApp;
+}
+
+// Avisa a la web del cambio (arranque = empieza o sigue: manda otra vez a los 3 s, ya afinado).
+function avisarDirecto(arranque as Boolean) as Void {
+    var d = app().directo;
+    if (d == null) { return; }
+    if (arranque) { (d as Directo).arrancado(); } else { (d as Directo).avisar(); }
 }
 
 // El segundo plano solo se programa si hay algo que mandar y hay clave.

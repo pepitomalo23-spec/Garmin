@@ -104,3 +104,14 @@ function pruebaIdUnico(logger as Logger) as Boolean {
     logger.debug(a + " " + b);
     return !a.equals(b) && a.length() >= 8 && a.length() <= 64;
 }
+
+// El ms de arranque se afina con lecturas (segundos enteros, ms del temporizador).
+// Arranque real en el ms 420 del segundo: tras dos lecturas se sabe exacto.
+(:test)
+function pruebaAfinarAncla(logger as Logger) as Boolean {
+    var r = cruzarAncla(0, 999, 2, 1580);      // 1,58 s después: [420, 999]
+    var r2 = cruzarAncla(r[0] as Number, r[1] as Number, 2, 2579);   // justo antes del segundo 3: [420, 420]
+    var r3 = cruzarAncla(r2[0] as Number, r2[1] as Number, 1, 9000);  // lectura imposible: se queda igual
+    logger.debug(r.toString() + " " + r2.toString() + " " + r3.toString());
+    return r[0] == 420 && r[1] == 999 && r2[0] == 420 && r2[1] == 420 && r3[0] == 420 && r3[1] == 420;
+}

@@ -28,6 +28,7 @@ class CronoVista extends WatchUi.View {
         _periodo = 0;
         ajustarTimer();
         app().sincro.intentar(false);
+        avisarDirecto(false);
     }
 
     function onHide() as Void {
@@ -45,6 +46,9 @@ class CronoVista extends WatchUi.View {
     }
 
     function tick() as Void {
+        var c = app().crono as Cronometro;
+        c.afinarAncla();
+        if (app().directo != null) { (app().directo as Directo).alTick(c); }
         var s = app().sincro as SincroPrimerPlano;
         if (s.pend > 0 && !s.enviando) { s.intentar(false); }
         WatchUi.requestUpdate();
