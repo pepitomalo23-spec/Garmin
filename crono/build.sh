@@ -44,9 +44,15 @@ pruebas() {
   done
   echo "Bibliotecas que faltan al simulador:"; ldd "$BIN/simulator" | grep "not found" || echo "(ninguna)"
   monkeyc --unit-test -w -d fenix6xpro -f crono/pruebas.jungle -y /tmp/developer_key.der -o /tmp/pruebas.prg || return 1
+  export NO_AT_BRIDGE=1
   (xvfb-run -a -s "-screen 0 1280x1024x24" "$BIN/simulator" > /tmp/sim.log 2>&1 &)
-  sleep 20
-  timeout 240 monkeydo /tmp/pruebas.prg fenix6xpro -t > /tmp/resultado.txt 2>&1
+  # Espera a que el simulador abra su puerto (1234) antes de mandarle las pruebas.
+  for i in $(seq 1 60); do
+    ss -ltn 2>/dev/null | grep -q ':1234 ' && break
+    sleep 2
+  done
+  echo "Simulador escuchando tras ~$((i * 2)) s"; sleep 5
+  timeout 300 monkeydo /tmp/pruebas.prg fenix6xpro -t > /tmp/resultado.txt 2>&1
   local rc=$?
   cat /tmp/resultado.txt
   echo "--- simulador:"; tail -n 15 /tmp/sim.log
