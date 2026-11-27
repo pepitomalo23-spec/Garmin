@@ -1,7 +1,7 @@
-=== Clave de firma (12:12:27)
+=== Clave de firma (12:15:56)
 Clave derivada: 2f22074e06c9
 --- código de salida: 0
-=== Instalar CLI (12:12:29)
+=== Instalar CLI (12:15:58)
 go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
 go: downloading github.com/Masterminds/semver/v3 v3.2.1
 go: downloading github.com/pkg/errors v0.9.1
@@ -20,68 +20,68 @@ go: downloading github.com/spf13/jwalterweatherman v1.1.0
 go: downloading github.com/PuerkitoBio/goquery v1.8.1
 go: downloading gopkg.in/ini.v1 v1.67.0
 go: downloading github.com/mattn/go-runewidth v0.0.9
+go: downloading golang.org/x/text v0.10.0
 go: downloading github.com/subosito/gotenv v1.4.2
 go: downloading github.com/hashicorp/hcl v1.0.0
 go: downloading github.com/magiconair/properties v1.8.7
 go: downloading github.com/pelletier/go-toml/v2 v2.0.8
 go: downloading gopkg.in/yaml.v3 v3.0.1
-go: downloading golang.org/x/text v0.10.0
 go: downloading github.com/andybalholm/cascadia v1.3.1
 go: downloading golang.org/x/net v0.11.0
 --- código de salida: 0
-=== Aceptar licencia (12:12:47)
+=== Aceptar licencia (12:16:18)
 --- código de salida: 0
-=== Login Garmin (12:12:48)
+=== Login Garmin (12:16:18)
 Successfully logged in
 --- código de salida: 0
-=== SDK (12:12:51)
-time="2026-11-27T12:12:51Z" level=info msg="Setting 9.3.0 to be the current SDK"
-time="2026-11-27T12:12:51Z" level=info msg="SDK does not exist, downloading it"
+=== SDK (12:16:21)
+time="2026-11-27T12:16:21Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-27T12:16:21Z" level=info msg="SDK does not exist, downloading it"
 --- código de salida: 0
-=== Dispositivo fenix6xpro (12:12:55)
-time="2026-11-27T12:12:55Z" level=info msg="Downloading 1 devices"
-time="2026-11-27T12:12:55Z" level=info msg="Downloading device zip" device=fenix6xpro
+=== Dispositivo fenix6xpro (12:16:25)
+time="2026-11-27T12:16:26Z" level=info msg="Downloading 1 devices"
+time="2026-11-27T12:16:26Z" level=info msg="Downloading device zip" device=fenix6xpro
 --- código de salida: 0
-=== Compilar .iq (tienda) (12:12:56)
+=== Compilar .iq (tienda) (12:16:26)
 BUILDING FOR 1 DEVICES
 1 OUT OF 1 DEVICES BUILT
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Compilar .prg (fenix6xpro) (12:13:03)
+=== Compilar .prg (fenix6xpro) (12:16:30)
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Pruebas en el simulador (12:13:07)
+=== Pruebas en el simulador (12:16:33)
 Bibliotecas que faltan al simulador:
 (ninguna)
 BUILD SUCCESSFUL
 Simulador escuchando tras ~28 s
 ------------------------------------------------------------------------------
 Executing test pruebaFormatoTiempo...
-DEBUG (12:14): 05:07.42 | 1:02:03.45 | 01:01.99
+DEBUG (12:18): 05:07.42 | 1:02:03.45 | 01:01.99
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaVueltasYParciales...
-DEBUG (12:14): vueltas [60100, 62030, 63100] parciales [60100, 122130, 185230]
+DEBUG (12:18): vueltas [60100, 62030, 63100] parciales [60100, 122130, 185230]
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaTiempoReal...
-DEBUG (12:14): normal 6000 tras reinicio 3601000
+DEBUG (12:18): normal 6000 tras reinicio 3601000
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaPausaYVueltas...
-DEBUG (12:14): pausa 2000 reg {inicio=>1795781657, tipo=>Carrera, est=>0, id=>c6b097419-b60df73d9f, dur=>2000, fin=>1795781657, vueltas=>[2000], parciales=>[2000], guardado=>1795781657}
+DEBUG (12:18): pausa 2000 reg {inicio=>1795781880, tipo=>Carrera, est=>0, id=>c6b0974f8-b6f64240a7, dur=>2000, fin=>1795781880, vueltas=>[2000], parciales=>[2000], guardado=>1795781880}
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaAlmacen...
-DEBUG (12:14): en el reloj 40, pendientes 30, primero test0001
+DEBUG (12:18): en el reloj 40, pendientes 30, primero test0001
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaClave...
-DEBUG (12:14): ABCDEFGHJKMNPQRSTUVWXYZ2
+DEBUG (12:18): ABCDEFGHJKMNPQRSTUVWXYZ2
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaIdUnico...
-DEBUG (12:14): c6b097419-b60d6a3dd0 c6b097419-f7685b3dd0
+DEBUG (12:18): c6b0974f8-b6f6bf40dc c6b0974f8-f69ff040dc
 PASS
 
 ==============================================================================
@@ -98,7 +98,12 @@ Ran 7 tests
 
 PASSED (passed=7, failed=0, errors=0)
 --- simulador:
-12:14:01: Debug: Adding duplicate image handler for 'JPEG file'
-12:14:02: Debug: SetLayout
+12:17:43: Debug: Adding duplicate image handler for 'JPEG file'
+12:17:44: Debug: SetLayout
 --- código de salida: 1
-ESTADO: OK (pruebas: no se pudieron ejecutar)
+=== Capturas del simulador (12:18:00)
+-rw-r--r-- 1 runner runner 171705 Nov 27 12:18 crono/build/sim_1_preparado.png
+-rw-r--r-- 1 runner runner 186422 Nov 27 12:18 crono/build/sim_2_marcha.png
+-rw-r--r-- 1 runner runner 186422 Nov 27 12:18 crono/build/sim_3_pausa.png
+--- código de salida: 0
+ESTADO: OK (pruebas: PASSED (passed=7, failed=0, errors=0))
