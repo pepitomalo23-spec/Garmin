@@ -28,7 +28,7 @@ module Almacen {
     [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 35; @position = 10; @symbol_constdef = [NADA,35,10,14]; ]
     const NADA = -9004;
     [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 37; @position = 10; @symbol_constdef = [VERSION_APP,37,10,21]; ]
-    const VERSION_APP = "1.1.0";
+    const VERSION_APP = "1.2.0";
     [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 38; @position = 10; @symbol_constdef = [MODELO,38,10,16]; ]
     const MODELO = "fenix6xpro";
     [ @file = "/home/runner/work/Garmin/Garmin/crono/source/Almacen.mc"; @line = 39; @position = 10; @symbol_constdef = [URL_POR_DEFECTO,39,10,25]; ]
