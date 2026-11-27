@@ -1,6 +1,7 @@
 import Toybox.Background;
 import Toybox.Communications;
 import Toybox.Lang;
+import Toybox.PersistedContent;
 import Toybox.System;
 import Toybox.Time;
 
@@ -36,7 +37,7 @@ class Envio {
         if (pend.size() == 0 && _fondo) { return Almacen.NADA; }
         if (!System.getDeviceSettings().phoneConnected) { return Almacen.SIN_MOVIL; }
 
-        var params = {} as Dictionary<String, Object>;
+        var params = {} as Dictionary<Object, Object>;
         params.put("pendientes", pend.size());
         params.put("version", Almacen.VERSION_APP);
         params.put("modelo", Almacen.MODELO);
@@ -62,10 +63,16 @@ class Envio {
         return 0;
     }
 
-    function alResponder(cod as Number, datos) as Void {
+    function alResponder(cod as Number, datos as Null or ByteArray or Dictionary or String or PersistedContent.Iterator) as Void {
         var nuevos = 0;
-        if (cod == 200 && datos instanceof Dictionary && datos["ok"] == true) {
-            var conf = datos["confirmados"];
+        var d = {} as Dictionary;
+        var valida = false;
+        if (datos instanceof Dictionary) {
+            d = datos as Dictionary;
+            valida = (d["ok"] == true);
+        }
+        if (cod == 200 && valida) {
+            var conf = d["confirmados"];
             if (conf instanceof Array) {
                 for (var i = 0; i < conf.size(); i++) {
                     if (conf[i] instanceof String) {
@@ -74,7 +81,7 @@ class Envio {
                     }
                 }
             }
-            var rech = datos["rechazados"];
+            var rech = d["rechazados"];
             if (rech instanceof Array) {
                 for (var j = 0; j < rech.size(); j++) {
                     var x = rech[j];
