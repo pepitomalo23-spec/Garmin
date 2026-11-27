@@ -76,9 +76,27 @@ captura() {
   sudo apt-get install -y -qq imagemagick xdotool > /dev/null 2>&1
   (monkeydo "$OUT/CronoPjfire.prg" fenix6xpro > /tmp/app.log 2>&1 &)
   sleep 15
-  # Botones del Fenix 6X dibujado en el simulador (pantalla de 1280x1024): START arriba a la derecha, BACK abajo.
-  start() { xdotool mousemove 397 231 click 1; }
-  back()  { xdotool mousemove 394 372 click 1; }
+  # Botones del Fenix 6X dibujado en el simulador: sus posiciones salen de simulator.json del
+  # dispositivo (relativas a la imagen del reloj, que empieza en x=1, y=26 de la ventana).
+  local pos
+  pos=$(python3 - "$HOME/.Garmin/ConnectIQ/Devices/fenix6xpro/simulator.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+keys = d.get("keys") or d.get("buttons") or []
+print("teclas:", [(k.get("id"), k.get("location")) for k in keys], file=sys.stderr)
+def centro(nombre, defecto):
+    for k in keys:
+        if str(k.get("id", "")).lower() == nombre:
+            l = k["location"]; return "%d %d" % (1 + l["x"] + l["width"] // 2, 26 + l["y"] + l["height"] // 2)
+    return defecto
+print(centro("enter", "397 231"), centro("esc", "394 372"))
+PY
+)
+  echo "START y BACK en: $pos"
+  set -- $pos
+  local sx=${1:-397} sy=${2:-231} bx=${3:-394} by=${4:-372}
+  start() { xdotool mousemove "$sx" "$sy" click 1; }
+  back()  { xdotool mousemove "$bx" "$by" click 1; }
   foto()  { import -window root "$OUT/sim_$1.png"; }
   foto 1_preparado
   start; sleep 3.4; back; sleep 1.3; back; sleep 0.8; foto 2_marcha
