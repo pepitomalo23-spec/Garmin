@@ -58,10 +58,13 @@ pruebas() {
   echo "--- simulador:"; tail -n 15 /tmp/sim.log
   return $rc
 }
-if step "Pruebas en el simulador" pruebas; then
-  PRUEBAS="$(grep -oE 'PASSED.*|FAILED.*|[0-9]+ (tests )?passed.*' /tmp/resultado.txt | tail -n1)"
-  [ -z "$PRUEBAS" ] && PRUEBAS="ejecutadas (ver log)"
+step "Pruebas en el simulador" pruebas
+# monkeydo puede acabar con código 1 aunque todo pase: manda el resumen de las pruebas.
+if grep -qE '^PASSED' /tmp/resultado.txt 2>/dev/null; then
+  PRUEBAS="$(grep -oE '^PASSED.*' /tmp/resultado.txt | tail -n1)"
+elif grep -qE '^FAILED|FAIL$' /tmp/resultado.txt 2>/dev/null; then
+  PRUEBAS="CON FALLOS: $(grep -oE '^FAILED.*' /tmp/resultado.txt | tail -n1)"
 else
-  grep -q "FAIL" /tmp/resultado.txt 2>/dev/null && PRUEBAS="CON FALLOS" || PRUEBAS="no se pudieron ejecutar"
+  PRUEBAS="no se pudieron ejecutar"
 fi
 echo "ESTADO: OK (pruebas: $PRUEBAS)" | tee -a "$LOG"
