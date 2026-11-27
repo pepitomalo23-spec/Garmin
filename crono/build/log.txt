@@ -1,7 +1,7 @@
-=== Clave de firma (16:25:21)
+=== Clave de firma (16:51:19)
 Clave derivada: 2f22074e06c9
 --- código de salida: 0
-=== Instalar CLI (16:25:23)
+=== Instalar CLI (16:51:22)
 go: downloading github.com/lindell/connect-iq-sdk-manager-cli v0.8.4
 go: downloading github.com/Masterminds/semver/v3 v3.2.1
 go: downloading github.com/pkg/errors v0.9.1
@@ -29,111 +29,111 @@ go: downloading gopkg.in/yaml.v3 v3.0.1
 go: downloading github.com/andybalholm/cascadia v1.3.1
 go: downloading golang.org/x/net v0.11.0
 --- código de salida: 0
-=== Aceptar licencia (16:25:42)
+=== Aceptar licencia (16:51:46)
 --- código de salida: 0
-=== Login Garmin (16:25:42)
+=== Login Garmin (16:51:46)
 Successfully logged in
 --- código de salida: 0
-=== SDK (16:25:46)
-time="2026-11-27T16:25:46Z" level=info msg="Setting 9.3.0 to be the current SDK"
-time="2026-11-27T16:25:46Z" level=info msg="SDK does not exist, downloading it"
+=== SDK (16:51:50)
+time="2026-11-27T16:51:50Z" level=info msg="Setting 9.3.0 to be the current SDK"
+time="2026-11-27T16:51:50Z" level=info msg="SDK does not exist, downloading it"
 --- código de salida: 0
-=== Dispositivo fenix6xpro (con sus letras, para el simulador) (16:25:50)
-time="2026-11-27T16:25:50Z" level=info msg="Downloading 1 devices"
-time="2026-11-27T16:25:50Z" level=info msg="Downloading device zip" device=fenix6xpro
-time="2026-11-27T16:25:50Z" level=info msg="Installing 43 fonts"
-time="2026-11-27T16:25:50Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_34B
-time="2026-11-27T16:25:50Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_34B
-time="2026-11-27T16:25:50Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_29B
-time="2026-11-27T16:25:50Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_27
-time="2026-11-27T16:25:50Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_37B
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_19
-time="2026-11-27T16:25:51Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 21"
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_29B
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6_NOTO_SANS_CJK_SC_BOLD_TWN_19
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_27B
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_22B
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_26B
-time="2026-11-27T16:25:51Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 27"
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_49
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_37B
-time="2026-11-27T16:25:51Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_26B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_37B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_19
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_29B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_19
-time="2026-11-27T16:25:52Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 16"
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_29B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_32
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_34B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_26B
-time="2026-11-27T16:25:52Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_37B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_34B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_39
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_54
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_29B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_37B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_19B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_25B
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6_BIONIC_BOLD_NUMBER_18
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_69
-time="2026-11-27T16:25:53Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_26B
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6_CDPG_ROBOTO_15B
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_26B
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_19
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_19B
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_62
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_34B
-time="2026-11-27T16:25:54Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_13B
+=== Dispositivo fenix6xpro (con sus letras, para el simulador) (16:51:55)
+time="2026-11-27T16:51:55Z" level=info msg="Downloading 1 devices"
+time="2026-11-27T16:51:55Z" level=info msg="Downloading device zip" device=fenix6xpro
+time="2026-11-27T16:51:55Z" level=info msg="Installing 43 fonts"
+time="2026-11-27T16:51:55Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_37B
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_34B
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_19
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_29B
+time="2026-11-27T16:51:56Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 16"
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_19
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_29B
+time="2026-11-27T16:51:56Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_39
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_69
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_34B
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_29B
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_22B
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_32
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_37B
+time="2026-11-27T16:51:57Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_37B
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_26B
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_26B
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_37B
+time="2026-11-27T16:51:58Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 21"
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_27B
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_27
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_34B
+time="2026-11-27T16:51:58Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_19
+time="2026-11-27T16:51:59Z" level=info msg="Font is contains spaces and can't be downloaded" font="bitstreamVeraSans 27"
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_26B
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_KR_BOLD_34B
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_26B
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_54
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_BOLD_NUMBER_62
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_TWN_19
+time="2026-11-27T16:51:59Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_JP_BOLD_34B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_BIONIC_COND_BOLD_NUMBER_49
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_19B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_29B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_25B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_13B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_29B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_CDPG_ROBOTO_19B
+time="2026-11-27T16:52:00Z" level=info msg="Downloading font zip" font=FNT_FENIX6_NOTO_SANS_CJK_SC_BOLD_TWN_19
+time="2026-11-27T16:52:01Z" level=info msg="Downloading font zip" font=FNT_FENIX6_CDPG_ROBOTO_15B
+time="2026-11-27T16:52:01Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_NOTO_SANS_CJK_SC_BOLD_CHN_26B
+time="2026-11-27T16:52:01Z" level=info msg="Downloading font zip" font=FNT_FENIX6X_ROBOTO_CONDENSED_BOLD_VIET_37B
+time="2026-11-27T16:52:01Z" level=info msg="Downloading font zip" font=FNT_FENIX6_BIONIC_BOLD_NUMBER_18
 --- código de salida: 0
-=== Compilar .iq (tienda) (16:25:54)
+=== Compilar .iq (tienda) (16:52:01)
 BUILDING FOR 1 DEVICES
 1 OUT OF 1 DEVICES BUILT
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Compilar .prg (fenix6xpro) (16:26:00)
+=== Compilar .prg (fenix6xpro) (16:52:10)
 BUILD SUCCESSFUL
 --- código de salida: 0
-=== Pruebas en el simulador (16:26:03)
+=== Pruebas en el simulador (16:52:14)
 Bibliotecas que faltan al simulador:
 (ninguna)
 BUILD SUCCESSFUL
 Simulador escuchando tras ~28 s
 ------------------------------------------------------------------------------
 Executing test pruebaFormatoTiempo...
-DEBUG (16:27): 05:07.42 | 1:02:03.45 | 01:01.99
+DEBUG (16:53): 05:07.42 | 1:02:03.45 | 01:01.99
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaVueltasYParciales...
-DEBUG (16:27): vueltas [60100, 62030, 63100] parciales [60100, 122130, 185230]
+DEBUG (16:53): vueltas [60100, 62030, 63100] parciales [60100, 122130, 185230]
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaTiempoReal...
-DEBUG (16:27): normal 6000 tras reinicio 3601000
+DEBUG (16:53): normal 6000 tras reinicio 3601000
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaPausaYVueltas...
-DEBUG (16:27): pausa 2000 reg {inicio=>1795796845, tipo=>Carrera, est=>0, id=>c6b09af6d-b7415940be, dur=>2000, fin=>1795796845, vueltas=>[2000], parciales=>[2000], guardado=>1795796845}
+DEBUG (16:53): pausa 2000 reg {inicio=>1795798411, tipo=>Carrera, est=>0, id=>c6b09b58b-b775bf402b, dur=>2000, fin=>1795798411, vueltas=>[2000], parciales=>[2000], guardado=>1795798411}
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaAlmacen...
-DEBUG (16:27): en el reloj 40, pendientes 30, primero test0001
+DEBUG (16:53): en el reloj 40, pendientes 30, primero test0001
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaClave...
-DEBUG (16:27): ABCDEFGHJKMNPQRSTUVWXYZ2
+DEBUG (16:53): ABCDEFGHJKMNPQRSTUVWXYZ2
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaIdUnico...
-DEBUG (16:27): c6b09af6d-b741c740f3 c6b09af6d-f5f10040f3
+DEBUG (16:53): c6b09b58b-b77537406d c6b09b58b-f598e0406d
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaAfinarAncla...
-DEBUG (16:27): [420, 999] [420, 420] [420, 420]
+DEBUG (16:53): [420, 999] [420, 420] [420, 420]
 PASS
 ------------------------------------------------------------------------------
 Executing test pruebaDesfaseNtp...
-DEBUG (16:27): [1000, 600]
+DEBUG (16:53): [1000, 600]
 PASS
 
 ==============================================================================
@@ -152,10 +152,10 @@ Ran 9 tests
 
 PASSED (passed=9, failed=0, errors=0)
 --- simulador:
-16:27:09: Debug: Adding duplicate image handler for 'JPEG file'
-16:27:09: Debug: SetLayout
+16:53:15: Debug: Adding duplicate image handler for 'JPEG file'
+16:53:15: Debug: SetLayout
 --- código de salida: 1
-=== Capturas del simulador (16:27:25)
+=== Capturas del simulador (16:53:31)
 teclas: [('enter', {'height': 50, 'width': 40, 'x': 373, 'y': 166}), ('up', {'height': 50, 'width': 40, 'x': 1, 'y': 268}), ('menu', {'height': 50, 'width': 40, 'x': 1, 'y': 268}), ('down', {'height': 50, 'width': 40, 'x': 25, 'y': 367}), ('esc', {'height': 50, 'width': 40, 'x': 367, 'y': 367})]
 START y BACK en: 394 217 388 418
 --- salida de la app:
