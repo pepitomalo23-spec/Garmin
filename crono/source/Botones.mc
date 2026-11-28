@@ -187,7 +187,8 @@ class MenuPrincipalDelegado extends WatchUi.Menu2InputDelegate {
             WatchUi.pushView(new EstadoVista(), new WatchUi.BehaviorDelegate(), WatchUi.SLIDE_LEFT);
         } else if (id == :salir) {
             (app().crono as Cronometro).persistir();
-            System.exit();
+            var d = app().directo;
+            if (d != null) { (d as Directo).salirDespues(); } else { System.exit(); }
         }
     }
 }
